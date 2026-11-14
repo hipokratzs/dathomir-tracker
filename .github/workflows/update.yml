@@ -1,0 +1,60 @@
+name: Atualizar tracker
+
+on:
+  schedule:
+    # A cada 15 minutos (o GitHub costuma atrasar alguns minutos; as vezes pula uma rodada).
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tracker
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    # O swgoh.gg bloqueia robos (erro 403). O swgoh-comlink le direto do jogo e roda
+    # aqui mesmo, como contêiner temporario: sobe no inicio e e descartado no fim.
+    services:
+      comlink:
+        image: ghcr.io/swgoh-utils/swgoh-comlink:latest
+        env:
+          APP_NAME: mythosaur-rote-tracker
+        ports:
+          - 3000:3000
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Ler o jogo e atualizar dados
+        run: python update.py
+        env:
+          COMLINK_URL: http://localhost:3000
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      - name: Salvar se algo mudou
+        run: |
+          git config user.name "tracker-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json index.html
+          if git diff --cached --quiet; then
+            echo "Sem mudancas."
+          else
+            git commit -m "Atualiza dados $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git pull --rebase
+            git push
+          fi

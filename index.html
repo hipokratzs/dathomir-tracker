@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Dathomir R8 Tracker</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one column briefing — summary strip, then one row per unit with candidates grouped by relic tier */
+:root{
+  --bg:#f3f4f6; --surface:#ffffff; --fg:#1b2330; --muted:#5d6777; --line:#d8dce3;
+  --accent:#b07d1a; --accent-soft:#f6ecd6; --ok:#2e7d4f; --ok-soft:#e1f1e7; --open:#a8452f; --open-soft:#f7e3dd;
+  --display:"Barlow Condensed","Arial Narrow",sans-serif; --body:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12161c; --surface:#1b2129; --fg:#e6e9ee; --muted:#9aa4b2; --line:#2c3440;
+  --accent:#e0b04f; --accent-soft:#3a2f17; --ok:#6cc48e; --ok-soft:#1d3527; --open:#e88a72; --open-soft:#3b221c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12161c; --surface:#1b2129; --fg:#e6e9ee; --muted:#9aa4b2; --line:#2c3440;
+  --accent:#e0b04f; --accent-soft:#3a2f17; --ok:#6cc48e; --ok-soft:#1d3527; --open:#e88a72; --open-soft:#3b221c; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.wrap{max-width:960px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:22px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--display);font-size:clamp(32px,6vw,46px);line-height:1;margin:4px 0 8px;text-wrap:balance;letter-spacing:.01em}
+.lede{color:var(--muted);max-width:65ch;margin:0}
+.updated{font-family:var(--mono);font-size:12px;color:var(--muted);margin:8px 0 0}
+.summary{display:flex;flex-wrap:wrap;gap:10px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 14px;min-width:120px;flex:1}
+.stat b{display:block;font-family:var(--display);font-size:30px;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.list{display:grid;gap:10px}
+.unit{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;grid-template-columns:200px 1fr;gap:14px}
+.unit.is-done{opacity:.72}
+.head{display:grid;gap:6px;align-content:start;min-width:0}
+.name{font-family:var(--display);font-size:24px;line-height:1.1;font-weight:700}
+.need{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.pill{justify-self:start;font-size:12px;font-weight:600;padding:2px 9px;border-radius:99px}
+.pill.open{background:var(--open-soft);color:var(--open)}
+.pill.check{background:var(--accent-soft);color:var(--accent)}
+.pill.done{background:var(--ok-soft);color:var(--ok)}
+.tiers{display:grid;gap:8px;min-width:0}
+.tier{display:grid;grid-template-columns:78px 1fr;gap:10px;align-items:start}
+.tag{font-family:var(--mono);font-size:12px;padding-top:3px;color:var(--muted)}
+.names{display:flex;flex-wrap:wrap;gap:6px;min-width:0}
+.chip{font-size:13px;padding:2px 8px;border-radius:4px;border:1px solid var(--line)}
+.r8 .chip{background:var(--ok-soft);border-color:transparent;color:var(--ok)}
+.r7 .chip{border-color:var(--accent);font-weight:500}
+.pledge .chip{background:var(--accent-soft);border-color:transparent;color:var(--accent);font-weight:600}
+.chip.busy{text-decoration:underline dotted;text-underline-offset:3px}
+.note{font-size:13px;color:var(--muted);margin:0}
+.foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;display:grid;gap:6px}
+@media (max-width:640px){.unit{grid-template-columns:1fr}.tier{grid-template-columns:1fr;gap:4px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow" id="eyebrow">ROTE platoon needs</div>
+    <h1>Dathomir R8 Tracker</h1>
+    <p class="lede">What we still need at Relic 8 to fill every Dathomir platoon, and who in the guild is closest to getting there. Ask the R7 players first: they need one relic level.</p>
+    <p class="updated" id="updated"></p>
+  </header>
+
+  <section class="summary" aria-label="Summary">
+    <div class="stat"><b id="s-need">0</b><span>R8 upgrades needed</span></div>
+    <div class="stat"><b id="s-units">0</b><span>Units still open</span></div>
+    <div class="stat"><b id="s-r7">0</b><span>R7 players, one step away</span></div>
+  </section>
+
+  <section class="list" id="list" aria-label="Units"></section>
+
+  <footer class="foot">
+    <p class="note">Green = already R8 or higher. Gold outline = R7, best people to ask. "Reported" = the player said on Discord they reached R8 and the tracker has not picked it up yet. Dotted underline = player is a top candidate on 3 or more units, so spread the asks around.</p>
+    <p class="note">Data read straight from the game by an automated job every 15 minutes, so a fresh upgrade shows up on the next run.</p>
+  </footer>
+</div>
+
+<!-- Seed copies: update.py rewrites these on every run, so this file also works on its own. -->
+<script type="application/json" id="seed-config">{"guild_id": "f9HdOgX5SsiR_Q3mcPCzxw", "guild_name": "MYTHOSAURheadHUNTERS", "planet": "Dathomir", "_ajuda": "target = quantos jogadores em R8+ a guilda precisa ter nesse personagem. reported = jogador avisou no Discord que chegou a R8, mas o swgoh.gg ainda nao atualizou. pledged = jogador se comprometeu a upar. check = observacao em aberto.", "units": [{"id": "MAULS7", "name": "Maul", "target": 6}, {"id": "SAVAGEOPRESS", "name": "Savage Opress", "target": 2}, {"id": "BOBAFETTSCION", "name": "Boba Fett, Scion of Jango", "target": 8, "reported": ["TheJobaFett"]}, {"id": "STARKILLER", "name": "Starkiller", "target": 12, "check": "TheJobaFett finished his to R8 on 1 Nov. Confirm with Trash Panda if this one is still open."}, {"id": "NIGHTSISTERSPIRIT", "name": "Nightsister Spirit", "target": 3, "reported": ["TheJobaFett"]}, {"id": "DENGAR", "name": "Dengar", "target": 4}, {"id": "NIGHTSISTERZOMBIE", "name": "Nightsister Zombie", "target": 2}, {"id": "BT1", "name": "BT-1", "target": 2}, {"id": "SNOWTROOPER", "name": "Snowtrooper", "target": 3}]}</script>
+<script type="application/json" id="seed-data">{"updated": "2026-11-14T15:45:00Z", "source": "swgoh.gg guild unit search (leitura manual)", "units": {"MAULS7": [{"name": "DarthIsaB", "relic": 8}, {"name": "UncleSpike823", "relic": 8}, {"name": "hellothere", "relic": 8}, {"name": "Grey Jedi29", "relic": 8}, {"name": "Guardiandevil34", "relic": 8}, {"name": "Starkiller117", "relic": 8}, {"name": "TheJobaFett", "relic": 7}, {"name": "Bem", "relic": 7}, {"name": "Lazrin Novai", "relic": 7}, {"name": "Jodo Kast", "relic": 7}, {"name": "trod75", "relic": 7}, {"name": "Baserock", "relic": 7}, {"name": "Trash Panda", "relic": 7}, {"name": "Medjo Juhin", "relic": 6}, {"name": "Jaso Swift", "relic": 6}], "SAVAGEOPRESS": [{"name": "hellothere", "relic": 8}, {"name": "Lazrin Novai", "relic": 7}, {"name": "Grey Jedi29", "relic": 7}, {"name": "Xara", "relic": 6}, {"name": "Medjo Juhin", "relic": 6}], "BOBAFETTSCION": [{"name": "Casper Darkmage", "relic": 9}, {"name": "Fama", "relic": 8}, {"name": "Guardiandevil34", "relic": 8}, {"name": "Trash Panda", "relic": 8}, {"name": "Hoptownlaw", "relic": 8}, {"name": "Bem", "relic": 7}, {"name": "hellothere", "relic": 7}, {"name": "Wckdaze", "relic": 7}, {"name": "Darthsketti", "relic": 7}, {"name": "TheJobaFett", "relic": 7}, {"name": "Canchuck", "relic": 7}, {"name": "Swyth", "relic": 7}, {"name": "Grey Jedi29", "relic": 7}, {"name": "Lazrin Novai", "relic": 6}, {"name": "Bertz", "relic": 6}], "STARKILLER": [{"name": "hellothere", "relic": 9}, {"name": "Starkiller117", "relic": 9}, {"name": "UncleSpike823", "relic": 8}, {"name": "Medjo Juhin", "relic": 8}, {"name": "Guardiandevil34", "relic": 8}, {"name": "Allnightgamer", "relic": 8}, {"name": "Grey Jedi29", "relic": 8}, {"name": "Xara", "relic": 8}, {"name": "Bertz", "relic": 8}, {"name": "TheJobaFett", "relic": 8}, {"name": "Trash Panda", "relic": 8}, {"name": "Bem", "relic": 7}, {"name": "Veskasa Stargazer", "relic": 7}, {"name": "DarthIsaB", "relic": 6}, {"name": "Viktorion", "relic": 6}, {"name": "NoleySmokes", "relic": 6}, {"name": "Darthsketti", "relic": 6}], "NIGHTSISTERSPIRIT": [{"name": "Medjo Juhin", "relic": 8}, {"name": "TheJobaFett", "relic": 7}, {"name": "Canchuck", "relic": 7}, {"name": "Grey Jedi29", "relic": 7}, {"name": "Viktorion", "relic": 6}], "DENGAR": [{"name": "Fama", "relic": 8}, {"name": "Grey Jedi29", "relic": 8}, {"name": "Medjo Juhin", "relic": 7}, {"name": "Lazrin Novai", "relic": 7}, {"name": "Darthsketti", "relic": 7}, {"name": "Wckdaze", "relic": 7}], "NIGHTSISTERZOMBIE": [{"name": "TheJobaFett", "relic": 8}, {"name": "Canchuck", "relic": 7}, {"name": "Grey Jedi29", "relic": 7}, {"name": "Sabum", "relic": 6}], "BT1": [{"name": "Medjo Juhin", "relic": 8}, {"name": "Guardiandevil34", "relic": 7}, {"name": "Starkiller117", "relic": 6}, {"name": "DarthIsaB", "relic": 6}, {"name": "Yan elriad", "relic": 6}, {"name": "50uLh4ck3r", "relic": 6}, {"name": "Trash Panda", "relic": 6}], "SNOWTROOPER": [{"name": "Darthsketti", "relic": 8}, {"name": "TheJobaFett", "relic": 8}, {"name": "UncleSpike823", "relic": 8}, {"name": "Jodo Kast", "relic": 6}, {"name": "Medjo Juhin", "relic": 6}, {"name": "Grey Jedi29", "relic": 6}, {"name": "Starkiller117", "relic": 6}]}}</script>
+<script>
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const seed=id=>{try{return JSON.parse(document.getElementById(id).textContent)}catch(e){return null}};
+async function load(file,id){
+  try{const r=await fetch(file,{cache:"no-store"});if(r.ok)return await r.json()}catch(e){}
+  return seed(id);
+}
+function render(cfg,data){
+  if(!cfg||!data){document.getElementById("list").innerHTML='<p class="note">Could not load the tracker data.</p>';return}
+  document.getElementById("eyebrow").textContent=(cfg.guild_name||"")+" · ROTE platoon needs";
+  const when=new Date(data.updated);
+  document.getElementById("updated").textContent="Data read "+(isNaN(when)?data.updated:when.toLocaleString());
+  const units=cfg.units.map(u=>{
+    const ps=(data.units[u.id]||[]).slice().sort((a,b)=>b.relic-a.relic);
+    const r8=ps.filter(p=>p.relic>=8).map(p=>p.relic>8?`${p.name} (R${p.relic})`:p.name);
+    const r8names=new Set(ps.filter(p=>p.relic>=8).map(p=>p.name));
+    const reported=(u.reported||[]).filter(n=>!r8names.has(n));
+    const r7=ps.filter(p=>p.relic===7&&!reported.includes(p.name)).map(p=>p.name);
+    const r6=ps.filter(p=>p.relic===6&&!reported.includes(p.name)).map(p=>p.name);
+    const have=r8.length+reported.length;
+    const missing=Math.max(0,u.target-have);
+    return {...u,r8,r7,r6,reported,have,missing};
+  });
+  const count={};units.filter(u=>u.missing).forEach(u=>[...u.r7,...u.r6].forEach(p=>count[p]=(count[p]||0)+1));
+  const chips=(arr,mark)=>arr.length?arr.map(p=>`<span class="chip${mark&&count[p]>=3?" busy":""}">${esc(p)}</span>`).join(""):'<span class="note">Nobody at this tier</span>';
+  const row=(cls,tag,arr,mark)=>`<div class="tier ${cls}"><div class="tag">${tag}</div><div class="names">${chips(arr,mark)}</div></div>`;
+  units.sort((a,b)=>(a.missing===0)-(b.missing===0));
+  document.getElementById("list").innerHTML=units.map(u=>{
+    const done=u.missing===0;
+    const pill=done?'<span class="pill done">Done</span>':u.check?'<span class="pill check">Check status</span>':(u.pledged&&u.pledged.length?`<span class="pill check">${u.pledged.length} committed</span>`:'<span class="pill open">Open</span>');
+    return `<article class="unit${done?" is-done":""}">
+  <div class="head">
+   <div class="name">${esc(u.name)}</div>
+   <div class="need">${done?"Covered":`Need ${u.missing} more at R8`} · ${u.have}/${u.target} at R8</div>
+   ${pill}
+   ${!done&&u.check?`<p class="note">${esc(u.check)}</p>`:""}
+  </div>
+  <div class="tiers">
+   ${u.reported.length?row("pledge","Reported",u.reported):""}
+   ${u.pledged&&u.pledged.length?row("pledge","Committed",u.pledged):""}
+   ${row("r8","R8+",u.r8)}
+   ${done?"":row("r7","R7 · ask",u.r7,true)+row("r6","R6",u.r6,true)}
+  </div>
+ </article>`}).join("");
+  document.getElementById("s-need").textContent=units.reduce((a,u)=>a+u.missing,0);
+  document.getElementById("s-units").textContent=units.filter(u=>u.missing).length;
+  document.getElementById("s-r7").textContent=new Set(units.filter(u=>u.missing).flatMap(u=>u.r7)).size;
+}
+(async()=>{render(await load("config.json","seed-config"),await load("data.json","seed-data"))})();
+</script>
+</body>
+</html>

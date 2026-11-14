@@ -1,0 +1,60 @@
+{
+ "guild_id": "f9HdOgX5SsiR_Q3mcPCzxw",
+ "guild_name": "MYTHOSAURheadHUNTERS",
+ "planet": "Dathomir",
+ "_ajuda": "target = quantos jogadores em R8+ a guilda precisa ter nesse personagem. reported = jogador avisou no Discord que chegou a R8, mas o swgoh.gg ainda nao atualizou. pledged = jogador se comprometeu a upar. check = observacao em aberto.",
+ "units": [
+  {
+   "id": "MAULS7",
+   "name": "Maul",
+   "target": 6
+  },
+  {
+   "id": "SAVAGEOPRESS",
+   "name": "Savage Opress",
+   "target": 2
+  },
+  {
+   "id": "BOBAFETTSCION",
+   "name": "Boba Fett, Scion of Jango",
+   "target": 8,
+   "reported": [
+    "TheJobaFett"
+   ]
+  },
+  {
+   "id": "STARKILLER",
+   "name": "Starkiller",
+   "target": 12,
+   "check": "TheJobaFett finished his to R8 on 1 Nov. Confirm with Trash Panda if this one is still open."
+  },
+  {
+   "id": "NIGHTSISTERSPIRIT",
+   "name": "Nightsister Spirit",
+   "target": 3,
+   "reported": [
+    "TheJobaFett"
+   ]
+  },
+  {
+   "id": "DENGAR",
+   "name": "Dengar",
+   "target": 4
+  },
+  {
+   "id": "NIGHTSISTERZOMBIE",
+   "name": "Nightsister Zombie",
+   "target": 2
+  },
+  {
+   "id": "BT1",
+   "name": "BT-1",
+   "target": 2
+  },
+  {
+   "id": "SNOWTROOPER",
+   "name": "Snowtrooper",
+   "target": 3
+  }
+ ]
+}
