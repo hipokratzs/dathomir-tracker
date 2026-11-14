@@ -52,6 +52,23 @@ h1{font-family:var(--display);font-size:clamp(32px,6vw,46px);line-height:1;margi
 .chip.busy{text-decoration:underline dotted;text-underline-offset:3px}
 .note{font-size:13px;color:var(--muted);margin:0}
 .foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;display:grid;gap:6px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px;display:grid;gap:12px;min-width:0}
+.panel h2{font-family:var(--display);font-size:26px;line-height:1.1;margin:0}
+.panel h3{font-family:var(--display);font-size:20px;line-height:1.1;margin:0}
+.panel-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.copy{font:inherit;font-size:13px;font-weight:600;padding:6px 12px;border-radius:5px;border:1px solid var(--accent);background:var(--accent-soft);color:var(--accent);cursor:pointer}
+.copy:hover{filter:brightness(1.05)}
+.copy.ok{border-color:var(--ok);background:var(--ok-soft);color:var(--ok)}
+.msg{margin:0;padding:12px;border-radius:5px;background:var(--bg);border:1px solid var(--line);font-family:var(--body);font-size:14px;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere}
+.log{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.log>li{display:grid;grid-template-columns:150px 1fr;gap:10px;padding-top:12px;border-top:1px solid var(--line)}
+.log>li:first-child{border-top:0;padding-top:0}
+.log time{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:2px}
+.log ul{margin:0;padding:0;list-style:none;display:grid;gap:3px}
+.log .up8{color:var(--ok);font-weight:600}
+.log .down{color:var(--open)}
+.more{font:inherit;font-size:13px;background:none;border:0;color:var(--accent);cursor:pointer;justify-self:start;padding:0;text-decoration:underline}
+@media (max-width:640px){.log>li{grid-template-columns:1fr;gap:4px}}
 @media (max-width:640px){.unit{grid-template-columns:1fr}.tier{grid-template-columns:1fr;gap:4px}}
 </style>
 </head>
@@ -72,6 +89,21 @@ h1{font-family:var(--display);font-size:clamp(32px,6vw,46px);line-height:1;margi
 
   <section class="list" id="list" aria-label="Units"></section>
 
+  <section class="panel" aria-labelledby="discord-h">
+    <div class="panel-head"><h2 id="discord-h">Discord summary</h2><button class="copy" data-copy="msg-status" type="button">Copy</button></div>
+    <p class="note">Ready to paste in #rote-platoon-needs. Built from the live data above.</p>
+    <pre class="msg" id="msg-status"></pre>
+    <div class="panel-head"><h3>R7 call-out</h3><button class="copy" data-copy="msg-callout" type="button">Copy</button></div>
+    <pre class="msg" id="msg-callout"></pre>
+  </section>
+
+  <section class="panel" aria-labelledby="log-h">
+    <h2 id="log-h">Change log</h2>
+    <p class="note">Every time someone moves up (or down) a relic on a tracked unit, the job records it here. Times are in your local time zone.</p>
+    <ul class="log" id="log"></ul>
+    <button class="more" id="log-more" type="button" hidden>Show older changes</button>
+  </section>
+
   <footer class="foot">
     <p class="note">Green = already R8 or higher. Gold outline = R7, best people to ask. "Reported" = the player said on Discord they reached R8 and the tracker has not picked it up yet. Dotted underline = player is a top candidate on 3 or more units, so spread the asks around.</p>
     <p class="note">Data read straight from the game by an automated job every 15 minutes, so a fresh upgrade shows up on the next run.</p>
@@ -79,8 +111,9 @@ h1{font-family:var(--display);font-size:clamp(32px,6vw,46px);line-height:1;margi
 </div>
 
 <!-- Seed copies: update.py rewrites these on every run, so this file also works on its own. -->
-<script type="application/json" id="seed-config">{"guild_id": "f9HdOgX5SsiR_Q3mcPCzxw", "guild_name": "MYTHOSAURheadHUNTERS", "planet": "Dathomir", "_ajuda": "target = quantos jogadores em R8+ a guilda precisa ter nesse personagem. reported = jogador avisou no Discord que chegou a R8, mas o swgoh.gg ainda nao atualizou. pledged = jogador se comprometeu a upar. check = observacao em aberto.", "units": [{"id": "MAULS7", "name": "Maul", "target": 6}, {"id": "SAVAGEOPRESS", "name": "Savage Opress", "target": 2}, {"id": "BOBAFETTSCION", "name": "Boba Fett, Scion of Jango", "target": 8, "reported": ["TheJobaFett"]}, {"id": "STARKILLER", "name": "Starkiller", "target": 12, "check": "TheJobaFett finished his to R8 on 1 Nov. Confirm with Trash Panda if this one is still open."}, {"id": "NIGHTSISTERSPIRIT", "name": "Nightsister Spirit", "target": 3, "reported": ["TheJobaFett"]}, {"id": "DENGAR", "name": "Dengar", "target": 4}, {"id": "NIGHTSISTERZOMBIE", "name": "Nightsister Zombie", "target": 2}, {"id": "BT1", "name": "BT-1", "target": 2}, {"id": "SNOWTROOPER", "name": "Snowtrooper", "target": 3}]}</script>
+<script type="application/json" id="seed-config">{"guild_id": "f9HdOgX5SsiR_Q3mcPCzxw", "guild_name": "MYTHOSAURheadHUNTERS", "planet": "Dathomir", "_ajuda": "target = quantos jogadores a guilda precisa ter em R8+ nesse personagem (total). needed = quantos upgrades o Trash Panda pediu (o x/y do resumo do Discord). done = quem ja entregou antes do historico automatico (quem subir daqui pra frente entra sozinho). short = nome curto no resumo do Discord. reported = avisou no Discord que chegou a R8 e o jogo ainda nao mostrou. pledged = se comprometeu a upar. check = observacao em aberto.", "units": [{"id": "MAULS7", "name": "Maul", "target": 6, "needed": 3, "done": ["Starkiller117", "UncleSpike823", "DarthIsaB"]}, {"id": "SAVAGEOPRESS", "name": "Savage Opress", "target": 2, "needed": 1}, {"id": "BOBAFETTSCION", "name": "Boba Fett, Scion of Jango", "short": "Jango Scion", "target": 8, "needed": 3, "reported": ["TheJobaFett"]}, {"id": "STARKILLER", "name": "Starkiller", "target": 12, "needed": 1, "check": "TheJobaFett finished his to R8 on 1 Nov. Confirm with Trash Panda if this one is still open."}, {"id": "NIGHTSISTERSPIRIT", "name": "Nightsister Spirit", "short": "NS Spirit", "target": 3, "needed": 2, "reported": ["TheJobaFett"]}, {"id": "DENGAR", "name": "Dengar", "target": 4, "needed": 2}, {"id": "NIGHTSISTERZOMBIE", "name": "Nightsister Zombie", "short": "NS Zombie", "target": 2, "needed": 1}, {"id": "BT1", "name": "BT-1", "target": 2, "needed": 1}, {"id": "SNOWTROOPER", "name": "Snowtrooper", "target": 3, "needed": 1, "done": ["UncleSpike823"]}]}</script>
 <script type="application/json" id="seed-data">{"updated": "2026-11-14T17:04:26Z", "source": "jogo (swgoh-comlink)", "members": 50, "units": {"STARKILLER": [{"name": "hellothere", "relic": 9}, {"name": "Starkiller117", "relic": 9}, {"name": "Allnightgamer", "relic": 8}, {"name": "Bem", "relic": 8}, {"name": "Bertz", "relic": 8}, {"name": "Grey Jedi29", "relic": 8}, {"name": "Guardiandevil34", "relic": 8}, {"name": "Medjo Juhin", "relic": 8}, {"name": "TheJobaFett", "relic": 8}, {"name": "Trash Panda", "relic": 8}, {"name": "UncleSpike823", "relic": 8}, {"name": "Xara", "relic": 8}, {"name": "Veskasa Stargazer", "relic": 7}, {"name": "DarthIsaB", "relic": 6}, {"name": "Darthsketti", "relic": 6}, {"name": "NoleySmokes", "relic": 6}, {"name": "Viktorion", "relic": 6}], "SAVAGEOPRESS": [{"name": "hellothere", "relic": 8}, {"name": "Grey Jedi29", "relic": 7}, {"name": "Lazrin Novai", "relic": 7}, {"name": "Medjo Juhin", "relic": 6}, {"name": "Xara", "relic": 6}], "BOBAFETTSCION": [{"name": "Casper Darkmage", "relic": 9}, {"name": "Bem", "relic": 8}, {"name": "Fama", "relic": 8}, {"name": "Guardiandevil34", "relic": 8}, {"name": "Hoptownlaw", "relic": 8}, {"name": "TheJobaFett", "relic": 8}, {"name": "Trash Panda", "relic": 8}, {"name": "Canchuck", "relic": 7}, {"name": "Darthsketti", "relic": 7}, {"name": "Grey Jedi29", "relic": 7}, {"name": "hellothere", "relic": 7}, {"name": "Swyth", "relic": 7}, {"name": "Wckdaze", "relic": 7}, {"name": "Bertz", "relic": 6}, {"name": "Lazrin Novai", "relic": 6}], "SNOWTROOPER": [{"name": "Darthsketti", "relic": 8}, {"name": "TheJobaFett", "relic": 8}, {"name": "UncleSpike823", "relic": 8}, {"name": "Grey Jedi29", "relic": 6}, {"name": "Jodo Kast", "relic": 6}, {"name": "Medjo Juhin", "relic": 6}, {"name": "Starkiller117", "relic": 6}], "MAULS7": [{"name": "DarthIsaB", "relic": 8}, {"name": "Grey Jedi29", "relic": 8}, {"name": "Guardiandevil34", "relic": 8}, {"name": "hellothere", "relic": 8}, {"name": "Starkiller117", "relic": 8}, {"name": "UncleSpike823", "relic": 8}, {"name": "Baserock", "relic": 7}, {"name": "Bem", "relic": 7}, {"name": "Jodo Kast", "relic": 7}, {"name": "Lazrin Novai", "relic": 7}, {"name": "TheJobaFett", "relic": 7}, {"name": "Trash Panda", "relic": 7}, {"name": "trod75", "relic": 7}, {"name": "Jaso Swift", "relic": 6}, {"name": "Medjo Juhin", "relic": 6}], "NIGHTSISTERSPIRIT": [{"name": "Medjo Juhin", "relic": 8}, {"name": "TheJobaFett", "relic": 8}, {"name": "Canchuck", "relic": 7}, {"name": "Grey Jedi29", "relic": 7}, {"name": "Viktorion", "relic": 6}], "NIGHTSISTERZOMBIE": [{"name": "TheJobaFett", "relic": 8}, {"name": "Canchuck", "relic": 7}, {"name": "Grey Jedi29", "relic": 7}, {"name": "Sabum", "relic": 6}], "DENGAR": [{"name": "Fama", "relic": 8}, {"name": "Grey Jedi29", "relic": 8}, {"name": "Darthsketti", "relic": 7}, {"name": "Lazrin Novai", "relic": 7}, {"name": "Medjo Juhin", "relic": 7}, {"name": "Wckdaze", "relic": 7}], "BT1": [{"name": "Medjo Juhin", "relic": 8}, {"name": "Guardiandevil34", "relic": 7}, {"name": "50uLh4ck3r", "relic": 6}, {"name": "DarthIsaB", "relic": 6}, {"name": "Starkiller117", "relic": 6}, {"name": "Trash Panda", "relic": 6}, {"name": "Yan elriad", "relic": 6}]}}</script>
+<script type="application/json" id="seed-log">[{"time": "2026-11-14T17:04:26Z", "changes": [{"unit": "BOBAFETTSCION", "player": "Bem", "from": 7, "to": 8}, {"unit": "BOBAFETTSCION", "player": "TheJobaFett", "from": 7, "to": 8}, {"unit": "STARKILLER", "player": "Bem", "from": 7, "to": 8}, {"unit": "NIGHTSISTERSPIRIT", "player": "TheJobaFett", "from": 7, "to": 8}]}]</script>
 <script>
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const seed=id=>{try{return JSON.parse(document.getElementById(id).textContent)}catch(e){return null}};
@@ -88,7 +121,7 @@ async function load(file,id){
   try{const r=await fetch(file,{cache:"no-store"});if(r.ok)return await r.json()}catch(e){}
   return seed(id);
 }
-function render(cfg,data){
+function render(cfg,data,log){
   if(!cfg||!data){document.getElementById("list").innerHTML='<p class="note">Could not load the tracker data.</p>';return}
   document.getElementById("eyebrow").textContent=(cfg.guild_name||"")+" · ROTE platoon needs";
   const when=new Date(data.updated);
@@ -128,8 +161,78 @@ function render(cfg,data){
   document.getElementById("s-need").textContent=units.reduce((a,u)=>a+u.missing,0);
   document.getElementById("s-units").textContent=units.filter(u=>u.missing).length;
   document.getElementById("s-r7").textContent=new Set(units.filter(u=>u.missing).flatMap(u=>u.r7)).size;
+  renderDiscord(data,units,log||[]);
+  renderLog(cfg,log||[]);
 }
-(async()=>{render(await load("config.json","seed-config"),await load("data.json","seed-data"))})();
+const label=u=>u.short||u.name;
+const rl=r=>r==null?"below R6":"R"+r;
+function renderDiscord(data,units,log){
+  // Who reached R8 on each unit since the log started (oldest first).
+  const arrivals={};
+  log.slice().reverse().forEach(e=>e.changes.forEach(c=>{if((c.to||0)>=8&&(c.from||0)<8)(arrivals[c.unit]=arrivals[c.unit]||[]).push(c.player)}));
+  const rows=units.map(u=>{
+    const needed=u.needed??u.target;
+    const base=u.target-needed;
+    const doneN=Math.min(needed,Math.max(0,u.have-base));
+    const names=[...new Set([...(u.done||[]),...(arrivals[u.id]||[])])];
+    const doneTxt=[...names,...u.reported.filter(n=>!names.includes(n)).map(n=>n+" (reported)")];
+    const pledged=u.pledged||[];
+    const st=u.missing===0?"✅":u.check?"❓":(doneN>0||pledged.length||u.reported.length)?"🟡":"🔴";
+    const rank={"✅":0,"🟡":1,"❓":2,"🔴":3}[st];
+    const parts=[];
+    if(doneTxt.length)parts.push("done: "+doneTxt.join(", "));
+    if(u.missing&&u.check)parts.push(u.check);
+    if(u.missing&&pledged.length)parts.push("committed: "+pledged.join(", "));
+    if(u.missing&&u.r7.length)parts.push("R7: "+u.r7.join(", "));
+    else if(u.missing&&u.r6.length)parts.push("R6: "+u.r6.join(", "));
+    return {rank,u,line:`${st} **${label(u)}** ${doneN}/${needed}${parts.length?" — "+parts.join(" · "):""}`};
+  }).sort((a,b)=>a.rank-b.rank);
+  const total=units.reduce((a,u)=>a+u.missing,0);
+  const when=new Date(data.updated);
+  const day=isNaN(when)?"":when.toLocaleDateString("en-US",{month:"short",day:"numeric"});
+  const status=[
+    `📋 **DATHOMIR R8 TRACKER** — updated ${day}`,
+    total?`Still needed: **${total} R8 upgrade${total===1?"":"s"}**`:"**All Dathomir R8 needs are covered!** 🎉",
+    "Legend: ✅ done · 🟡 in progress · 🔴 open · ❓ check",
+    "",...rows.map(r=>r.line),"",
+    total?"Can you take one? Reply here with the character and I'll update this list 🙏":"Thanks everyone! 🙏"
+  ].join("\n");
+  const open=rows.filter(r=>r.u.missing&&r.u.r7.length);
+  const callout=open.length?[
+    "📣 **ROTE call-out!** You're all R7, one relic away from something we need for Dathomir:",
+    ...open.map(r=>`• ${label(r.u)} (need ${r.u.missing}): ${r.u.r7.join(", ")}`),
+    "Reply here with the one you can take and I'll mark you on the tracker. Every R8 = more stars for the guild! ⭐🙏"
+  ].join("\n"):"Nobody at R7 on the units still open right now.";
+  document.getElementById("msg-status").textContent=status;
+  document.getElementById("msg-callout").textContent=callout;
+}
+function renderLog(cfg,log){
+  const names=Object.fromEntries(cfg.units.map(u=>[u.id,label(u)]));
+  const el=document.getElementById("log"),more=document.getElementById("log-more");
+  if(!log.length){el.innerHTML='<li><span></span><p class="note">No changes recorded yet.</p></li>';more.hidden=true;return}
+  const LIMIT=20;let all=false;
+  const draw=()=>{
+    el.innerHTML=(all?log:log.slice(0,LIMIT)).map(e=>{
+      const t=new Date(e.time);
+      const ts=isNaN(t)?esc(e.time):t.toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"});
+      const items=e.changes.map(c=>{
+        const up8=(c.to||0)>=8&&(c.from||0)<8,down=(c.to??0)<(c.from??0);
+        return `<li class="${up8?"up8":down?"down":""}"><b>${esc(c.player)}</b> · ${esc(names[c.unit]||c.unit)} · ${rl(c.from)} → ${rl(c.to)}${up8?" ⭐ reached R8":""}</li>`}).join("");
+      return `<li><time datetime="${esc(e.time)}">${ts}</time><ul>${items}</ul></li>`}).join("");
+    more.hidden=all||log.length<=LIMIT;
+  };
+  more.onclick=()=>{all=true;draw()};
+  draw();
+}
+document.addEventListener("click",async ev=>{
+  const b=ev.target.closest(".copy");if(!b)return;
+  const box=document.getElementById(b.dataset.copy);
+  try{await navigator.clipboard.writeText(box.textContent)}catch(e){
+    const r=document.createRange();r.selectNodeContents(box);
+    const sel=getSelection();sel.removeAllRanges();sel.addRange(r);document.execCommand("copy");sel.removeAllRanges()}
+  b.textContent="Copied!";b.classList.add("ok");setTimeout(()=>{b.textContent="Copy";b.classList.remove("ok")},1600);
+});
+(async()=>{render(await load("config.json","seed-config"),await load("data.json","seed-data"),await load("log.json","seed-log"))})();
 </script>
 </body>
 </html>

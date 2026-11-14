@@ -5,30 +5,25 @@ swgoh-comlink (github.com/swgoh-utils/swgoh-comlink), um servico que conversa co
 servidores do jogo. No GitHub Actions ele sobe sozinho como contêiner (ver update.yml).
 
 Uso:
-  python update.py              le o jogo, grava data.json, atualiza index.html e manda e-mail se algo mudou
-  python update.py --dry-run    le o jogo e mostra as mudancas, sem gravar nem mandar e-mail
-  python update.py --seed-only  so copia config.json e data.json para dentro do index.html
-  python update.py --test-email manda um e-mail de teste, sem ler o jogo
+  python update.py              le o jogo, grava data.json, registra as mudancas em log.json e atualiza index.html
+  python update.py --dry-run    le o jogo e mostra as mudancas, sem gravar nada
+  python update.py --seed-only  so copia config.json, data.json e log.json para dentro do index.html
 
-Variaveis de ambiente:
-  COMLINK_URL (padrao http://localhost:3000)
-  E-mail (opcional): SMTP_HOST, SMTP_PORT (465), SMTP_USER, SMTP_PASS, EMAIL_TO, SITE_URL
+Variavel de ambiente: COMLINK_URL (padrao http://localhost:3000)
 """
 import datetime
 import json
 import os
 import re
-import smtplib
-import ssl
 import sys
 import time
 import urllib.request
-from email.message import EmailMessage
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 COMLINK = os.environ.get("COMLINK_URL", "http://localhost:3000").rstrip("/")
 MIN_RELIC = 6  # guarda jogadores a partir de R6
 PAUSE = 0.3    # segundos entre jogadores
+LOG_MAX = 500  # quantas rodadas com mudanca o historico guarda
 
 
 def path(name):
@@ -121,7 +116,7 @@ def missing(cfg, data):
 
 def diff(cfg, old, new):
     names = {u["id"]: u["name"] for u in cfg["units"]}
-    lines = []
+    lines, changes = [], []
     for uid, label in names.items():
         before = {p["name"]: p["relic"] for p in old["units"].get(uid, [])}
         after = {p["name"]: p["relic"] for p in new["units"].get(uid, [])}
@@ -132,14 +127,15 @@ def diff(cfg, old, new):
                 now = f"R{b}" if b is not None else "abaixo de R6"
                 star = "  <<< chegou a R8" if (b or 0) >= 8 > (a or 0) else ""
                 lines.append(f"{label}: {player} {was} -> {now}{star}")
+                changes.append({"unit": uid, "player": player, "from": a, "to": b})
     m_old, m_new = missing(cfg, old), missing(cfg, new)
     total_old, total_new = sum(m_old.values()), sum(m_new.values())
     if total_old != total_new:
         lines.append(f"Total de upgrades R8 pendentes: {total_old} -> {total_new}")
-    return lines, m_new
+    return lines, changes
 
 
-def embed_seeds(cfg, data):
+def embed_seeds(cfg, data, log):
     html_path = path("index.html")
     with open(html_path, encoding="utf-8") as f:
         html = f.read()
@@ -153,72 +149,34 @@ def embed_seeds(cfg, data):
 
     html = put(html, "seed-config", cfg)
     html = put(html, "seed-data", data)
+    html = put(html, "seed-log", log)
     with open(html_path, "w", encoding="utf-8") as f:
         f.write(html)
 
 
-def send_email(cfg, lines, still_missing, subject=None):
-    host, to = os.environ.get("SMTP_HOST"), os.environ.get("EMAIL_TO")
-    if not host or not to:
-        print("E-mail nao configurado (SMTP_HOST/EMAIL_TO vazios); pulando o envio.")
-        return
-    names = {u["id"]: u["name"] for u in cfg["units"]}
-    open_lines = [f"- {names[k]}: faltam {v}" for k, v in still_missing.items() if v]
-    msg = EmailMessage()
-    msg["Subject"] = subject or f"[ROTE] Tracker mudou: {sum(still_missing.values())} upgrades R8 pendentes"
-    msg["From"] = os.environ.get("SMTP_USER", to)
-    msg["To"] = to
-    body = ["Mudancas desde a ultima leitura:", ""] + [f"- {l}" for l in lines]
-    body += ["", "Ainda em aberto:"] + (open_lines or ["- nada, tudo coberto!"])
-    site = os.environ.get("SITE_URL")
-    if site:
-        body += ["", f"Pagina: {site}"]
-    msg.set_content("\n".join(body))
-    port = int(os.environ.get("SMTP_PORT", "465"))
-    user = os.environ.get("SMTP_USER", "").strip()
-    # A senha de app do Google aparece como "abcd efgh ijkl mnop"; espacos (inclusive os
-    # invisiveis copiados da tela) atrapalham o login, entao saem todos.
-    password = "".join(os.environ.get("SMTP_PASS", "").split()).replace(" ", "")
-    # Diagnostico sem revelar a senha: so o tamanho e se sao so letras (senha de app = 16 letras).
-    print(f"Login SMTP: usuario {user!r}, senha com {len(password)} caracteres, "
-          f"so letras: {'sim' if password.isascii() and password.isalpha() else 'nao'}")
-    try:
-        with smtplib.SMTP_SSL(host, port, context=ssl.create_default_context(), timeout=60) as s:
-            s.login(user, password)
-            s.send_message(msg)
-    except (smtplib.SMTPAuthenticationError, smtplib.SMTPServerDisconnected) as e:
-        raise RuntimeError(
-            "O Gmail recusou o login. Confira se SMTP_PASS e uma SENHA DE APP (16 letras, "
-            "myaccount.google.com/apppasswords), nao a senha normal da conta, e se SMTP_USER "
-            f"e o Gmail dono dessa senha. Detalhe: {e}") from e
-    print(f"E-mail enviado para {to}.")
+def load_log():
+    return load("log.json") if os.path.exists(path("log.json")) else []
 
 
 def main():
     cfg = load("config.json")
     if "--seed-only" in sys.argv:
-        embed_seeds(cfg, load("data.json"))
-        print("index.html atualizado com config.json e data.json.")
-        return
-    if "--test-email" in sys.argv:
-        data = load("data.json")
-        send_email(cfg, ["Teste de e-mail do tracker: se voce recebeu isto, o envio esta funcionando."],
-                   missing(cfg, data), subject="[ROTE] Teste de e-mail do tracker")
+        embed_seeds(cfg, load("data.json"), load_log())
+        print("index.html atualizado com config.json, data.json e log.json.")
         return
     old = load("data.json") if os.path.exists(path("data.json")) else None
     new = fetch(cfg)
-    lines, still_missing = diff(cfg, old, new) if old else (["Primeira leitura."], missing(cfg, new))
+    lines, changes = diff(cfg, old, new) if old else (["Primeira leitura."], [])
     print("\n".join(lines) if lines else "Nenhuma mudanca.")
     if "--dry-run" in sys.argv:
         return
+    log = load_log()
+    if changes:
+        log.insert(0, {"time": new["updated"], "changes": changes})
+        del log[LOG_MAX:]
+        save("log.json", log)
     save("data.json", new)
-    embed_seeds(cfg, new)
-    if old and lines:
-        try:
-            send_email(cfg, lines, still_missing)
-        except Exception as e:
-            # Os dados ja foram gravados; uma falha de e-mail nao pode impedir o commit.
-            print(f"::warning::FALHA ao enviar e-mail (dados salvos mesmo assim): {e}")
+    embed_seeds(cfg, new, log)
 
 
 if __name__ == "__main__":
