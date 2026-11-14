@@ -1,107 +1,15 @@
 {
- "updated": "2026-11-14T21:41:54Z",
+ "updated": "2026-11-14T22:17:23Z",
  "source": "jogo (swgoh-comlink)",
  "members": 50,
  "units": {
-  "SAVAGEOPRESS": [
+  "MAULS7": [
    {
-    "name": "hellothere",
+    "name": "DarthIsaB",
     "relic": 8
    },
    {
     "name": "Grey Jedi29",
-    "relic": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 7
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 6
-   },
-   {
-    "name": "Xara",
-    "relic": 6
-   }
-  ],
-  "NIGHTSISTERSPIRIT": [
-   {
-    "name": "Medjo Juhin",
-    "relic": 8
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 8
-   },
-   {
-    "name": "Canchuck",
-    "relic": 7
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 7
-   },
-   {
-    "name": "Viktorion",
-    "relic": 6
-   }
-  ],
-  "DENGAR": [
-   {
-    "name": "Fama",
-    "relic": 8
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 8
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 7
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 7
-   },
-   {
-    "name": "Wckdaze",
-    "relic": 7
-   }
-  ],
-  "NIGHTSISTERZOMBIE": [
-   {
-    "name": "TheJobaFett",
-    "relic": 8
-   },
-   {
-    "name": "Canchuck",
-    "relic": 7
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 7
-   },
-   {
-    "name": "Sabum",
-    "relic": 6
-   }
-  ],
-  "BOBAFETTSCION": [
-   {
-    "name": "Casper Darkmage",
-    "relic": 9
-   },
-   {
-    "name": "Bem",
-    "relic": 8
-   },
-   {
-    "name": "Fama",
     "relic": 8
    },
    {
@@ -109,7 +17,57 @@
     "relic": 8
    },
    {
-    "name": "Hoptownlaw",
+    "name": "hellothere",
+    "relic": 8
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 8
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 8
+   },
+   {
+    "name": "Baserock",
+    "relic": 7
+   },
+   {
+    "name": "Bem",
+    "relic": 7
+   },
+   {
+    "name": "Jodo Kast",
+    "relic": 7
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 7
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 7
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 7
+   },
+   {
+    "name": "trod75",
+    "relic": 7
+   },
+   {
+    "name": "Jaso Swift",
+    "relic": 6
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 6
+   }
+  ],
+  "SNOWTROOPER": [
+   {
+    "name": "Darthsketti",
     "relic": 8
    },
    {
@@ -117,39 +75,23 @@
     "relic": 8
    },
    {
-    "name": "Trash Panda",
+    "name": "UncleSpike823",
     "relic": 8
    },
    {
-    "name": "Canchuck",
-    "relic": 7
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 7
-   },
-   {
     "name": "Grey Jedi29",
-    "relic": 7
-   },
-   {
-    "name": "hellothere",
-    "relic": 7
-   },
-   {
-    "name": "Swyth",
-    "relic": 7
-   },
-   {
-    "name": "Wckdaze",
-    "relic": 7
-   },
-   {
-    "name": "Bertz",
     "relic": 6
    },
    {
-    "name": "Lazrin Novai",
+    "name": "Jodo Kast",
+    "relic": 6
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 6
+   },
+   {
+    "name": "Starkiller117",
     "relic": 6
    }
   ],
@@ -223,9 +165,9 @@
     "relic": 6
    }
   ],
-  "MAULS7": [
+  "DENGAR": [
    {
-    "name": "DarthIsaB",
+    "name": "Fama",
     "relic": 8
    },
    {
@@ -233,31 +175,7 @@
     "relic": 8
    },
    {
-    "name": "Guardiandevil34",
-    "relic": 8
-   },
-   {
-    "name": "hellothere",
-    "relic": 8
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 8
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 8
-   },
-   {
-    "name": "Baserock",
-    "relic": 7
-   },
-   {
-    "name": "Bem",
-    "relic": 7
-   },
-   {
-    "name": "Jodo Kast",
+    "name": "Darthsketti",
     "relic": 7
    },
    {
@@ -265,23 +183,73 @@
     "relic": 7
    },
    {
+    "name": "Medjo Juhin",
+    "relic": 7
+   },
+   {
+    "name": "Wckdaze",
+    "relic": 7
+   }
+  ],
+  "NIGHTSISTERZOMBIE": [
+   {
     "name": "TheJobaFett",
+    "relic": 8
+   },
+   {
+    "name": "Canchuck",
     "relic": 7
    },
    {
-    "name": "Trash Panda",
+    "name": "Grey Jedi29",
     "relic": 7
    },
    {
-    "name": "trod75",
-    "relic": 7
-   },
-   {
-    "name": "Jaso Swift",
+    "name": "Sabum",
     "relic": 6
+   }
+  ],
+  "NIGHTSISTERSPIRIT": [
+   {
+    "name": "Medjo Juhin",
+    "relic": 8
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 8
+   },
+   {
+    "name": "Canchuck",
+    "relic": 7
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 7
+   },
+   {
+    "name": "Viktorion",
+    "relic": 6
+   }
+  ],
+  "SAVAGEOPRESS": [
+   {
+    "name": "hellothere",
+    "relic": 8
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 7
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 7
    },
    {
     "name": "Medjo Juhin",
+    "relic": 6
+   },
+   {
+    "name": "Xara",
     "relic": 6
    }
   ],
@@ -315,9 +283,25 @@
     "relic": 6
    }
   ],
-  "SNOWTROOPER": [
+  "BOBAFETTSCION": [
    {
-    "name": "Darthsketti",
+    "name": "Casper Darkmage",
+    "relic": 9
+   },
+   {
+    "name": "Bem",
+    "relic": 8
+   },
+   {
+    "name": "Fama",
+    "relic": 8
+   },
+   {
+    "name": "Guardiandevil34",
+    "relic": 8
+   },
+   {
+    "name": "Hoptownlaw",
     "relic": 8
    },
    {
@@ -325,23 +309,39 @@
     "relic": 8
    },
    {
-    "name": "UncleSpike823",
+    "name": "Trash Panda",
     "relic": 8
    },
    {
+    "name": "Canchuck",
+    "relic": 7
+   },
+   {
+    "name": "Darthsketti",
+    "relic": 7
+   },
+   {
     "name": "Grey Jedi29",
+    "relic": 7
+   },
+   {
+    "name": "hellothere",
+    "relic": 7
+   },
+   {
+    "name": "Swyth",
+    "relic": 7
+   },
+   {
+    "name": "Wckdaze",
+    "relic": 7
+   },
+   {
+    "name": "Bertz",
     "relic": 6
    },
    {
-    "name": "Jodo Kast",
-    "relic": 6
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 6
-   },
-   {
-    "name": "Starkiller117",
+    "name": "Lazrin Novai",
     "relic": 6
    }
   ]
