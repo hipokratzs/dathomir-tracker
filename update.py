@@ -175,9 +175,22 @@ def send_email(cfg, lines, still_missing, subject=None):
         body += ["", f"Pagina: {site}"]
     msg.set_content("\n".join(body))
     port = int(os.environ.get("SMTP_PORT", "465"))
-    with smtplib.SMTP_SSL(host, port, context=ssl.create_default_context()) as s:
-        s.login(os.environ["SMTP_USER"], os.environ["SMTP_PASS"])
-        s.send_message(msg)
+    user = os.environ.get("SMTP_USER", "").strip()
+    # A senha de app do Google aparece como "abcd efgh ijkl mnop"; espacos (inclusive os
+    # invisiveis copiados da tela) atrapalham o login, entao saem todos.
+    password = "".join(os.environ.get("SMTP_PASS", "").split()).replace(" ", "")
+    # Diagnostico sem revelar a senha: so o tamanho e se sao so letras (senha de app = 16 letras).
+    print(f"Login SMTP: usuario {user!r}, senha com {len(password)} caracteres, "
+          f"so letras: {'sim' if password.isascii() and password.isalpha() else 'nao'}")
+    try:
+        with smtplib.SMTP_SSL(host, port, context=ssl.create_default_context(), timeout=60) as s:
+            s.login(user, password)
+            s.send_message(msg)
+    except (smtplib.SMTPAuthenticationError, smtplib.SMTPServerDisconnected) as e:
+        raise RuntimeError(
+            "O Gmail recusou o login. Confira se SMTP_PASS e uma SENHA DE APP (16 letras, "
+            "myaccount.google.com/apppasswords), nao a senha normal da conta, e se SMTP_USER "
+            f"e o Gmail dono dessa senha. Detalhe: {e}") from e
     print(f"E-mail enviado para {to}.")
 
 
