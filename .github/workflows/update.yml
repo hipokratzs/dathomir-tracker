@@ -4,7 +4,12 @@ on:
   schedule:
     # A cada 15 minutos (o GitHub costuma atrasar alguns minutos; as vezes pula uma rodada).
     - cron: "*/15 * * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      testar_email:
+        description: "So mandar um e-mail de teste (nao le o jogo)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -35,7 +40,19 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Testar e-mail
+        if: ${{ inputs.testar_email }}
+        run: python update.py --test-email
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          SITE_URL: ${{ vars.SITE_URL }}
+
       - name: Ler o jogo e atualizar dados
+        if: ${{ !inputs.testar_email }}
         run: python update.py
         env:
           COMLINK_URL: http://localhost:3000
@@ -47,6 +64,7 @@ jobs:
           SITE_URL: ${{ vars.SITE_URL }}
 
       - name: Salvar se algo mudou
+        if: ${{ !inputs.testar_email }}
         run: |
           git config user.name "tracker-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

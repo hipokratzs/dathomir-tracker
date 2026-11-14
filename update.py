@@ -8,6 +8,7 @@ Uso:
   python update.py              le o jogo, grava data.json, atualiza index.html e manda e-mail se algo mudou
   python update.py --dry-run    le o jogo e mostra as mudancas, sem gravar nem mandar e-mail
   python update.py --seed-only  so copia config.json e data.json para dentro do index.html
+  python update.py --test-email manda um e-mail de teste, sem ler o jogo
 
 Variaveis de ambiente:
   COMLINK_URL (padrao http://localhost:3000)
@@ -156,7 +157,7 @@ def embed_seeds(cfg, data):
         f.write(html)
 
 
-def send_email(cfg, lines, still_missing):
+def send_email(cfg, lines, still_missing, subject=None):
     host, to = os.environ.get("SMTP_HOST"), os.environ.get("EMAIL_TO")
     if not host or not to:
         print("E-mail nao configurado (SMTP_HOST/EMAIL_TO vazios); pulando o envio.")
@@ -164,7 +165,7 @@ def send_email(cfg, lines, still_missing):
     names = {u["id"]: u["name"] for u in cfg["units"]}
     open_lines = [f"- {names[k]}: faltam {v}" for k, v in still_missing.items() if v]
     msg = EmailMessage()
-    msg["Subject"] = f"[ROTE] Tracker mudou: {sum(still_missing.values())} upgrades R8 pendentes"
+    msg["Subject"] = subject or f"[ROTE] Tracker mudou: {sum(still_missing.values())} upgrades R8 pendentes"
     msg["From"] = os.environ.get("SMTP_USER", to)
     msg["To"] = to
     body = ["Mudancas desde a ultima leitura:", ""] + [f"- {l}" for l in lines]
@@ -186,6 +187,11 @@ def main():
         embed_seeds(cfg, load("data.json"))
         print("index.html atualizado com config.json e data.json.")
         return
+    if "--test-email" in sys.argv:
+        data = load("data.json")
+        send_email(cfg, ["Teste de e-mail do tracker: se voce recebeu isto, o envio esta funcionando."],
+                   missing(cfg, data), subject="[ROTE] Teste de e-mail do tracker")
+        return
     old = load("data.json") if os.path.exists(path("data.json")) else None
     new = fetch(cfg)
     lines, still_missing = diff(cfg, old, new) if old else (["Primeira leitura."], missing(cfg, new))
@@ -195,7 +201,11 @@ def main():
     save("data.json", new)
     embed_seeds(cfg, new)
     if old and lines:
-        send_email(cfg, lines, still_missing)
+        try:
+            send_email(cfg, lines, still_missing)
+        except Exception as e:
+            # Os dados ja foram gravados; uma falha de e-mail nao pode impedir o commit.
+            print(f"::warning::FALHA ao enviar e-mail (dados salvos mesmo assim): {e}")
 
 
 if __name__ == "__main__":
