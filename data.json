@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T06:59:41Z",
+ "updated": "2026-11-16T09:34:07Z",
  "source": "jogo (swgoh-comlink)",
  "members": 50,
  "units": {
@@ -95,28 +95,6 @@
     "relic": 6
    }
   ],
-  "SAVAGEOPRESS": [
-   {
-    "name": "hellothere",
-    "relic": 8
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 7
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 6
-   },
-   {
-    "name": "Xara",
-    "relic": 6
-   }
-  ],
   "NIGHTSISTERZOMBIE": [
    {
     "name": "TheJobaFett",
@@ -132,6 +110,36 @@
    },
    {
     "name": "Sabum",
+    "relic": 6
+   }
+  ],
+  "SNOWTROOPER": [
+   {
+    "name": "Darthsketti",
+    "relic": 8
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 8
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 8
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 6
+   },
+   {
+    "name": "Jodo Kast",
+    "relic": 6
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 6
+   },
+   {
+    "name": "Starkiller117",
     "relic": 6
    }
   ],
@@ -202,36 +210,6 @@
    },
    {
     "name": "Viktorion",
-    "relic": 6
-   }
-  ],
-  "SNOWTROOPER": [
-   {
-    "name": "Darthsketti",
-    "relic": 8
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 8
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 8
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 6
-   },
-   {
-    "name": "Jodo Kast",
-    "relic": 6
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 6
-   },
-   {
-    "name": "Starkiller117",
     "relic": 6
    }
   ],
@@ -324,6 +302,28 @@
    },
    {
     "name": "Medjo Juhin",
+    "relic": 6
+   }
+  ],
+  "SAVAGEOPRESS": [
+   {
+    "name": "hellothere",
+    "relic": 8
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 7
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 7
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 6
+   },
+   {
+    "name": "Xara",
     "relic": 6
    }
   ],
