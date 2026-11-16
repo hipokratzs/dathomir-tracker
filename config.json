@@ -1,8 +1,7 @@
 {
  "guild_id": "f9HdOgX5SsiR_Q3mcPCzxw",
  "guild_name": "MYTHOSAURheadHUNTERS",
- "planet": "Dathomir",
- "_ajuda": "target = quantos jogadores a guilda precisa ter em R8+ nesse personagem (total). needed = quantos upgrades o Trash Panda pediu (o x/y do resumo do Discord). done = quem ja entregou antes do historico automatico (quem subir daqui pra frente entra sozinho). short = nome curto no resumo do Discord. reported = avisou no Discord que chegou a R8 e o jogo ainda nao mostrou. pledged = se comprometeu a upar. check = observacao em aberto.",
+ "_ajuda": "target = quantos jogadores a guilda precisa ter em R8+ nesse personagem (total). needed = quantos upgrades o Trash Panda pediu (o x/y do resumo do Discord). done = quem ja entregou antes do historico automatico (quem subir daqui pra frente entra sozinho). short = nome curto no resumo do Discord. reported = avisou no Discord que chegou a R8 e o jogo ainda nao mostrou. pledged = se comprometeu a upar. check = observacao em aberto. planet = em qual aba o personagem aparece (dathomir ou lothal). ship = true para naves: contam por estrelas (7 estrelas), nao por reliquia.",
  "units": [
   {
    "id": "MAULS7",
@@ -13,13 +12,15 @@
     "Starkiller117",
     "UncleSpike823",
     "DarthIsaB"
-   ]
+   ],
+   "planet": "dathomir"
   },
   {
    "id": "SAVAGEOPRESS",
    "name": "Savage Opress",
    "target": 2,
-   "needed": 1
+   "needed": 1,
+   "planet": "dathomir"
   },
   {
    "id": "BOBAFETTSCION",
@@ -32,14 +33,16 @@
    ],
    "pledged": [
     "RagnarokBeyond"
-   ]
+   ],
+   "planet": "dathomir"
   },
   {
    "id": "STARKILLER",
    "name": "Starkiller",
    "target": 12,
    "needed": 1,
-   "check": "TheJobaFett finished his to R8 on 1 Nov. Confirm with Trash Panda if this one is still open."
+   "check": "TheJobaFett finished his to R8 on 1 Nov. Confirm with Trash Panda if this one is still open.",
+   "planet": "dathomir"
   },
   {
    "id": "NIGHTSISTERSPIRIT",
@@ -49,26 +52,30 @@
    "needed": 2,
    "reported": [
     "TheJobaFett"
-   ]
+   ],
+   "planet": "dathomir"
   },
   {
    "id": "DENGAR",
    "name": "Dengar",
    "target": 4,
-   "needed": 2
+   "needed": 2,
+   "planet": "dathomir"
   },
   {
    "id": "NIGHTSISTERZOMBIE",
    "name": "Nightsister Zombie",
    "short": "NS Zombie",
    "target": 2,
-   "needed": 1
+   "needed": 1,
+   "planet": "dathomir"
   },
   {
    "id": "BT1",
    "name": "BT-1",
    "target": 2,
-   "needed": 1
+   "needed": 1,
+   "planet": "dathomir"
   },
   {
    "id": "SNOWTROOPER",
@@ -77,7 +84,333 @@
    "needed": 1,
    "done": [
     "UncleSpike823"
-   ]
+   ],
+   "planet": "dathomir"
+  },
+  {
+   "id": "GRANDMASTERLUKE",
+   "name": "Jedi Master Luke Skywalker",
+   "planet": "lothal",
+   "target": 8,
+   "short": "JML"
+  },
+  {
+   "id": "CAPITALPROFUNDITY",
+   "name": "Profundity",
+   "planet": "lothal",
+   "target": 7,
+   "ship": true
+  },
+  {
+   "id": "HERMITYODA",
+   "name": "Hermit Yoda",
+   "planet": "lothal",
+   "target": 5
+  },
+  {
+   "id": "COMMANDERAHSOKA",
+   "name": "Commander Ahsoka Tano",
+   "planet": "lothal",
+   "target": 5
+  },
+  {
+   "id": "HOTHLEIA",
+   "name": "Rebel Officer Leia Organa",
+   "planet": "lothal",
+   "target": 4,
+   "short": "Rebel Officer Leia"
+  },
+  {
+   "id": "RAZORCREST",
+   "name": "Razor Crest",
+   "planet": "lothal",
+   "target": 4,
+   "ship": true
+  },
+  {
+   "id": "BENSOLO",
+   "name": "Ben Solo",
+   "planet": "lothal",
+   "target": 3
+  },
+  {
+   "id": "GENERALKENOBI",
+   "name": "General Kenobi",
+   "planet": "lothal",
+   "target": 3
+  },
+  {
+   "id": "JEDIKNIGHTREVAN",
+   "name": "Jedi Knight Revan",
+   "planet": "lothal",
+   "target": 2
+  },
+  {
+   "id": "ZAALBAR",
+   "name": "Zaalbar",
+   "planet": "lothal",
+   "target": 2
+  },
+  {
+   "id": "HANSOLO",
+   "name": "Han Solo",
+   "planet": "lothal",
+   "target": 2
+  },
+  {
+   "id": "XANADUBLOOD",
+   "name": "Xanadu Blood",
+   "planet": "lothal",
+   "target": 2,
+   "ship": true
+  },
+  {
+   "id": "KIADIMUNDI",
+   "name": "Ki-Adi-Mundi",
+   "planet": "lothal",
+   "target": 2
+  },
+  {
+   "id": "CHEWBACCALEGENDARY",
+   "name": "Chewbacca",
+   "planet": "lothal",
+   "target": 2,
+   "short": "Chewbacca"
+  },
+  {
+   "id": "50RT",
+   "name": "50R-T",
+   "planet": "lothal",
+   "target": 2
+  },
+  {
+   "id": "SCARIFREBEL",
+   "name": "Scarif Rebel Pathfinder",
+   "planet": "lothal",
+   "target": 2,
+   "short": "Scarif Pathfinder"
+  },
+  {
+   "id": "JEDIMASTERKENOBI",
+   "name": "Jedi Master Kenobi",
+   "planet": "lothal",
+   "target": 2,
+   "short": "JMK"
+  },
+  {
+   "id": "PADMEAMIDALA",
+   "name": "Padmé Amidala",
+   "planet": "lothal",
+   "target": 2
+  },
+  {
+   "id": "LOGRAY",
+   "name": "Logray",
+   "planet": "lothal",
+   "target": 2
+  },
+  {
+   "id": "SMUGGLERCHEWBACCA",
+   "name": "Veteran Smuggler Chewbacca",
+   "planet": "lothal",
+   "target": 1,
+   "short": "Vet. Smuggler Chewie"
+  },
+  {
+   "id": "DASHRENDAR",
+   "name": "Dash Rendar",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "YWINGREBEL",
+   "name": "Rebel Y-wing",
+   "planet": "lothal",
+   "target": 1,
+   "short": "Rebel Y-wing",
+   "ship": true
+  },
+  {
+   "id": "THEMANDALORIANBESKARARMOR",
+   "name": "The Mandalorian (Beskar Armor)",
+   "planet": "lothal",
+   "target": 1,
+   "short": "Mando (Beskar)"
+  },
+  {
+   "id": "BB8",
+   "name": "BB-8",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "FINN",
+   "name": "Finn",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "R2D2_LEGENDARY",
+   "name": "R2-D2",
+   "planet": "lothal",
+   "target": 1,
+   "short": "R2-D2"
+  },
+  {
+   "id": "REY",
+   "name": "Rey (Scavenger)",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "RAVENSCLAW",
+   "name": "Raven's Claw",
+   "planet": "lothal",
+   "target": 1,
+   "ship": true
+  },
+  {
+   "id": "EBONHAWK",
+   "name": "Ebon Hawk",
+   "planet": "lothal",
+   "target": 1,
+   "ship": true
+  },
+  {
+   "id": "CHIEFNEBIT",
+   "name": "Chief Nebit",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "GHOST",
+   "name": "Ghost",
+   "planet": "lothal",
+   "target": 1,
+   "ship": true
+  },
+  {
+   "id": "KYLEKATARN",
+   "name": "Kyle Katarn",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "REYJEDITRAINING",
+   "name": "Rey (Jedi Training)",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "JOLEEBINDO",
+   "name": "Jolee Bindo",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "OUTRIDER",
+   "name": "Outrider",
+   "planet": "lothal",
+   "target": 1,
+   "ship": true
+  },
+  {
+   "id": "EETHKOTH",
+   "name": "Eeth Koth",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "BADBATCHTECH",
+   "name": "Tech",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "JEDIKNIGHTCONSULAR",
+   "name": "Jedi Consular",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "GRANDMASTERYODA",
+   "name": "Grand Master Yoda",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "BISTAN",
+   "name": "Bistan",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "MILLENNIUMFALCON",
+   "name": "Han's Millennium Falcon",
+   "planet": "lothal",
+   "target": 1,
+   "short": "Han's Falcon",
+   "ship": true
+  },
+  {
+   "id": "BLADEOFDORIN",
+   "name": "Plo Koon's Jedi Starfighter",
+   "planet": "lothal",
+   "target": 1,
+   "short": "Plo Koon's Starfighter",
+   "ship": true
+  },
+  {
+   "id": "XWINGRED2",
+   "name": "Wedge Antilles's X-wing",
+   "planet": "lothal",
+   "target": 1,
+   "short": "Wedge's X-wing",
+   "ship": true
+  },
+  {
+   "id": "SANASTARROS",
+   "name": "Sana Starros",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "BADBATCHECHO",
+   "name": "Echo",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "AAYLASECURA",
+   "name": "Aayla Secura",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "WICKET",
+   "name": "Wicket",
+   "planet": "lothal",
+   "target": 1
+  },
+  {
+   "id": "HONDO",
+   "name": "Hondo Ohnaka",
+   "planet": "lothal",
+   "target": 1
+  }
+ ],
+ "planets": [
+  {
+   "id": "dathomir",
+   "name": "Dathomir",
+   "phase": "Phase 3",
+   "relic": 8
+  },
+  {
+   "id": "lothal",
+   "name": "Lothal",
+   "phase": "Phase 4",
+   "relic": 8
   }
  ]
 }

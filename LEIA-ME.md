@@ -65,3 +65,17 @@ O GitHub já faz isso sozinho; esta parte é só para testes.
 - Cada rodada consulta a guilda e cada membro uma vez (cerca de 50 consultas), leva cerca de 1 minuto e não custa nada em repositório público.
 - O GitHub pausa o agendamento se o repositório passar 60 dias sem alteração. Como o robô salva a cada mudança, só acontece se a guilda parar de upar. Se pausar, aparece um botão para reativar na aba Actions.
 - Segurança: nenhum segredo fica no código. O gitleaks foi rodado em 14/11/2026 no histórico local, na pasta e no repositório público, sem achados.
+
+## Planetas (abas)
+
+O site tem uma aba por planeta, cada uma com link direto:
+- `https://hipokratzs.github.io/dathomir-tracker/#dathomir`
+- `https://hipokratzs.github.io/dathomir-tracker/#lothal`
+
+No `config.json`, a lista `planets` define as abas e cada personagem tem `"planet": "dathomir"` ou `"lothal"`. Naves levam `"ship": true` e contam por estrelas (7★ = pronta, 6★ = "a um passo"), não por relíquia.
+
+A lista de Lothal saiu do quadro de platoons do swgoh.gg (Rise of the Empire, Fase 4): 6 platoons, 90 vagas. Ali o `target` é o número de vagas de cada unidade.
+
+Para um planeta novo: acrescente-o em `planets` e os personagens com `"planet": "<id>"`. Na primeira leitura, o robô não registra personagens novos no histórico, então não aparecem dezenas de "mudanças" falsas.
+
+Se o robô mostrar "Aviso: ninguem da guilda tem XYZ", confira o ID no `config.json`.

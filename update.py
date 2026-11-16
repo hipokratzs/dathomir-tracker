@@ -1,4 +1,4 @@
-"""Atualiza o Dathomir R8 Tracker lendo os dados direto do jogo, pelo swgoh-comlink.
+"""Atualiza o ROTE R8 Tracker (Dathomir, Lothal...) lendo os dados direto do jogo, pelo swgoh-comlink.
 
 O swgoh.gg bloqueia acesso automatico (Cloudflare, erro 403), por isso o robo usa o
 swgoh-comlink (github.com/swgoh-utils/swgoh-comlink), um servico que conversa com os
@@ -22,6 +22,7 @@ import urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 COMLINK = os.environ.get("COMLINK_URL", "http://localhost:3000").rstrip("/")
 MIN_RELIC = 6  # guarda jogadores a partir de R6
+MIN_STARS = 6  # naves: guarda a partir de 6 estrelas (7 = pronta para o platoon)
 PAUSE = 0.3    # segundos entre jogadores
 LOG_MAX = 500  # quantas rodadas com mudanca o historico guarda
 
@@ -76,7 +77,9 @@ def relic_level(unit):
 def fetch(cfg):
     wait_comlink()
     wanted = {u["id"] for u in cfg["units"]}
+    ships = {u["id"] for u in cfg["units"] if u.get("ship")}
     out = {uid: [] for uid in wanted}
+    seen = set()
     guild = post("guild", {"guildId": cfg["guild_id"], "includeRecentGuildActivityInfo": False})
     members = (guild.get("guild") or {}).get("member") or []
     if len(members) < 10:
@@ -86,7 +89,15 @@ def fetch(cfg):
         name = p.get("name") or m.get("playerName") or m["playerId"]
         for unit in p.get("rosterUnit", []):
             uid = unit.get("definitionId", "").split(":")[0]
-            if uid not in wanted or unit.get("currentTier") != 13 or unit.get("currentRarity") != 7:
+            if uid not in wanted:
+                continue
+            seen.add(uid)
+            if uid in ships:
+                stars = unit.get("currentRarity") or 0
+                if stars >= MIN_STARS:
+                    out[uid].append({"name": name, "stars": stars})
+                continue
+            if unit.get("currentTier") != 13 or unit.get("currentRarity") != 7:
                 continue
             relic = relic_level(unit)
             if relic >= MIN_RELIC:
@@ -94,8 +105,10 @@ def fetch(cfg):
         time.sleep(PAUSE)
     if not any(out.values()):
         raise RuntimeError("Nenhum personagem da lista encontrado em nenhum jogador; abortando.")
+    for uid in sorted(wanted - seen):
+        print(f"Aviso: ninguem da guilda tem {uid}. Confira se o ID no config.json esta certo.")
     for uid in out:
-        out[uid].sort(key=lambda x: (-x["relic"], x["name"].lower()))
+        out[uid].sort(key=lambda x: (-level(x), x["name"].lower()))
     return {
         "updated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "source": "jogo (swgoh-comlink)",
@@ -104,34 +117,50 @@ def fetch(cfg):
     }
 
 
+def level(entry):
+    """Relic para personagens, estrelas para naves."""
+    return entry["stars"] if "stars" in entry else entry["relic"]
+
+
+def ready(u, entry):
+    return entry.get("stars", 0) >= 7 if u.get("ship") else entry.get("relic", 0) >= 8
+
+
 def missing(cfg, data):
     res = {}
     for u in cfg["units"]:
         ps = data["units"].get(u["id"], [])
-        r8 = {p["name"] for p in ps if p["relic"] >= 8}
+        r8 = {p["name"] for p in ps if ready(u, p)}
         reported = [n for n in u.get("reported", []) if n not in r8]
         res[u["id"]] = max(0, u["target"] - len(r8) - len(reported))
     return res
 
 
 def diff(cfg, old, new):
-    names = {u["id"]: u["name"] for u in cfg["units"]}
     lines, changes = [], []
-    for uid, label in names.items():
-        before = {p["name"]: p["relic"] for p in old["units"].get(uid, [])}
-        after = {p["name"]: p["relic"] for p in new["units"].get(uid, [])}
+    for u in cfg["units"]:
+        uid, label, ship = u["id"], u["name"], bool(u.get("ship"))
+        if uid not in old["units"]:
+            continue  # personagem recem-adicionado: a primeira leitura nao conta como mudanca
+        before = {p["name"]: level(p) for p in old["units"].get(uid, [])}
+        after = {p["name"]: level(p) for p in new["units"].get(uid, [])}
+        goal = 7 if ship else 8
+        fmt = (lambda v: f"{v} estrelas" if v is not None else "abaixo de 6 estrelas") if ship else \
+              (lambda v: f"R{v}" if v is not None else "abaixo de R6")
         for player in sorted(set(before) | set(after), key=str.lower):
             a, b = before.get(player), after.get(player)
             if a != b:
-                was = f"R{a}" if a is not None else "abaixo de R6"
-                now = f"R{b}" if b is not None else "abaixo de R6"
-                star = "  <<< chegou a R8" if (b or 0) >= 8 > (a or 0) else ""
-                lines.append(f"{label}: {player} {was} -> {now}{star}")
-                changes.append({"unit": uid, "player": player, "from": a, "to": b})
+                star = f"  <<< chegou a {fmt(goal)}" if (b or 0) >= goal > (a or 0) else ""
+                lines.append(f"{label}: {player} {fmt(a)} -> {fmt(b)}{star}")
+                ch = {"unit": uid, "player": player, "from": a, "to": b}
+                if ship:
+                    ch["kind"] = "stars"
+                changes.append(ch)
     m_old, m_new = missing(cfg, old), missing(cfg, new)
-    total_old, total_new = sum(m_old.values()), sum(m_new.values())
+    known = [uid for uid in m_old if uid in old["units"]]  # ignora personagens recem-adicionados
+    total_old, total_new = sum(m_old[k] for k in known), sum(m_new[k] for k in known)
     if total_old != total_new:
-        lines.append(f"Total de upgrades R8 pendentes: {total_old} -> {total_new}")
+        lines.append(f"Total de upgrades pendentes: {total_old} -> {total_new}")
     return lines, changes
 
 

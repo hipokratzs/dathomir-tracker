@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Dathomir R8 Tracker</title>
+<title>ROTE R8 Tracker</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
@@ -69,6 +69,13 @@ h1{font-family:var(--display);font-size:clamp(32px,6vw,46px);line-height:1;margi
 .log .down{color:var(--open)}
 .more{font:inherit;font-size:13px;background:none;border:0;color:var(--accent);cursor:pointer;justify-self:start;padding:0;text-decoration:underline}
 @media (max-width:640px){.log>li{grid-template-columns:1fr;gap:4px}}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.tabs a{font-family:var(--display);font-size:20px;font-weight:700;letter-spacing:.02em;text-decoration:none;color:var(--muted);padding:6px 16px;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+.tabs a small{font-family:var(--mono);font-size:11px;font-weight:500;margin-left:6px;letter-spacing:0}
+.tabs a:hover{color:var(--fg)}
+.tabs a[aria-current="page"]{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
+.tabs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.kind{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
 @media (max-width:640px){.unit{grid-template-columns:1fr}.tier{grid-template-columns:1fr;gap:4px}}
 </style>
 </head>
@@ -76,15 +83,16 @@ h1{font-family:var(--display);font-size:clamp(32px,6vw,46px);line-height:1;margi
 <div class="wrap">
   <header>
     <div class="eyebrow" id="eyebrow">ROTE platoon needs</div>
-    <h1>Dathomir R8 Tracker</h1>
-    <p class="lede">What we still need at Relic 8 to fill every Dathomir platoon, and who in the guild is closest to getting there. Ask the R7 players first: they need one relic level.</p>
+    <h1 id="title">ROTE R8 Tracker</h1>
+    <p class="lede" id="lede">What we still need to fill every platoon, and who in the guild is closest to getting there.</p>
     <p class="updated" id="updated"></p>
+    <nav class="tabs" id="tabs" aria-label="Planets"></nav>
   </header>
 
   <section class="summary" aria-label="Summary">
-    <div class="stat"><b id="s-need">0</b><span>R8 upgrades needed</span></div>
+    <div class="stat"><b id="s-need">0</b><span>Upgrades needed</span></div>
     <div class="stat"><b id="s-units">0</b><span>Units still open</span></div>
-    <div class="stat"><b id="s-r7">0</b><span>R7 players, one step away</span></div>
+    <div class="stat"><b id="s-r7">0</b><span>Players one step away</span></div>
   </section>
 
   <section class="list" id="list" aria-label="Units"></section>
@@ -105,13 +113,13 @@ h1{font-family:var(--display);font-size:clamp(32px,6vw,46px);line-height:1;margi
   </section>
 
   <footer class="foot">
-    <p class="note">Green = already R8 or higher. Gold outline = R7, best people to ask. "Reported" = the player said on Discord they reached R8 and the tracker has not picked it up yet. Dotted underline = player is a top candidate on 3 or more units, so spread the asks around.</p>
+    <p class="note">Green = already R8 or higher (ships: 7 stars). Gold outline = R7 (ships: 6 stars), one step away and the best people to ask. "Reported" = the player said on Discord they reached R8 and the tracker has not picked it up yet. Dotted underline = player is a top candidate on 3 or more units, so spread the asks around.</p>
     <p class="note">Data read straight from the game by an automated job every 15 minutes, so a fresh upgrade shows up on the next run.</p>
   </footer>
 </div>
 
 <!-- Seed copies: update.py rewrites these on every run, so this file also works on its own. -->
-<script type="application/json" id="seed-config">{"guild_id": "f9HdOgX5SsiR_Q3mcPCzxw", "guild_name": "MYTHOSAURheadHUNTERS", "planet": "Dathomir", "_ajuda": "target = quantos jogadores a guilda precisa ter em R8+ nesse personagem (total). needed = quantos upgrades o Trash Panda pediu (o x/y do resumo do Discord). done = quem ja entregou antes do historico automatico (quem subir daqui pra frente entra sozinho). short = nome curto no resumo do Discord. reported = avisou no Discord que chegou a R8 e o jogo ainda nao mostrou. pledged = se comprometeu a upar. check = observacao em aberto.", "units": [{"id": "MAULS7", "name": "Maul", "target": 6, "needed": 3, "done": ["Starkiller117", "UncleSpike823", "DarthIsaB"]}, {"id": "SAVAGEOPRESS", "name": "Savage Opress", "target": 2, "needed": 1}, {"id": "BOBAFETTSCION", "name": "Boba Fett, Scion of Jango", "short": "Jango Scion", "target": 8, "needed": 3, "reported": ["TheJobaFett"], "pledged": ["RagnarokBeyond"]}, {"id": "STARKILLER", "name": "Starkiller", "target": 12, "needed": 1, "check": "TheJobaFett finished his to R8 on 1 Nov. Confirm with Trash Panda if this one is still open."}, {"id": "NIGHTSISTERSPIRIT", "name": "Nightsister Spirit", "short": "NS Spirit", "target": 3, "needed": 2, "reported": ["TheJobaFett"]}, {"id": "DENGAR", "name": "Dengar", "target": 4, "needed": 2}, {"id": "NIGHTSISTERZOMBIE", "name": "Nightsister Zombie", "short": "NS Zombie", "target": 2, "needed": 1}, {"id": "BT1", "name": "BT-1", "target": 2, "needed": 1}, {"id": "SNOWTROOPER", "name": "Snowtrooper", "target": 3, "needed": 1, "done": ["UncleSpike823"]}]}</script>
+<script type="application/json" id="seed-config">{"guild_id": "f9HdOgX5SsiR_Q3mcPCzxw", "guild_name": "MYTHOSAURheadHUNTERS", "_ajuda": "target = quantos jogadores a guilda precisa ter em R8+ nesse personagem (total). needed = quantos upgrades o Trash Panda pediu (o x/y do resumo do Discord). done = quem ja entregou antes do historico automatico (quem subir daqui pra frente entra sozinho). short = nome curto no resumo do Discord. reported = avisou no Discord que chegou a R8 e o jogo ainda nao mostrou. pledged = se comprometeu a upar. check = observacao em aberto. planet = em qual aba o personagem aparece (dathomir ou lothal). ship = true para naves: contam por estrelas (7 estrelas), nao por reliquia.", "units": [{"id": "MAULS7", "name": "Maul", "target": 6, "needed": 3, "done": ["Starkiller117", "UncleSpike823", "DarthIsaB"], "planet": "dathomir"}, {"id": "SAVAGEOPRESS", "name": "Savage Opress", "target": 2, "needed": 1, "planet": "dathomir"}, {"id": "BOBAFETTSCION", "name": "Boba Fett, Scion of Jango", "short": "Jango Scion", "target": 8, "needed": 3, "reported": ["TheJobaFett"], "pledged": ["RagnarokBeyond"], "planet": "dathomir"}, {"id": "STARKILLER", "name": "Starkiller", "target": 12, "needed": 1, "check": "TheJobaFett finished his to R8 on 1 Nov. Confirm with Trash Panda if this one is still open.", "planet": "dathomir"}, {"id": "NIGHTSISTERSPIRIT", "name": "Nightsister Spirit", "short": "NS Spirit", "target": 3, "needed": 2, "reported": ["TheJobaFett"], "planet": "dathomir"}, {"id": "DENGAR", "name": "Dengar", "target": 4, "needed": 2, "planet": "dathomir"}, {"id": "NIGHTSISTERZOMBIE", "name": "Nightsister Zombie", "short": "NS Zombie", "target": 2, "needed": 1, "planet": "dathomir"}, {"id": "BT1", "name": "BT-1", "target": 2, "needed": 1, "planet": "dathomir"}, {"id": "SNOWTROOPER", "name": "Snowtrooper", "target": 3, "needed": 1, "done": ["UncleSpike823"], "planet": "dathomir"}, {"id": "GRANDMASTERLUKE", "name": "Jedi Master Luke Skywalker", "planet": "lothal", "target": 8, "short": "JML"}, {"id": "CAPITALPROFUNDITY", "name": "Profundity", "planet": "lothal", "target": 7, "ship": true}, {"id": "HERMITYODA", "name": "Hermit Yoda", "planet": "lothal", "target": 5}, {"id": "COMMANDERAHSOKA", "name": "Commander Ahsoka Tano", "planet": "lothal", "target": 5}, {"id": "HOTHLEIA", "name": "Rebel Officer Leia Organa", "planet": "lothal", "target": 4, "short": "Rebel Officer Leia"}, {"id": "RAZORCREST", "name": "Razor Crest", "planet": "lothal", "target": 4, "ship": true}, {"id": "BENSOLO", "name": "Ben Solo", "planet": "lothal", "target": 3}, {"id": "GENERALKENOBI", "name": "General Kenobi", "planet": "lothal", "target": 3}, {"id": "JEDIKNIGHTREVAN", "name": "Jedi Knight Revan", "planet": "lothal", "target": 2}, {"id": "ZAALBAR", "name": "Zaalbar", "planet": "lothal", "target": 2}, {"id": "HANSOLO", "name": "Han Solo", "planet": "lothal", "target": 2}, {"id": "XANADUBLOOD", "name": "Xanadu Blood", "planet": "lothal", "target": 2, "ship": true}, {"id": "KIADIMUNDI", "name": "Ki-Adi-Mundi", "planet": "lothal", "target": 2}, {"id": "CHEWBACCALEGENDARY", "name": "Chewbacca", "planet": "lothal", "target": 2, "short": "Chewbacca"}, {"id": "50RT", "name": "50R-T", "planet": "lothal", "target": 2}, {"id": "SCARIFREBEL", "name": "Scarif Rebel Pathfinder", "planet": "lothal", "target": 2, "short": "Scarif Pathfinder"}, {"id": "JEDIMASTERKENOBI", "name": "Jedi Master Kenobi", "planet": "lothal", "target": 2, "short": "JMK"}, {"id": "PADMEAMIDALA", "name": "Padmé Amidala", "planet": "lothal", "target": 2}, {"id": "LOGRAY", "name": "Logray", "planet": "lothal", "target": 2}, {"id": "SMUGGLERCHEWBACCA", "name": "Veteran Smuggler Chewbacca", "planet": "lothal", "target": 1, "short": "Vet. Smuggler Chewie"}, {"id": "DASHRENDAR", "name": "Dash Rendar", "planet": "lothal", "target": 1}, {"id": "YWINGREBEL", "name": "Rebel Y-wing", "planet": "lothal", "target": 1, "short": "Rebel Y-wing", "ship": true}, {"id": "THEMANDALORIANBESKARARMOR", "name": "The Mandalorian (Beskar Armor)", "planet": "lothal", "target": 1, "short": "Mando (Beskar)"}, {"id": "BB8", "name": "BB-8", "planet": "lothal", "target": 1}, {"id": "FINN", "name": "Finn", "planet": "lothal", "target": 1}, {"id": "R2D2_LEGENDARY", "name": "R2-D2", "planet": "lothal", "target": 1, "short": "R2-D2"}, {"id": "REY", "name": "Rey (Scavenger)", "planet": "lothal", "target": 1}, {"id": "RAVENSCLAW", "name": "Raven's Claw", "planet": "lothal", "target": 1, "ship": true}, {"id": "EBONHAWK", "name": "Ebon Hawk", "planet": "lothal", "target": 1, "ship": true}, {"id": "CHIEFNEBIT", "name": "Chief Nebit", "planet": "lothal", "target": 1}, {"id": "GHOST", "name": "Ghost", "planet": "lothal", "target": 1, "ship": true}, {"id": "KYLEKATARN", "name": "Kyle Katarn", "planet": "lothal", "target": 1}, {"id": "REYJEDITRAINING", "name": "Rey (Jedi Training)", "planet": "lothal", "target": 1}, {"id": "JOLEEBINDO", "name": "Jolee Bindo", "planet": "lothal", "target": 1}, {"id": "OUTRIDER", "name": "Outrider", "planet": "lothal", "target": 1, "ship": true}, {"id": "EETHKOTH", "name": "Eeth Koth", "planet": "lothal", "target": 1}, {"id": "BADBATCHTECH", "name": "Tech", "planet": "lothal", "target": 1}, {"id": "JEDIKNIGHTCONSULAR", "name": "Jedi Consular", "planet": "lothal", "target": 1}, {"id": "GRANDMASTERYODA", "name": "Grand Master Yoda", "planet": "lothal", "target": 1}, {"id": "BISTAN", "name": "Bistan", "planet": "lothal", "target": 1}, {"id": "MILLENNIUMFALCON", "name": "Han's Millennium Falcon", "planet": "lothal", "target": 1, "short": "Han's Falcon", "ship": true}, {"id": "BLADEOFDORIN", "name": "Plo Koon's Jedi Starfighter", "planet": "lothal", "target": 1, "short": "Plo Koon's Starfighter", "ship": true}, {"id": "XWINGRED2", "name": "Wedge Antilles's X-wing", "planet": "lothal", "target": 1, "short": "Wedge's X-wing", "ship": true}, {"id": "SANASTARROS", "name": "Sana Starros", "planet": "lothal", "target": 1}, {"id": "BADBATCHECHO", "name": "Echo", "planet": "lothal", "target": 1}, {"id": "AAYLASECURA", "name": "Aayla Secura", "planet": "lothal", "target": 1}, {"id": "WICKET", "name": "Wicket", "planet": "lothal", "target": 1}, {"id": "HONDO", "name": "Hondo Ohnaka", "planet": "lothal", "target": 1}], "planets": [{"id": "dathomir", "name": "Dathomir", "phase": "Phase 3", "relic": 8}, {"id": "lothal", "name": "Lothal", "phase": "Phase 4", "relic": 8}]}</script>
 <script type="application/json" id="seed-data">{"updated": "2026-11-16T21:17:38Z", "source": "jogo (swgoh-comlink)", "members": 50, "units": {"DENGAR": [{"name": "Fama", "relic": 8}, {"name": "Grey Jedi29", "relic": 8}, {"name": "Darthsketti", "relic": 7}, {"name": "Lazrin Novai", "relic": 7}, {"name": "Medjo Juhin", "relic": 7}, {"name": "Wckdaze", "relic": 7}], "NIGHTSISTERSPIRIT": [{"name": "Medjo Juhin", "relic": 8}, {"name": "TheJobaFett", "relic": 8}, {"name": "Canchuck", "relic": 7}, {"name": "Grey Jedi29", "relic": 7}, {"name": "Viktorion", "relic": 6}], "NIGHTSISTERZOMBIE": [{"name": "TheJobaFett", "relic": 8}, {"name": "Canchuck", "relic": 7}, {"name": "Grey Jedi29", "relic": 7}, {"name": "Sabum", "relic": 6}], "MAULS7": [{"name": "DarthIsaB", "relic": 8}, {"name": "Grey Jedi29", "relic": 8}, {"name": "Guardiandevil34", "relic": 8}, {"name": "hellothere", "relic": 8}, {"name": "Starkiller117", "relic": 8}, {"name": "UncleSpike823", "relic": 8}, {"name": "Baserock", "relic": 7}, {"name": "Bem", "relic": 7}, {"name": "Jodo Kast", "relic": 7}, {"name": "Lazrin Novai", "relic": 7}, {"name": "TheJobaFett", "relic": 7}, {"name": "Trash Panda", "relic": 7}, {"name": "trod75", "relic": 7}, {"name": "Jaso Swift", "relic": 6}, {"name": "Medjo Juhin", "relic": 6}], "BT1": [{"name": "Medjo Juhin", "relic": 8}, {"name": "Guardiandevil34", "relic": 7}, {"name": "50uLh4ck3r", "relic": 6}, {"name": "DarthIsaB", "relic": 6}, {"name": "Starkiller117", "relic": 6}, {"name": "Trash Panda", "relic": 6}, {"name": "Yan elriad", "relic": 6}], "SAVAGEOPRESS": [{"name": "hellothere", "relic": 8}, {"name": "Grey Jedi29", "relic": 7}, {"name": "Lazrin Novai", "relic": 7}, {"name": "Medjo Juhin", "relic": 6}, {"name": "Xara", "relic": 6}], "SNOWTROOPER": [{"name": "Darthsketti", "relic": 8}, {"name": "TheJobaFett", "relic": 8}, {"name": "UncleSpike823", "relic": 8}, {"name": "Grey Jedi29", "relic": 6}, {"name": "Jodo Kast", "relic": 6}, {"name": "Medjo Juhin", "relic": 6}, {"name": "Starkiller117", "relic": 6}], "STARKILLER": [{"name": "hellothere", "relic": 9}, {"name": "Starkiller117", "relic": 9}, {"name": "Allnightgamer", "relic": 8}, {"name": "Bem", "relic": 8}, {"name": "Bertz", "relic": 8}, {"name": "Grey Jedi29", "relic": 8}, {"name": "Guardiandevil34", "relic": 8}, {"name": "Medjo Juhin", "relic": 8}, {"name": "TheJobaFett", "relic": 8}, {"name": "Trash Panda", "relic": 8}, {"name": "UncleSpike823", "relic": 8}, {"name": "Xara", "relic": 8}, {"name": "Veskasa Stargazer", "relic": 7}, {"name": "DarthIsaB", "relic": 6}, {"name": "Darthsketti", "relic": 6}, {"name": "NoleySmokes", "relic": 6}, {"name": "Viktorion", "relic": 6}], "BOBAFETTSCION": [{"name": "Casper Darkmage", "relic": 9}, {"name": "Bem", "relic": 8}, {"name": "Fama", "relic": 8}, {"name": "Guardiandevil34", "relic": 8}, {"name": "Hoptownlaw", "relic": 8}, {"name": "TheJobaFett", "relic": 8}, {"name": "Trash Panda", "relic": 8}, {"name": "Canchuck", "relic": 7}, {"name": "Darthsketti", "relic": 7}, {"name": "Grey Jedi29", "relic": 7}, {"name": "hellothere", "relic": 7}, {"name": "Swyth", "relic": 7}, {"name": "Wckdaze", "relic": 7}, {"name": "Bertz", "relic": 6}, {"name": "DarthIsaB", "relic": 6}, {"name": "Lazrin Novai", "relic": 6}]}}</script>
 <script type="application/json" id="seed-log">[{"time": "2026-11-15T06:32:47Z", "changes": [{"unit": "BOBAFETTSCION", "player": "DarthIsaB", "from": null, "to": 6}]}, {"time": "2026-11-14T17:04:26Z", "changes": [{"unit": "BOBAFETTSCION", "player": "Bem", "from": 7, "to": 8}, {"unit": "BOBAFETTSCION", "player": "TheJobaFett", "from": 7, "to": 8}, {"unit": "STARKILLER", "player": "Bem", "from": 7, "to": 8}, {"unit": "NIGHTSISTERSPIRIT", "player": "TheJobaFett", "from": 7, "to": 8}]}]</script>
 <script>
@@ -121,55 +129,75 @@ async function load(file,id){
   try{const r=await fetch(file,{cache:"no-store"});if(r.ok)return await r.json()}catch(e){}
   return seed(id);
 }
-function render(cfg,data,log){
+const label=u=>u.short||u.name;
+const lvl=p=>p.stars!=null?p.stars:p.relic;
+const planetsOf=cfg=>cfg.planets&&cfg.planets.length?cfg.planets:[{id:"dathomir",name:cfg.planet||"Dathomir"}];
+let STATE=null;
+
+function currentPlanet(cfg){
+  const ps=planetsOf(cfg),h=location.hash.replace("#","").toLowerCase();
+  return ps.find(p=>p.id===h)||ps[0];
+}
+function build(cfg,data,planet){
+  return cfg.units.filter(u=>(u.planet||"dathomir")===planet.id).map(u=>{
+    const ship=!!u.ship,goal=ship?7:8;
+    const ps=(data.units[u.id]||[]).slice().sort((a,b)=>lvl(b)-lvl(a));
+    const ok=ps.filter(p=>lvl(p)>=goal);
+    const okNames=new Set(ok.map(p=>p.name));
+    const r8=ok.map(p=>!ship&&p.relic>8?`${p.name} (R${p.relic})`:p.name);
+    const reported=(u.reported||[]).filter(n=>!okNames.has(n));
+    const r7=ps.filter(p=>lvl(p)===goal-1&&!reported.includes(p.name)).map(p=>p.name);
+    const r6=ship?[]:ps.filter(p=>p.relic===6&&!reported.includes(p.name)).map(p=>p.name);
+    const have=r8.length+reported.length;
+    return {...u,ship,r8,r7,r6,reported,have,missing:Math.max(0,u.target-have)};
+  });
+}
+function render(){
+  const {cfg,data,log}=STATE;
   if(!cfg||!data){document.getElementById("list").innerHTML='<p class="note">Could not load the tracker data.</p>';return}
+  const planet=currentPlanet(cfg);
   document.getElementById("eyebrow").textContent=(cfg.guild_name||"")+" · ROTE platoon needs";
+  document.getElementById("title").textContent=planet.name+" R8 Tracker";
+  document.title=planet.name+" R8 Tracker";
+  document.getElementById("lede").textContent=`What we still need to fill every ${planet.name} platoon${planet.phase?" ("+planet.phase+")":""}, and who in the guild is closest to getting there. Characters need Relic 8, ships need 7 stars. Ask the players one step away first.`;
   const when=new Date(data.updated);
   document.getElementById("updated").textContent="Data read "+(isNaN(when)?data.updated:when.toLocaleString());
-  const units=cfg.units.map(u=>{
-    const ps=(data.units[u.id]||[]).slice().sort((a,b)=>b.relic-a.relic);
-    const r8=ps.filter(p=>p.relic>=8).map(p=>p.relic>8?`${p.name} (R${p.relic})`:p.name);
-    const r8names=new Set(ps.filter(p=>p.relic>=8).map(p=>p.name));
-    const reported=(u.reported||[]).filter(n=>!r8names.has(n));
-    const r7=ps.filter(p=>p.relic===7&&!reported.includes(p.name)).map(p=>p.name);
-    const r6=ps.filter(p=>p.relic===6&&!reported.includes(p.name)).map(p=>p.name);
-    const have=r8.length+reported.length;
-    const missing=Math.max(0,u.target-have);
-    return {...u,r8,r7,r6,reported,have,missing};
-  });
+  const all=planetsOf(cfg).map(p=>({p,units:build(cfg,data,p)}));
+  document.getElementById("tabs").innerHTML=all.map(({p,units})=>{
+    const m=units.reduce((a,u)=>a+u.missing,0);
+    return `<a href="#${esc(p.id)}"${p.id===planet.id?' aria-current="page"':""}>${esc(p.name)}<small>${m?m+" open":"done"}</small></a>`}).join("");
+  const units=all.find(x=>x.p.id===planet.id).units;
   const count={};units.filter(u=>u.missing).forEach(u=>[...u.r7,...u.r6].forEach(p=>count[p]=(count[p]||0)+1));
   const chips=(arr,mark)=>arr.length?arr.map(p=>`<span class="chip${mark&&count[p]>=3?" busy":""}">${esc(p)}</span>`).join(""):'<span class="note">Nobody at this tier</span>';
   const row=(cls,tag,arr,mark)=>`<div class="tier ${cls}"><div class="tag">${tag}</div><div class="names">${chips(arr,mark)}</div></div>`;
-  units.sort((a,b)=>(a.missing===0)-(b.missing===0));
+  units.sort((a,b)=>(a.missing===0)-(b.missing===0)||b.missing-a.missing);
   document.getElementById("list").innerHTML=units.map(u=>{
-    const done=u.missing===0;
+    const done=u.missing===0,goal=u.ship?"7★":"R8";
     const pill=done?'<span class="pill done">Done</span>':u.check?'<span class="pill check">Check status</span>':(u.pledged&&u.pledged.length?`<span class="pill check">${u.pledged.length} committed</span>`:'<span class="pill open">Open</span>');
     return `<article class="unit${done?" is-done":""}">
   <div class="head">
+   ${u.ship?'<div class="kind">Ship</div>':""}
    <div class="name">${esc(u.name)}</div>
-   <div class="need">${done?"Covered":`Need ${u.missing} more at R8`} · ${u.have}/${u.target} at R8</div>
+   <div class="need">${done?"Covered":`Need ${u.missing} more at ${goal}`} · ${u.have}/${u.target} at ${goal}</div>
    ${pill}
    ${!done&&u.check?`<p class="note">${esc(u.check)}</p>`:""}
   </div>
   <div class="tiers">
    ${u.reported.length?row("pledge","Reported",u.reported):""}
    ${u.pledged&&u.pledged.length?row("pledge","Committed",u.pledged):""}
-   ${row("r8","R8+",u.r8)}
-   ${done?"":row("r7","R7 · ask",u.r7,true)+row("r6","R6",u.r6,true)}
+   ${row("r8",u.ship?"7★":"R8+",u.r8)}
+   ${done?"":row("r7",u.ship?"6★ · ask":"R7 · ask",u.r7,true)+(u.ship?"":row("r6","R6",u.r6,true))}
   </div>
  </article>`}).join("");
   document.getElementById("s-need").textContent=units.reduce((a,u)=>a+u.missing,0);
   document.getElementById("s-units").textContent=units.filter(u=>u.missing).length;
   document.getElementById("s-r7").textContent=new Set(units.filter(u=>u.missing).flatMap(u=>u.r7)).size;
-  renderDiscord(data,units,log||[]);
-  renderLog(cfg,log||[]);
+  renderDiscord(data,units,log||[],planet);
+  renderLog(units,log||[]);
 }
-const label=u=>u.short||u.name;
-const rl=r=>r==null?"below R6":"R"+r;
-function renderDiscord(data,units,log){
-  // Who reached R8 on each unit since the log started (oldest first).
+function renderDiscord(data,units,log,planet){
   const arrivals={};
-  log.slice().reverse().forEach(e=>e.changes.forEach(c=>{if((c.to||0)>=8&&(c.from||0)<8)(arrivals[c.unit]=arrivals[c.unit]||[]).push(c.player)}));
+  log.slice().reverse().forEach(e=>e.changes.forEach(c=>{const g=c.kind==="stars"?7:8;if((c.to||0)>=g&&(c.from||0)<g)(arrivals[c.unit]=arrivals[c.unit]||[]).push(c.player)}));
   const rows=units.map(u=>{
     const needed=u.needed??u.target;
     const base=u.target-needed;
@@ -180,46 +208,53 @@ function renderDiscord(data,units,log){
     const st=u.missing===0?"✅":u.check?"❓":(doneN>0||pledged.length||u.reported.length)?"🟡":"🔴";
     const rank={"✅":0,"🟡":1,"❓":2,"🔴":3}[st];
     const parts=[];
-    if(doneTxt.length)parts.push("done: "+doneTxt.join(", "));
+    if(doneTxt.length&&u.needed!=null)parts.push("done: "+doneTxt.join(", "));
     if(u.missing&&u.check)parts.push(u.check);
     if(u.missing&&pledged.length)parts.push("committed: "+pledged.join(", "));
-    if(u.missing&&u.r7.length)parts.push("R7: "+u.r7.join(", "));
+    if(u.missing&&u.r7.length)parts.push((u.ship?"6★: ":"R7: ")+u.r7.join(", "));
     else if(u.missing&&u.r6.length)parts.push("R6: "+u.r6.join(", "));
-    return {rank,u,line:`${st} **${label(u)}** ${doneN}/${needed}${parts.length?" — "+parts.join(" · "):""}`};
-  }).sort((a,b)=>a.rank-b.rank);
+    else if(u.missing)parts.push("nobody close yet");
+    return {rank,u,line:`${st} **${label(u)}**${u.ship?" (ship)":""} ${doneN}/${needed}${parts.length?" — "+parts.join(" · "):""}`};
+  });
+  const big=units.length>15;
+  const shown=(big?rows.filter(r=>r.u.missing):rows).sort((a,b)=>a.rank-b.rank||b.u.missing-a.u.missing);
   const total=units.reduce((a,u)=>a+u.missing,0);
+  const covered=units.filter(u=>!u.missing).length;
   const when=new Date(data.updated);
   const day=isNaN(when)?"":when.toLocaleDateString("en-US",{month:"short",day:"numeric"});
   const status=[
-    `📋 **DATHOMIR R8 TRACKER** — updated ${day}`,
-    total?`Still needed: **${total} R8 upgrade${total===1?"":"s"}**`:"**All Dathomir R8 needs are covered!** 🎉",
-    "Legend: ✅ done · 🟡 in progress · 🔴 open · ❓ check",
-    "",...rows.map(r=>r.line),"",
+    `📋 **${planet.name.toUpperCase()} R8 TRACKER** — updated ${day}`,
+    total?`Still needed: **${total} upgrade${total===1?"":"s"}** (characters to R8, ships to 7★)`:`**All ${planet.name} needs are covered!** 🎉`,
+    big&&covered?`${covered} of ${units.length} units already covered ✅ (full list on the site)`:"Legend: ✅ done · 🟡 in progress · 🔴 open · ❓ check",
+    "",...shown.map(r=>r.line),"",
     total?"Can you take one? Reply here with the character and I'll update this list 🙏":"Thanks everyone! 🙏"
   ].join("\n");
   const open=rows.filter(r=>r.u.missing&&r.u.r7.length);
   const callout=open.length?[
-    "📣 **ROTE call-out!** You're all R7, one relic away from something we need for Dathomir:",
+    `📣 **ROTE call-out!** You're one step away (R7, or 6★ on ships) from something we need for ${planet.name}:`,
     ...open.map(r=>`• ${label(r.u)} (need ${r.u.missing}): ${r.u.r7.join(", ")}`),
-    "Reply here with the one you can take and I'll mark you on the tracker. Every R8 = more stars for the guild! ⭐🙏"
-  ].join("\n"):"Nobody at R7 on the units still open right now.";
+    "Reply here with the one you can take and I'll mark you on the tracker. Every upgrade = more stars for the guild! ⭐🙏"
+  ].join("\n"):"Nobody is one step away on the units still open right now.";
   document.getElementById("msg-status").textContent=status;
   document.getElementById("msg-callout").textContent=callout;
 }
-function renderLog(cfg,log){
-  const names=Object.fromEntries(cfg.units.map(u=>[u.id,label(u)]));
+function renderLog(units,log){
+  const names=Object.fromEntries(units.map(u=>[u.id,label(u)]));
+  const mine=log.map(e=>({...e,changes:e.changes.filter(c=>names[c.unit])})).filter(e=>e.changes.length);
   const el=document.getElementById("log"),more=document.getElementById("log-more");
-  if(!log.length){el.innerHTML='<li><span></span><p class="note">No changes recorded yet.</p></li>';more.hidden=true;return}
+  if(!mine.length){el.innerHTML='<li><span></span><p class="note">No changes recorded yet for this planet.</p></li>';more.hidden=true;return}
   const LIMIT=20;let all=false;
+  const fmt=(c,v)=>v==null?(c.kind==="stars"?"below 6★":"below R6"):(c.kind==="stars"?v+"★":"R"+v);
   const draw=()=>{
-    el.innerHTML=(all?log:log.slice(0,LIMIT)).map(e=>{
+    el.innerHTML=(all?mine:mine.slice(0,LIMIT)).map(e=>{
       const t=new Date(e.time);
       const ts=isNaN(t)?esc(e.time):t.toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"});
       const items=e.changes.map(c=>{
-        const up8=(c.to||0)>=8&&(c.from||0)<8,down=(c.to??0)<(c.from??0);
-        return `<li class="${up8?"up8":down?"down":""}"><b>${esc(c.player)}</b> · ${esc(names[c.unit]||c.unit)} · ${rl(c.from)} → ${rl(c.to)}${up8?" ⭐ reached R8":""}</li>`}).join("");
+        const g=c.kind==="stars"?7:8;
+        const up=(c.to||0)>=g&&(c.from||0)<g,down=(c.to??0)<(c.from??0);
+        return `<li class="${up?"up8":down?"down":""}"><b>${esc(c.player)}</b> · ${esc(names[c.unit])} · ${fmt(c,c.from)} → ${fmt(c,c.to)}${up?(c.kind==="stars"?" ⭐ reached 7★":" ⭐ reached R8"):""}</li>`}).join("");
       return `<li><time datetime="${esc(e.time)}">${ts}</time><ul>${items}</ul></li>`}).join("");
-    more.hidden=all||log.length<=LIMIT;
+    more.hidden=all||mine.length<=LIMIT;
   };
   more.onclick=()=>{all=true;draw()};
   draw();
@@ -232,7 +267,8 @@ document.addEventListener("click",async ev=>{
     const sel=getSelection();sel.removeAllRanges();sel.addRange(r);document.execCommand("copy");sel.removeAllRanges()}
   b.textContent="Copied!";b.classList.add("ok");setTimeout(()=>{b.textContent="Copy";b.classList.remove("ok")},1600);
 });
-(async()=>{render(await load("config.json","seed-config"),await load("data.json","seed-data"),await load("log.json","seed-log"))})();
+window.addEventListener("hashchange",()=>{if(STATE){render();window.scrollTo(0,0)}});
+(async()=>{STATE={cfg:await load("config.json","seed-config"),data:await load("data.json","seed-data"),log:await load("log.json","seed-log")};render()})();
 </script>
 </body>
 </html>
