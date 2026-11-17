@@ -75,6 +75,18 @@ h1{font-family:var(--display);font-size:clamp(32px,6vw,46px);line-height:1;margi
 .tabs a:hover{color:var(--fg)}
 .tabs a[aria-current="page"]{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
 .tabs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.finder{display:grid;gap:10px}
+.finder label{font-family:var(--display);font-size:22px;font-weight:700}
+.finder-row{display:flex;flex-wrap:wrap;gap:8px}
+.finder input{font:inherit;font-size:16px;padding:8px 12px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);min-width:0;flex:1 1 220px}
+.finder input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.finder button{font:inherit;font-size:14px;padding:8px 14px;border-radius:6px;border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer}
+.me-group{display:grid;gap:4px}
+.me-group h3{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0;font-weight:500}
+.me-group ul{margin:0;padding-left:18px;display:grid;gap:2px}
+.me-group.best h3{color:var(--accent)}
+.chip.me{outline:2px solid var(--accent);outline-offset:1px;font-weight:700}
+.unit.mine{border-color:var(--accent)}
 .kind{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
 @media (max-width:640px){.unit{grid-template-columns:1fr}.tier{grid-template-columns:1fr;gap:4px}}
 </style>
@@ -88,6 +100,17 @@ h1{font-family:var(--display);font-size:clamp(32px,6vw,46px);line-height:1;margi
     <p class="updated" id="updated"></p>
     <nav class="tabs" id="tabs" aria-label="Planets"></nav>
   </header>
+
+  <section class="panel finder" aria-labelledby="finder-l">
+    <label id="finder-l" for="player">Find your name</label>
+    <p class="note">Type your in-game name to see which units on this planet you can help with.</p>
+    <div class="finder-row">
+      <input id="player" list="players" autocomplete="off" placeholder="e.g. FeRRiZ">
+      <button type="button" id="player-clear">Clear</button>
+    </div>
+    <datalist id="players"></datalist>
+    <div id="me" aria-live="polite"></div>
+  </section>
 
   <section class="summary" aria-label="Summary">
     <div class="stat"><b id="s-need">0</b><span>Upgrades needed</span></div>
@@ -168,13 +191,16 @@ function render(){
     return `<a href="#${esc(p.id)}"${p.id===planet.id?' aria-current="page"':""}>${esc(p.name)}<small>${m?m+" open":"done"}</small></a>`}).join("");
   const units=all.find(x=>x.p.id===planet.id).units;
   const count={};units.filter(u=>u.missing).forEach(u=>[...u.r7,...u.r6].forEach(p=>count[p]=(count[p]||0)+1));
-  const chips=(arr,mark)=>arr.length?arr.map(p=>`<span class="chip${mark&&count[p]>=3?" busy":""}">${esc(p)}</span>`).join(""):'<span class="note">Nobody at this tier</span>';
+  const ME=meName(data);
+  const isMe=p=>ME&&p.replace(/ \(R\d+\)$/,"").toLowerCase()===ME.toLowerCase();
+  const chips=(arr,mark)=>arr.length?arr.map(p=>`<span class="chip${mark&&count[p]>=3?" busy":""}${isMe(p)?" me":""}">${esc(p)}</span>`).join(""):'<span class="note">Nobody at this tier</span>';
   const row=(cls,tag,arr,mark)=>`<div class="tier ${cls}"><div class="tag">${tag}</div><div class="names">${chips(arr,mark)}</div></div>`;
   units.sort((a,b)=>(a.missing===0)-(b.missing===0)||b.missing-a.missing);
   document.getElementById("list").innerHTML=units.map(u=>{
     const done=u.missing===0,goal=u.ship?"7★":"R8";
     const pill=done?'<span class="pill done">Done</span>':u.check?'<span class="pill check">Check status</span>':(u.pledged&&u.pledged.length?`<span class="pill check">${u.pledged.length} committed</span>`:'<span class="pill open">Open</span>');
-    return `<article class="unit${done?" is-done":""}">
+    const mine=ME&&[...u.r8,...u.r7,...u.r6,...u.reported].some(isMe);
+    return `<article class="unit${done?" is-done":""}${mine?" mine":""}">
   <div class="head">
    ${u.ship?'<div class="kind">Ship</div>':""}
    <div class="name">${esc(u.name)}</div>
@@ -192,6 +218,7 @@ function render(){
   document.getElementById("s-need").textContent=units.reduce((a,u)=>a+u.missing,0);
   document.getElementById("s-units").textContent=units.filter(u=>u.missing).length;
   document.getElementById("s-r7").textContent=new Set(units.filter(u=>u.missing).flatMap(u=>u.r7)).size;
+  renderMe(data,all,planet);
   renderDiscord(data,units,log||[],planet);
   renderLog(units,log||[]);
 }
@@ -268,6 +295,67 @@ document.addEventListener("click",async ev=>{
   b.textContent="Copied!";b.classList.add("ok");setTimeout(()=>{b.textContent="Copy";b.classList.remove("ok")},1600);
 });
 window.addEventListener("hashchange",()=>{if(STATE){render();window.scrollTo(0,0)}});
+
+/* ---- Find your name ---- */
+let ME_INPUT="";
+try{ME_INPUT=localStorage.getItem("tracker-player")||""}catch(e){}
+function allPlayers(data){
+  const set=new Set();Object.values(data.units).forEach(l=>l.forEach(p=>set.add(p.name)));
+  return [...set].sort((a,b)=>a.localeCompare(b,undefined,{sensitivity:"base"}));
+}
+function meName(data){
+  const q=ME_INPUT.trim().toLowerCase();if(!q)return null;
+  const ps=allPlayers(data);
+  return ps.find(p=>p.toLowerCase()===q)||(ps.filter(p=>p.toLowerCase().includes(q)).length===1?ps.find(p=>p.toLowerCase().includes(q)):null);
+}
+function renderMe(data,all,planet){
+  const dl=document.getElementById("players");
+  if(!dl.childElementCount)dl.innerHTML=allPlayers(data).map(p=>`<option value="${esc(p)}"></option>`).join("");
+  const box=document.getElementById("me"),inp=document.getElementById("player");
+  if(document.activeElement!==inp)inp.value=ME_INPUT;
+  const q=ME_INPUT.trim();
+  if(!q){box.innerHTML="";return}
+  const me=meName(data);
+  if(!me){
+    const hits=allPlayers(data).filter(p=>p.toLowerCase().includes(q.toLowerCase()));
+    box.innerHTML=`<p class="note">${hits.length?"More than one match: "+hits.slice(0,8).map(esc).join(", ")+". Keep typing.":"No one with that name shows up at R6+ (or 6★ on ships) on any tracked unit yet."}</p>`;
+    return;
+  }
+  const same=p=>p.replace(/ \(R\d+\)$/,"").toLowerCase()===me.toLowerCase();
+  const block=(units)=>{
+    const g={ready:[],step:[],r6:[],have:[]};
+    units.forEach(u=>{
+      const tag=u.ship?" (ship)":"";
+      if(u.r8.some(same)||u.reported.some(same)){g.have.push(label(u)+tag+(u.missing?"":" ✓ covered"));return}
+      if(!u.missing)return;
+      if(u.r7.some(same))g.step.push(`${label(u)}${tag}: you're ${u.ship?"6★, one star":"R7, one relic"} away · guild needs ${u.missing}`);
+      else if(u.r6.some(same))g.r6.push(`${label(u)}: you're R6 · guild needs ${u.missing}`);
+    });
+    return g;
+  };
+  const cur=all.find(x=>x.p.id===planet.id);
+  const g=block(cur.units);
+  const list=(cls,title,items)=>items.length?`<div class="me-group ${cls}"><h3>${title}</h3><ul>${items.map(i=>`<li>${esc(i)}</li>`).join("")}</ul></div>`:"";
+  const others=all.filter(x=>x.p.id!==planet.id).map(x=>{const o=block(x.units);return o.step.length?`<a href="#${esc(x.p.id)}">${esc(x.p.name)}</a>: ${o.step.length} unit${o.step.length===1?"":"s"} one step away`:""}).filter(Boolean);
+  const any=g.step.length||g.r6.length||g.have.length;
+  box.innerHTML=`<div class="tiers">
+    <p class="note"><b>${esc(me)}</b> on ${esc(planet.name)}:</p>
+    ${list("best","Best ways to help (one step away)",g.step)}
+    ${list("","Next in line (R6)",g.r6)}
+    ${list("","Already counting for the platoons",g.have)}
+    ${any?"":`<p class="note">Nothing close on ${esc(planet.name)} yet.</p>`}
+    ${others.length?`<p class="note">Also: ${others.join(" · ")}</p>`:""}
+  </div>`;
+}
+document.getElementById("player").addEventListener("input",e=>{
+  ME_INPUT=e.target.value;
+  try{localStorage.setItem("tracker-player",ME_INPUT)}catch(err){}
+  if(STATE)render();
+});
+document.getElementById("player-clear").addEventListener("click",()=>{
+  ME_INPUT="";try{localStorage.removeItem("tracker-player")}catch(e){}
+  document.getElementById("player").value="";if(STATE)render();
+});
 (async()=>{STATE={cfg:await load("config.json","seed-config"),data:await load("data.json","seed-data"),log:await load("log.json","seed-log")};render()})();
 </script>
 </body>
