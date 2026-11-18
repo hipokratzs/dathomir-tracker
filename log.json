@@ -1,5 +1,22 @@
 [
  {
+  "time": "2026-11-18T03:22:41Z",
+  "changes": [
+   {
+    "unit": "BOBAFETTSCION",
+    "player": "DarthIsaB",
+    "from": 6,
+    "to": 8
+   },
+   {
+    "unit": "COMMANDERAHSOKA",
+    "player": "DarthIsaB",
+    "from": null,
+    "to": 9
+   }
+  ]
+ },
+ {
   "time": "2026-11-18T02:28:50Z",
   "changes": [
    {
