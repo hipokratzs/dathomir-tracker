@@ -1,5 +1,16 @@
 [
  {
+  "time": "2026-11-18T05:28:29Z",
+  "changes": [
+   {
+    "unit": "DENGAR",
+    "player": "Medjo Juhin",
+    "from": 7,
+    "to": 8
+   }
+  ]
+ },
+ {
   "time": "2026-11-18T04:25:08Z",
   "changes": [
    {
