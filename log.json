@@ -1,5 +1,22 @@
 [
  {
+  "time": "2026-11-18T01:25:33Z",
+  "changes": [
+   {
+    "unit": "COMMANDERAHSOKA",
+    "player": "Riah",
+    "from": null,
+    "to": 9
+   },
+   {
+    "unit": "PADMEAMIDALA",
+    "player": "Xara",
+    "from": 6,
+    "to": 7
+   }
+  ]
+ },
+ {
   "time": "2026-11-18T00:12:17Z",
   "changes": [
    {
