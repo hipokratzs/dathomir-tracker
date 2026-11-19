@@ -1,5 +1,22 @@
 [
  {
+  "time": "2026-11-19T02:42:56Z",
+  "changes": [
+   {
+    "unit": "GENERALKENOBI",
+    "player": "UncleSpike823",
+    "from": 8,
+    "to": 9
+   },
+   {
+    "unit": "REY",
+    "player": "UncleSpike823",
+    "from": 7,
+    "to": 8
+   }
+  ]
+ },
+ {
   "time": "2026-11-19T01:45:42Z",
   "changes": [
    {
