@@ -1,5 +1,16 @@
 [
  {
+  "time": "2026-11-20T20:20:10Z",
+  "changes": [
+   {
+    "unit": "SNOWTROOPER",
+    "player": "warden2025",
+    "from": null,
+    "to": 9
+   }
+  ]
+ },
+ {
   "time": "2026-11-20T17:22:37Z",
   "changes": [
    {
