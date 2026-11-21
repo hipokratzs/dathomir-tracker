@@ -1,5 +1,22 @@
 [
  {
+  "time": "2026-11-21T04:27:42Z",
+  "changes": [
+   {
+    "unit": "SMUGGLERCHEWBACCA",
+    "player": "Baserock",
+    "from": null,
+    "to": 7
+   },
+   {
+    "unit": "REY",
+    "player": "Baserock",
+    "from": 7,
+    "to": 8
+   }
+  ]
+ },
+ {
   "time": "2026-11-20T20:20:10Z",
   "changes": [
    {
