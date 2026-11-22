@@ -1,5 +1,22 @@
 [
  {
+  "time": "2026-11-22T15:15:18Z",
+  "changes": [
+   {
+    "unit": "BT1",
+    "player": "FeRRiZ",
+    "from": null,
+    "to": 7
+   },
+   {
+    "unit": "HONDO",
+    "player": "warden2025",
+    "from": null,
+    "to": 6
+   }
+  ]
+ },
+ {
   "time": "2026-11-21T20:23:09Z",
   "changes": [
    {
