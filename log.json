@@ -1,5 +1,29 @@
 [
  {
+  "time": "2026-11-23T18:18:52Z",
+  "changes": [
+   {
+    "unit": "HANSOLO",
+    "player": "Elias Lund",
+    "from": null,
+    "to": 8
+   },
+   {
+    "unit": "DASHRENDAR",
+    "player": "Elias Lund",
+    "from": null,
+    "to": 8
+   },
+   {
+    "unit": "OUTRIDER",
+    "player": "Elias Lund",
+    "from": null,
+    "to": 7,
+    "kind": "stars"
+   }
+  ]
+ },
+ {
   "time": "2026-11-23T12:54:48Z",
   "changes": [
    {
