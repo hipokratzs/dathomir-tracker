@@ -1,5 +1,29 @@
 [
  {
+  "time": "2026-11-23T12:54:48Z",
+  "changes": [
+   {
+    "unit": "HANSOLO",
+    "player": "Toyotathon Enthusiast",
+    "from": null,
+    "to": 8
+   },
+   {
+    "unit": "DASHRENDAR",
+    "player": "Toyotathon Enthusiast",
+    "from": null,
+    "to": 8
+   },
+   {
+    "unit": "OUTRIDER",
+    "player": "Toyotathon Enthusiast",
+    "from": null,
+    "to": 7,
+    "kind": "stars"
+   }
+  ]
+ },
+ {
   "time": "2026-11-23T00:06:42Z",
   "changes": [
    {
