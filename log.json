@@ -1,5 +1,29 @@
 [
  {
+  "time": "2026-11-24T18:36:02Z",
+  "changes": [
+   {
+    "unit": "HANSOLO",
+    "player": "warden2025",
+    "from": null,
+    "to": 8
+   },
+   {
+    "unit": "DASHRENDAR",
+    "player": "warden2025",
+    "from": null,
+    "to": 8
+   },
+   {
+    "unit": "OUTRIDER",
+    "player": "warden2025",
+    "from": null,
+    "to": 7,
+    "kind": "stars"
+   }
+  ]
+ },
+ {
   "time": "2026-11-24T17:43:34Z",
   "changes": [
    {
