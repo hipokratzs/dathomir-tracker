@@ -1,128 +1,204 @@
 {
- "updated": "2026-11-25T17:41:45Z",
+ "updated": "2026-11-25T18:28:53Z",
  "source": "jogo (swgoh-comlink)",
  "members": 50,
  "units": {
-  "THEMANDALORIANBESKARARMOR": [
+  "XWINGRED2": [
    {
-    "name": "Swyth",
-    "relic": 10
+    "name": "50uLh4ck3r",
+    "stars": 7
    },
    {
-    "name": "Casper Darkmage",
-    "relic": 9
+    "name": "Allnightgamer",
+    "stars": 7
    },
    {
-    "name": "MYTHOSAUR",
-    "relic": 9
-   },
-   {
-    "name": "Wckdaze",
-    "relic": 9
-   },
-   {
-    "name": "Bertz",
-    "relic": 8
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 8
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 8
-   },
-   {
-    "name": "Hoyle2000",
-    "relic": 8
-   },
-   {
-    "name": "Jaso Swift",
-    "relic": 8
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 8
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 8
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 8
+    "name": "Baserock",
+    "stars": 7
    },
    {
     "name": "Bem",
-    "relic": 7
+    "stars": 7
+   },
+   {
+    "name": "Bertz",
+    "stars": 7
    },
    {
     "name": "Canchuck",
-    "relic": 7
+    "stars": 7
+   },
+   {
+    "name": "Casper Darkmage",
+    "stars": 7
    },
    {
     "name": "CymStar",
-    "relic": 7
+    "stars": 7
    },
    {
     "name": "DarthIsaB",
-    "relic": 7
+    "stars": 7
+   },
+   {
+    "name": "Darthsketti",
+    "stars": 7
+   },
+   {
+    "name": "Elias Lund",
+    "stars": 7
    },
    {
     "name": "Fama",
-    "relic": 7
+    "stars": 7
+   },
+   {
+    "name": "FeRRiZ",
+    "stars": 7
+   },
+   {
+    "name": "Grey Jedi29",
+    "stars": 7
    },
    {
     "name": "Guardiandevil34",
-    "relic": 7
+    "stars": 7
    },
    {
     "name": "HaterOfSand",
-    "relic": 7
+    "stars": 7
+   },
+   {
+    "name": "Hello There",
+    "stars": 7
+   },
+   {
+    "name": "hellothere",
+    "stars": 7
    },
    {
     "name": "Hoptownlaw",
-    "relic": 7
+    "stars": 7
+   },
+   {
+    "name": "Hoyle2000",
+    "stars": 7
+   },
+   {
+    "name": "ilmar",
+    "stars": 7
+   },
+   {
+    "name": "Jaso Swift",
+    "stars": 7
    },
    {
     "name": "Jodo Kast",
-    "relic": 7
+    "stars": 7
    },
    {
-    "name": "Moe Lester",
-    "relic": 7
-   },
-   {
-    "name": "Protews",
-    "relic": 7
-   },
-   {
-    "name": "Riah",
-    "relic": 7
-   },
-   {
-    "name": "Sabum",
-    "relic": 7
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 7
-   },
-   {
-    "name": "trod75",
-    "relic": 7
-   },
-   {
-    "name": "Viktorion",
-    "relic": 7
+    "name": "last of the order",
+    "stars": 7
    },
    {
     "name": "Lazrin Novai",
-    "relic": 6
+    "stars": 7
+   },
+   {
+    "name": "Lel En Co",
+    "stars": 7
+   },
+   {
+    "name": "Medjo Juhin",
+    "stars": 7
+   },
+   {
+    "name": "Moe Lester",
+    "stars": 7
+   },
+   {
+    "name": "NewLothropLegends",
+    "stars": 7
+   },
+   {
+    "name": "NoleySmokes",
+    "stars": 7
+   },
+   {
+    "name": "Protews",
+    "stars": 7
+   },
+   {
+    "name": "Riah",
+    "stars": 7
+   },
+   {
+    "name": "Ryanthos",
+    "stars": 7
+   },
+   {
+    "name": "Sabum",
+    "stars": 7
+   },
+   {
+    "name": "Starkiller117",
+    "stars": 7
+   },
+   {
+    "name": "Swyth",
+    "stars": 7
+   },
+   {
+    "name": "TheJobaFett",
+    "stars": 7
+   },
+   {
+    "name": "Toyotathon Enthusiast",
+    "stars": 7
+   },
+   {
+    "name": "Trash Panda",
+    "stars": 7
+   },
+   {
+    "name": "trod75",
+    "stars": 7
+   },
+   {
+    "name": "UncleSpike823",
+    "stars": 7
+   },
+   {
+    "name": "Veskasa Stargazer",
+    "stars": 7
+   },
+   {
+    "name": "Viktorion",
+    "stars": 7
+   },
+   {
+    "name": "warden2025",
+    "stars": 7
+   },
+   {
+    "name": "Wckdaze",
+    "stars": 7
+   },
+   {
+    "name": "Xara",
+    "stars": 7
+   },
+   {
+    "name": "Yan elriad",
+    "stars": 7
    }
   ],
   "EETHKOTH": [],
-  "NIGHTSISTERZOMBIE": [
+  "NIGHTSISTERSPIRIT": [
+   {
+    "name": "Medjo Juhin",
+    "relic": 8
+   },
    {
     "name": "TheJobaFett",
     "relic": 8
@@ -136,1095 +212,179 @@
     "relic": 7
    },
    {
-    "name": "Bem",
-    "relic": 6
-   },
-   {
-    "name": "Sabum",
+    "name": "Viktorion",
     "relic": 6
    }
   ],
-  "RAVENSCLAW": [
+  "SAVAGEOPRESS": [
    {
-    "name": "50uLh4ck3r",
-    "stars": 7
-   },
-   {
-    "name": "Allnightgamer",
-    "stars": 7
-   },
-   {
-    "name": "Baserock",
-    "stars": 7
-   },
-   {
-    "name": "Bem",
-    "stars": 7
-   },
-   {
-    "name": "Bertz",
-    "stars": 7
-   },
-   {
-    "name": "Casper Darkmage",
-    "stars": 7
-   },
-   {
-    "name": "CymStar",
-    "stars": 7
-   },
-   {
-    "name": "DarthIsaB",
-    "stars": 7
-   },
-   {
-    "name": "Darthsketti",
-    "stars": 7
-   },
-   {
-    "name": "Fama",
-    "stars": 7
-   },
-   {
-    "name": "FeRRiZ",
-    "stars": 7
+    "name": "hellothere",
+    "relic": 8
    },
    {
     "name": "Grey Jedi29",
-    "stars": 7
-   },
-   {
-    "name": "hellothere",
-    "stars": 7
-   },
-   {
-    "name": "Hoptownlaw",
-    "stars": 7
-   },
-   {
-    "name": "Jaso Swift",
-    "stars": 7
-   },
-   {
-    "name": "Jodo Kast",
-    "stars": 7
+    "relic": 7
    },
    {
     "name": "Lazrin Novai",
-    "stars": 7
+    "relic": 7
    },
    {
     "name": "Medjo Juhin",
-    "stars": 7
-   },
-   {
-    "name": "NoleySmokes",
-    "stars": 7
-   },
-   {
-    "name": "Sabum",
-    "stars": 7
-   },
-   {
-    "name": "Starkiller117",
-    "stars": 7
-   },
-   {
-    "name": "Swyth",
-    "stars": 7
-   },
-   {
-    "name": "trod75",
-    "stars": 7
-   },
-   {
-    "name": "UncleSpike823",
-    "stars": 7
-   },
-   {
-    "name": "Viktorion",
-    "stars": 7
-   },
-   {
-    "name": "Wckdaze",
-    "stars": 7
+    "relic": 6
    },
    {
     "name": "Xara",
-    "stars": 7
-   },
-   {
-    "name": "Yan elriad",
-    "stars": 7
-   },
-   {
-    "name": "Guardiandevil34",
-    "stars": 6
-   }
-  ],
-  "OUTRIDER": [
-   {
-    "name": "50uLh4ck3r",
-    "stars": 7
-   },
-   {
-    "name": "Allnightgamer",
-    "stars": 7
-   },
-   {
-    "name": "Baserock",
-    "stars": 7
-   },
-   {
-    "name": "Bem",
-    "stars": 7
-   },
-   {
-    "name": "Bertz",
-    "stars": 7
-   },
-   {
-    "name": "Canchuck",
-    "stars": 7
-   },
-   {
-    "name": "Casper Darkmage",
-    "stars": 7
-   },
-   {
-    "name": "CymStar",
-    "stars": 7
-   },
-   {
-    "name": "DarthIsaB",
-    "stars": 7
-   },
-   {
-    "name": "Darthsketti",
-    "stars": 7
-   },
-   {
-    "name": "Elias Lund",
-    "stars": 7
-   },
-   {
-    "name": "Fama",
-    "stars": 7
-   },
-   {
-    "name": "Grey Jedi29",
-    "stars": 7
-   },
-   {
-    "name": "Guardiandevil34",
-    "stars": 7
-   },
-   {
-    "name": "HaterOfSand",
-    "stars": 7
-   },
-   {
-    "name": "hellothere",
-    "stars": 7
-   },
-   {
-    "name": "Hoptownlaw",
-    "stars": 7
-   },
-   {
-    "name": "Hoyle2000",
-    "stars": 7
-   },
-   {
-    "name": "Jaso Swift",
-    "stars": 7
-   },
-   {
-    "name": "Jodo Kast",
-    "stars": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "stars": 7
-   },
-   {
-    "name": "Medjo Juhin",
-    "stars": 7
-   },
-   {
-    "name": "NoleySmokes",
-    "stars": 7
-   },
-   {
-    "name": "Protews",
-    "stars": 7
-   },
-   {
-    "name": "Riah",
-    "stars": 7
-   },
-   {
-    "name": "Sabum",
-    "stars": 7
-   },
-   {
-    "name": "Starkiller117",
-    "stars": 7
-   },
-   {
-    "name": "Swyth",
-    "stars": 7
-   },
-   {
-    "name": "TheJobaFett",
-    "stars": 7
-   },
-   {
-    "name": "Toyotathon Enthusiast",
-    "stars": 7
-   },
-   {
-    "name": "Trash Panda",
-    "stars": 7
-   },
-   {
-    "name": "trod75",
-    "stars": 7
-   },
-   {
-    "name": "UncleSpike823",
-    "stars": 7
-   },
-   {
-    "name": "Veskasa Stargazer",
-    "stars": 7
-   },
-   {
-    "name": "Viktorion",
-    "stars": 7
-   },
-   {
-    "name": "warden2025",
-    "stars": 7
-   },
-   {
-    "name": "Wckdaze",
-    "stars": 7
-   },
-   {
-    "name": "Xara",
-    "stars": 7
-   },
-   {
-    "name": "Yan elriad",
-    "stars": 7
-   }
-  ],
-  "SCARIFREBEL": [
-   {
-    "name": "UncleSpike823",
     "relic": 6
    }
   ],
-  "XANADUBLOOD": [
-   {
-    "name": "50uLh4ck3r",
-    "stars": 7
-   },
-   {
-    "name": "Allnightgamer",
-    "stars": 7
-   },
-   {
-    "name": "Baserock",
-    "stars": 7
-   },
-   {
-    "name": "Bem",
-    "stars": 7
-   },
+  "COMMANDERAHSOKA": [
    {
     "name": "Bertz",
-    "stars": 7
-   },
-   {
-    "name": "Canchuck",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Casper Darkmage",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "CymStar",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "DarthIsaB",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Darthsketti",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Elias Lund",
-    "stars": 7
-   },
-   {
-    "name": "Fama",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "FeRRiZ",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Grey Jedi29",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Guardiandevil34",
-    "stars": 7
-   },
-   {
-    "name": "HaterOfSand",
-    "stars": 7
-   },
-   {
-    "name": "Hello There",
-    "stars": 7
-   },
-   {
-    "name": "hellothere",
-    "stars": 7
-   },
-   {
-    "name": "Hoptownlaw",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Hoyle2000",
-    "stars": 7
-   },
-   {
-    "name": "ilmar",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Jaso Swift",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Jodo Kast",
-    "stars": 7
-   },
-   {
-    "name": "last of the order",
-    "stars": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "stars": 7
-   },
-   {
-    "name": "Lel En Co",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Medjo Juhin",
-    "stars": 7
-   },
-   {
-    "name": "Moe Lester",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "NewLothropLegends",
-    "stars": 7
-   },
-   {
-    "name": "NoleySmokes",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Protews",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Riah",
-    "stars": 7
-   },
-   {
-    "name": "Ryanthos",
-    "stars": 7
-   },
-   {
-    "name": "Sabum",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Starkiller117",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Swyth",
-    "stars": 7
-   },
-   {
-    "name": "TheJobaFett",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Toyotathon Enthusiast",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Trash Panda",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "trod75",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "UncleSpike823",
-    "stars": 7
-   },
-   {
-    "name": "Viktorion",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "warden2025",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Wckdaze",
-    "stars": 7
-   },
-   {
-    "name": "Xara",
-    "stars": 7
+    "relic": 9
    },
    {
     "name": "Yan elriad",
-    "stars": 7
-   }
-  ],
-  "AAYLASECURA": [
-   {
-    "name": "Bertz",
-    "relic": 6
-   },
-   {
-    "name": "DarthIsaB",
-    "relic": 6
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 6
-   },
-   {
-    "name": "NoleySmokes",
-    "relic": 6
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 6
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 6
-   }
-  ],
-  "STARKILLER": [
-   {
-    "name": "hellothere",
     "relic": 9
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 9
-   },
-   {
-    "name": "Allnightgamer",
-    "relic": 8
-   },
-   {
-    "name": "Bem",
-    "relic": 8
-   },
-   {
-    "name": "Bertz",
-    "relic": 8
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 8
-   },
-   {
-    "name": "Guardiandevil34",
-    "relic": 8
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 8
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 8
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 8
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 8
-   },
-   {
-    "name": "Xara",
-    "relic": 8
-   },
-   {
-    "name": "Veskasa Stargazer",
-    "relic": 7
-   },
-   {
-    "name": "DarthIsaB",
-    "relic": 6
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 6
-   },
-   {
-    "name": "NoleySmokes",
-    "relic": 6
-   },
-   {
-    "name": "Riah",
-    "relic": 6
-   },
-   {
-    "name": "trod75",
-    "relic": 6
-   },
-   {
-    "name": "Viktorion",
-    "relic": 6
-   }
-  ],
-  "HOTHLEIA": [
-   {
-    "name": "Bem",
-    "relic": 7
-   },
-   {
-    "name": "Bertz",
-    "relic": 7
-   },
-   {
-    "name": "Casper Darkmage",
-    "relic": 7
-   },
-   {
-    "name": "Guardiandevil34",
-    "relic": 7
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 7
-   },
-   {
-    "name": "Sabum",
-    "relic": 7
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 7
-   },
-   {
-    "name": "50uLh4ck3r",
-    "relic": 6
-   },
-   {
-    "name": "CymStar",
-    "relic": 6
-   },
-   {
-    "name": "Fama",
-    "relic": 6
-   },
-   {
-    "name": "FeRRiZ",
-    "relic": 6
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 6
-   },
-   {
-    "name": "Jaso Swift",
-    "relic": 6
-   },
-   {
-    "name": "last of the order",
-    "relic": 6
-   },
-   {
-    "name": "Ryanthos",
-    "relic": 6
-   },
-   {
-    "name": "Xara",
-    "relic": 6
-   }
-  ],
-  "LOGRAY": [
-   {
-    "name": "Guardiandevil34",
-    "relic": 9
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 7
-   },
-   {
-    "name": "NoleySmokes",
-    "relic": 7
-   },
-   {
-    "name": "Riah",
-    "relic": 7
-   },
-   {
-    "name": "Sabum",
-    "relic": 7
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 7
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 7
-   }
-  ],
-  "JEDIKNIGHTREVAN": [
-   {
-    "name": "Medjo Juhin",
-    "relic": 9
-   },
-   {
-    "name": "MYTHOSAUR",
-    "relic": 9
-   },
-   {
-    "name": "Allnightgamer",
-    "relic": 8
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 8
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 8
-   },
-   {
-    "name": "50uLh4ck3r",
-    "relic": 7
-   },
-   {
-    "name": "Canchuck",
-    "relic": 7
-   },
-   {
-    "name": "Casper Darkmage",
-    "relic": 7
-   },
-   {
-    "name": "CymStar",
-    "relic": 7
-   },
-   {
-    "name": "Guardiandevil34",
-    "relic": 7
-   },
-   {
-    "name": "Hello There",
-    "relic": 7
-   },
-   {
-    "name": "hellothere",
-    "relic": 7
-   },
-   {
-    "name": "Hoptownlaw",
-    "relic": 7
-   },
-   {
-    "name": "Hoyle2000",
-    "relic": 7
-   },
-   {
-    "name": "Jodo Kast",
-    "relic": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 7
-   },
-   {
-    "name": "Lel En Co",
-    "relic": 7
-   },
-   {
-    "name": "Ryanthos",
-    "relic": 7
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 7
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 7
-   },
-   {
-    "name": "Bem",
-    "relic": 6
-   },
-   {
-    "name": "Jaso Swift",
-    "relic": 6
-   },
-   {
-    "name": "jediknith",
-    "relic": 6
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 6
-   }
-  ],
-  "BB8": [
-   {
-    "name": "hellothere",
-    "relic": 8
-   },
-   {
-    "name": "Allnightgamer",
-    "relic": 7
-   },
-   {
-    "name": "Baserock",
-    "relic": 7
-   },
-   {
-    "name": "Bem",
-    "relic": 7
-   },
-   {
-    "name": "Bertz",
-    "relic": 7
-   },
-   {
-    "name": "Casper Darkmage",
-    "relic": 7
-   },
-   {
-    "name": "CymStar",
-    "relic": 7
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 7
-   },
-   {
-    "name": "FeRRiZ",
-    "relic": 7
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 7
-   },
-   {
-    "name": "Guardiandevil34",
-    "relic": 7
-   },
-   {
-    "name": "Hello There",
-    "relic": 7
-   },
-   {
-    "name": "Hoptownlaw",
-    "relic": 7
-   },
-   {
-    "name": "Hoyle2000",
-    "relic": 7
-   },
-   {
-    "name": "Jaso Swift",
-    "relic": 7
-   },
-   {
-    "name": "Jodo Kast",
-    "relic": 7
-   },
-   {
-    "name": "last of the order",
-    "relic": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 7
-   },
-   {
-    "name": "Lel En Co",
-    "relic": 7
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 7
-   },
-   {
-    "name": "NewLothropLegends",
-    "relic": 7
-   },
-   {
-    "name": "NoleySmokes",
-    "relic": 7
-   },
-   {
-    "name": "Ryanthos",
-    "relic": 7
-   },
-   {
-    "name": "Sabum",
-    "relic": 7
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 7
-   },
-   {
-    "name": "Swyth",
-    "relic": 7
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 7
-   },
-   {
-    "name": "Toyotathon Enthusiast",
-    "relic": 7
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 7
-   },
-   {
-    "name": "trod75",
-    "relic": 7
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 7
-   },
-   {
-    "name": "Viktorion",
-    "relic": 7
-   },
-   {
-    "name": "Wckdaze",
-    "relic": 7
-   },
-   {
-    "name": "Yan elriad",
-    "relic": 7
-   }
-  ],
-  "CHIEFNEBIT": [
-   {
-    "name": "Lazrin Novai",
-    "relic": 7
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 7
-   }
-  ],
-  "HANSOLO": [
-   {
-    "name": "50uLh4ck3r",
-    "relic": 8
-   },
-   {
-    "name": "Baserock",
-    "relic": 8
-   },
-   {
-    "name": "Bem",
-    "relic": 8
-   },
-   {
-    "name": "Bertz",
-    "relic": 8
-   },
-   {
-    "name": "Canchuck",
-    "relic": 8
-   },
-   {
-    "name": "Casper Darkmage",
-    "relic": 8
-   },
-   {
-    "name": "CymStar",
-    "relic": 8
-   },
-   {
-    "name": "DarthIsaB",
-    "relic": 8
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 8
-   },
-   {
-    "name": "Elias Lund",
-    "relic": 8
    },
    {
     "name": "Fama",
     "relic": 8
    },
    {
-    "name": "Grey Jedi29",
+    "name": "hamuta",
     "relic": 8
-   },
-   {
-    "name": "Guardiandevil34",
-    "relic": 8
-   },
-   {
-    "name": "HaterOfSand",
-    "relic": 8
-   },
-   {
-    "name": "Hoptownlaw",
-    "relic": 8
-   },
-   {
-    "name": "Hoyle2000",
-    "relic": 8
-   },
-   {
-    "name": "Jaso Swift",
-    "relic": 8
-   },
-   {
-    "name": "Jodo Kast",
-    "relic": 8
-   },
-   {
-    "name": "Lel En Co",
-    "relic": 8
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 8
-   },
-   {
-    "name": "NoleySmokes",
-    "relic": 8
-   },
-   {
-    "name": "Sabum",
-    "relic": 8
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 8
-   },
-   {
-    "name": "Swyth",
-    "relic": 8
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 8
-   },
-   {
-    "name": "Toyotathon Enthusiast",
-    "relic": 8
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 8
-   },
-   {
-    "name": "trod75",
-    "relic": 8
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 8
-   },
-   {
-    "name": "Viktorion",
-    "relic": 8
-   },
-   {
-    "name": "warden2025",
-    "relic": 8
-   },
-   {
-    "name": "Wckdaze",
-    "relic": 8
-   },
-   {
-    "name": "Yan elriad",
-    "relic": 8
-   },
-   {
-    "name": "FeRRiZ",
-    "relic": 7
    },
    {
     "name": "Allnightgamer",
-    "relic": 6
+    "relic": 7
    },
    {
     "name": "Hello There",
-    "relic": 6
+    "relic": 7
    },
    {
     "name": "hellothere",
-    "relic": 6
-   },
-   {
-    "name": "ilmar",
-    "relic": 6
-   },
-   {
-    "name": "last of the order",
-    "relic": 6
+    "relic": 7
    },
    {
     "name": "Lazrin Novai",
+    "relic": 7
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 7
+   },
+   {
+    "name": "Viktorion",
+    "relic": 7
+   },
+   {
+    "name": "Xara",
+    "relic": 7
+   },
+   {
+    "name": "Baserock",
     "relic": 6
    },
    {
-    "name": "Riah",
+    "name": "Bem",
     "relic": 6
    },
    {
-    "name": "Ryanthos",
+    "name": "Sabum",
     "relic": 6
    }
   ],
@@ -1394,1301 +554,25 @@
     "relic": 7
    }
   ],
-  "BADBATCHTECH": [
+  "ZAALBAR": [
    {
-    "name": "Guardiandevil34",
-    "relic": 6
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 6
-   }
-  ],
-  "SANASTARROS": [
-   {
-    "name": "Darthsketti",
+    "name": "Grey Jedi29",
     "relic": 7
    },
    {
-    "name": "50uLh4ck3r",
-    "relic": 6
-   },
-   {
     "name": "Bem",
     "relic": 6
-   },
-   {
-    "name": "Bertz",
-    "relic": 6
-   },
-   {
-    "name": "CymStar",
-    "relic": 6
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 6
-   },
-   {
-    "name": "Riah",
-    "relic": 6
-   },
-   {
-    "name": "Ryanthos",
-    "relic": 6
-   },
-   {
-    "name": "Swyth",
-    "relic": 6
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 6
-   },
-   {
-    "name": "Wckdaze",
-    "relic": 6
-   }
-  ],
-  "PADMEAMIDALA": [
-   {
-    "name": "Allnightgamer",
-    "relic": 8
-   },
-   {
-    "name": "Baserock",
-    "relic": 8
-   },
-   {
-    "name": "Bem",
-    "relic": 8
-   },
-   {
-    "name": "Bertz",
-    "relic": 8
-   },
-   {
-    "name": "Casper Darkmage",
-    "relic": 8
-   },
-   {
-    "name": "CymStar",
-    "relic": 8
    },
    {
     "name": "Darthsketti",
-    "relic": 8
-   },
-   {
-    "name": "Elias Lund",
-    "relic": 8
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 8
-   },
-   {
-    "name": "Guardiandevil34",
-    "relic": 8
-   },
-   {
-    "name": "Hello There",
-    "relic": 8
-   },
-   {
-    "name": "hellothere",
-    "relic": 8
+    "relic": 6
    },
    {
     "name": "Hoyle2000",
-    "relic": 8
-   },
-   {
-    "name": "Jaso Swift",
-    "relic": 8
-   },
-   {
-    "name": "Jodo Kast",
-    "relic": 8
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 8
-   },
-   {
-    "name": "Moe Lester",
-    "relic": 8
-   },
-   {
-    "name": "NewLothropLegends",
-    "relic": 8
-   },
-   {
-    "name": "Protews",
-    "relic": 8
-   },
-   {
-    "name": "Riah",
-    "relic": 8
-   },
-   {
-    "name": "Ryanthos",
-    "relic": 8
-   },
-   {
-    "name": "Sabum",
-    "relic": 8
+    "relic": 6
    },
    {
     "name": "Starkiller117",
-    "relic": 8
-   },
-   {
-    "name": "Swyth",
-    "relic": 8
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 8
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 8
-   },
-   {
-    "name": "trod75",
-    "relic": 8
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 8
-   },
-   {
-    "name": "Viktorion",
-    "relic": 8
-   },
-   {
-    "name": "warden2025",
-    "relic": 8
-   },
-   {
-    "name": "Wckdaze",
-    "relic": 8
-   },
-   {
-    "name": "Yan elriad",
-    "relic": 8
-   },
-   {
-    "name": "50uLh4ck3r",
-    "relic": 7
-   },
-   {
-    "name": "Fama",
-    "relic": 7
-   },
-   {
-    "name": "Hoptownlaw",
-    "relic": 7
-   },
-   {
-    "name": "Xara",
-    "relic": 7
-   },
-   {
-    "name": "hamuta",
-    "relic": 6
-   }
-  ],
-  "MAULS7": [
-   {
-    "name": "DarthIsaB",
-    "relic": 8
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 8
-   },
-   {
-    "name": "Guardiandevil34",
-    "relic": 8
-   },
-   {
-    "name": "hellothere",
-    "relic": 8
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 8
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 8
-   },
-   {
-    "name": "Baserock",
-    "relic": 7
-   },
-   {
-    "name": "Bem",
-    "relic": 7
-   },
-   {
-    "name": "Jodo Kast",
-    "relic": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 7
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 7
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 7
-   },
-   {
-    "name": "trod75",
-    "relic": 7
-   },
-   {
-    "name": "Jaso Swift",
-    "relic": 6
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 6
-   }
-  ],
-  "BISTAN": [
-   {
-    "name": "Yan elriad",
-    "relic": 8
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 7
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 6
-   }
-  ],
-  "KYLEKATARN": [
-   {
-    "name": "Allnightgamer",
-    "relic": 8
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 8
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 7
-   }
-  ],
-  "CAPITALPROFUNDITY": [
-   {
-    "name": "Baserock",
-    "stars": 7
-   },
-   {
-    "name": "Bem",
-    "stars": 7
-   },
-   {
-    "name": "Casper Darkmage",
-    "stars": 7
-   },
-   {
-    "name": "Fama",
-    "stars": 7
-   },
-   {
-    "name": "Grey Jedi29",
-    "stars": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "stars": 7
-   },
-   {
-    "name": "Medjo Juhin",
-    "stars": 7
-   },
-   {
-    "name": "Swyth",
-    "stars": 7
-   },
-   {
-    "name": "Trash Panda",
-    "stars": 7
-   },
-   {
-    "name": "Guardiandevil34",
-    "stars": 6
-   },
-   {
-    "name": "Viktorion",
-    "stars": 6
-   },
-   {
-    "name": "Yan elriad",
-    "stars": 6
-   }
-  ],
-  "BENSOLO": [
-   {
-    "name": "Medjo Juhin",
-    "relic": 9
-   },
-   {
-    "name": "Bertz",
-    "relic": 8
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 8
-   },
-   {
-    "name": "Guardiandevil34",
-    "relic": 8
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 8
-   },
-   {
-    "name": "Lel En Co",
-    "relic": 8
-   },
-   {
-    "name": "Casper Darkmage",
-    "relic": 7
-   },
-   {
-    "name": "CymStar",
-    "relic": 7
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 7
-   },
-   {
-    "name": "hellothere",
-    "relic": 7
-   },
-   {
-    "name": "Jodo Kast",
-    "relic": 7
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 7
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 7
-   },
-   {
-    "name": "Viktorion",
-    "relic": 7
-   },
-   {
-    "name": "Bem",
-    "relic": 6
-   },
-   {
-    "name": "Fama",
-    "relic": 6
-   },
-   {
-    "name": "Jaso Swift",
-    "relic": 6
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 6
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 6
-   }
-  ],
-  "BLADEOFDORIN": [
-   {
-    "name": "50uLh4ck3r",
-    "stars": 7
-   },
-   {
-    "name": "Allnightgamer",
-    "stars": 7
-   },
-   {
-    "name": "Baserock",
-    "stars": 7
-   },
-   {
-    "name": "Bem",
-    "stars": 7
-   },
-   {
-    "name": "Bertz",
-    "stars": 7
-   },
-   {
-    "name": "Canchuck",
-    "stars": 7
-   },
-   {
-    "name": "Casper Darkmage",
-    "stars": 7
-   },
-   {
-    "name": "CymStar",
-    "stars": 7
-   },
-   {
-    "name": "DarthIsaB",
-    "stars": 7
-   },
-   {
-    "name": "Darthsketti",
-    "stars": 7
-   },
-   {
-    "name": "Elias Lund",
-    "stars": 7
-   },
-   {
-    "name": "Fama",
-    "stars": 7
-   },
-   {
-    "name": "FeRRiZ",
-    "stars": 7
-   },
-   {
-    "name": "Grey Jedi29",
-    "stars": 7
-   },
-   {
-    "name": "Guardiandevil34",
-    "stars": 7
-   },
-   {
-    "name": "Hello There",
-    "stars": 7
-   },
-   {
-    "name": "hellothere",
-    "stars": 7
-   },
-   {
-    "name": "Hoptownlaw",
-    "stars": 7
-   },
-   {
-    "name": "Hoyle2000",
-    "stars": 7
-   },
-   {
-    "name": "ilmar",
-    "stars": 7
-   },
-   {
-    "name": "Jaso Swift",
-    "stars": 7
-   },
-   {
-    "name": "Jodo Kast",
-    "stars": 7
-   },
-   {
-    "name": "last of the order",
-    "stars": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "stars": 7
-   },
-   {
-    "name": "Lel En Co",
-    "stars": 7
-   },
-   {
-    "name": "Medjo Juhin",
-    "stars": 7
-   },
-   {
-    "name": "Moe Lester",
-    "stars": 7
-   },
-   {
-    "name": "NewLothropLegends",
-    "stars": 7
-   },
-   {
-    "name": "NoleySmokes",
-    "stars": 7
-   },
-   {
-    "name": "Protews",
-    "stars": 7
-   },
-   {
-    "name": "Riah",
-    "stars": 7
-   },
-   {
-    "name": "Ryanthos",
-    "stars": 7
-   },
-   {
-    "name": "Sabum",
-    "stars": 7
-   },
-   {
-    "name": "Starkiller117",
-    "stars": 7
-   },
-   {
-    "name": "Swyth",
-    "stars": 7
-   },
-   {
-    "name": "TheJobaFett",
-    "stars": 7
-   },
-   {
-    "name": "Toyotathon Enthusiast",
-    "stars": 7
-   },
-   {
-    "name": "Trash Panda",
-    "stars": 7
-   },
-   {
-    "name": "trod75",
-    "stars": 7
-   },
-   {
-    "name": "UncleSpike823",
-    "stars": 7
-   },
-   {
-    "name": "Veskasa Stargazer",
-    "stars": 7
-   },
-   {
-    "name": "Viktorion",
-    "stars": 7
-   },
-   {
-    "name": "warden2025",
-    "stars": 7
-   },
-   {
-    "name": "Wckdaze",
-    "stars": 7
-   },
-   {
-    "name": "Xara",
-    "stars": 7
-   },
-   {
-    "name": "Yan elriad",
-    "stars": 7
-   },
-   {
-    "name": "hamuta",
-    "stars": 6
-   }
-  ],
-  "NIGHTSISTERSPIRIT": [
-   {
-    "name": "Medjo Juhin",
-    "relic": 8
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 8
-   },
-   {
-    "name": "Canchuck",
-    "relic": 7
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 7
-   },
-   {
-    "name": "Viktorion",
-    "relic": 6
-   }
-  ],
-  "50RT": [
-   {
-    "name": "Bem",
-    "relic": 8
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 8
-   },
-   {
-    "name": "Elias Lund",
-    "relic": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 7
-   },
-   {
-    "name": "Viktorion",
-    "relic": 7
-   }
-  ],
-  "GENERALKENOBI": [
-   {
-    "name": "Baserock",
-    "relic": 9
-   },
-   {
-    "name": "Bem",
-    "relic": 9
-   },
-   {
-    "name": "Casper Darkmage",
-    "relic": 9
-   },
-   {
-    "name": "CymStar",
-    "relic": 9
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 9
-   },
-   {
-    "name": "Hoyle2000",
-    "relic": 9
-   },
-   {
-    "name": "Jaso Swift",
-    "relic": 9
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 9
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 9
-   },
-   {
-    "name": "Sabum",
-    "relic": 9
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 9
-   },
-   {
-    "name": "Swyth",
-    "relic": 9
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 9
-   },
-   {
-    "name": "trod75",
-    "relic": 9
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 9
-   },
-   {
-    "name": "warden2025",
-    "relic": 9
-   },
-   {
-    "name": "Wckdaze",
-    "relic": 9
-   },
-   {
-    "name": "Yan elriad",
-    "relic": 9
-   },
-   {
-    "name": "Allnightgamer",
-    "relic": 8
-   },
-   {
-    "name": "Bertz",
-    "relic": 8
-   },
-   {
-    "name": "Elias Lund",
-    "relic": 8
-   },
-   {
-    "name": "Fama",
-    "relic": 8
-   },
-   {
-    "name": "FeRRiZ",
-    "relic": 8
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 8
-   },
-   {
-    "name": "Guardiandevil34",
-    "relic": 8
-   },
-   {
-    "name": "hamuta",
-    "relic": 8
-   },
-   {
-    "name": "Hello There",
-    "relic": 8
-   },
-   {
-    "name": "hellothere",
-    "relic": 8
-   },
-   {
-    "name": "Jodo Kast",
-    "relic": 8
-   },
-   {
-    "name": "last of the order",
-    "relic": 8
-   },
-   {
-    "name": "Lel En Co",
-    "relic": 8
-   },
-   {
-    "name": "Moe Lester",
-    "relic": 8
-   },
-   {
-    "name": "MYTHOSAUR",
-    "relic": 8
-   },
-   {
-    "name": "NewLothropLegends",
-    "relic": 8
-   },
-   {
-    "name": "NoleySmokes",
-    "relic": 8
-   },
-   {
-    "name": "Protews",
-    "relic": 8
-   },
-   {
-    "name": "Ryanthos",
-    "relic": 8
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 8
-   },
-   {
-    "name": "Viktorion",
-    "relic": 8
-   },
-   {
-    "name": "50uLh4ck3r",
-    "relic": 7
-   },
-   {
-    "name": "Hoptownlaw",
-    "relic": 7
-   },
-   {
-    "name": "jediknith",
-    "relic": 7
-   },
-   {
-    "name": "Toyotathon Enthusiast",
-    "relic": 7
-   },
-   {
-    "name": "Xara",
-    "relic": 7
-   }
-  ],
-  "EBONHAWK": [
-   {
-    "name": "50uLh4ck3r",
-    "stars": 7
-   },
-   {
-    "name": "Allnightgamer",
-    "stars": 7
-   },
-   {
-    "name": "Baserock",
-    "stars": 7
-   },
-   {
-    "name": "Bem",
-    "stars": 7
-   },
-   {
-    "name": "Bertz",
-    "stars": 7
-   },
-   {
-    "name": "Casper Darkmage",
-    "stars": 7
-   },
-   {
-    "name": "CymStar",
-    "stars": 7
-   },
-   {
-    "name": "DarthIsaB",
-    "stars": 7
-   },
-   {
-    "name": "Darthsketti",
-    "stars": 7
-   },
-   {
-    "name": "Elias Lund",
-    "stars": 7
-   },
-   {
-    "name": "Fama",
-    "stars": 7
-   },
-   {
-    "name": "FeRRiZ",
-    "stars": 7
-   },
-   {
-    "name": "Grey Jedi29",
-    "stars": 7
-   },
-   {
-    "name": "Guardiandevil34",
-    "stars": 7
-   },
-   {
-    "name": "Hello There",
-    "stars": 7
-   },
-   {
-    "name": "hellothere",
-    "stars": 7
-   },
-   {
-    "name": "Hoptownlaw",
-    "stars": 7
-   },
-   {
-    "name": "Hoyle2000",
-    "stars": 7
-   },
-   {
-    "name": "Jaso Swift",
-    "stars": 7
-   },
-   {
-    "name": "Jodo Kast",
-    "stars": 7
-   },
-   {
-    "name": "last of the order",
-    "stars": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "stars": 7
-   },
-   {
-    "name": "Lel En Co",
-    "stars": 7
-   },
-   {
-    "name": "Medjo Juhin",
-    "stars": 7
-   },
-   {
-    "name": "Moe Lester",
-    "stars": 7
-   },
-   {
-    "name": "NewLothropLegends",
-    "stars": 7
-   },
-   {
-    "name": "NoleySmokes",
-    "stars": 7
-   },
-   {
-    "name": "Riah",
-    "stars": 7
-   },
-   {
-    "name": "Ryanthos",
-    "stars": 7
-   },
-   {
-    "name": "Sabum",
-    "stars": 7
-   },
-   {
-    "name": "Starkiller117",
-    "stars": 7
-   },
-   {
-    "name": "Swyth",
-    "stars": 7
-   },
-   {
-    "name": "TheJobaFett",
-    "stars": 7
-   },
-   {
-    "name": "Toyotathon Enthusiast",
-    "stars": 7
-   },
-   {
-    "name": "Trash Panda",
-    "stars": 7
-   },
-   {
-    "name": "trod75",
-    "stars": 7
-   },
-   {
-    "name": "UncleSpike823",
-    "stars": 7
-   },
-   {
-    "name": "Viktorion",
-    "stars": 7
-   },
-   {
-    "name": "warden2025",
-    "stars": 7
-   },
-   {
-    "name": "Wckdaze",
-    "stars": 7
-   },
-   {
-    "name": "Yan elriad",
-    "stars": 7
-   }
-  ],
-  "FINN": [
-   {
-    "name": "Wckdaze",
-    "relic": 8
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 7
-   },
-   {
-    "name": "warden2025",
-    "relic": 6
-   }
-  ],
-  "KIADIMUNDI": [
-   {
-    "name": "Trash Panda",
-    "relic": 8
-   },
-   {
-    "name": "Bertz",
-    "relic": 7
-   },
-   {
-    "name": "Fama",
-    "relic": 7
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 7
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 7
-   },
-   {
-    "name": "Guardiandevil34",
-    "relic": 6
-   }
-  ],
-  "SAVAGEOPRESS": [
-   {
-    "name": "hellothere",
-    "relic": 8
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 7
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 6
-   },
-   {
-    "name": "Xara",
-    "relic": 6
-   }
-  ],
-  "SMUGGLERCHEWBACCA": [
-   {
-    "name": "Trash Panda",
-    "relic": 8
-   },
-   {
-    "name": "Baserock",
-    "relic": 7
-   },
-   {
-    "name": "Bem",
-    "relic": 7
-   },
-   {
-    "name": "Casper Darkmage",
-    "relic": 7
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 7
-   },
-   {
-    "name": "Hoyle2000",
-    "relic": 7
-   },
-   {
-    "name": "Jaso Swift",
-    "relic": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 7
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 7
-   },
-   {
-    "name": "Sabum",
-    "relic": 7
-   },
-   {
-    "name": "Swyth",
-    "relic": 7
-   },
-   {
-    "name": "trod75",
-    "relic": 7
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 7
-   },
-   {
-    "name": "warden2025",
-    "relic": 7
-   },
-   {
-    "name": "Wckdaze",
-    "relic": 7
-   },
-   {
-    "name": "Yan elriad",
-    "relic": 7
-   }
-  ],
-  "JOLEEBINDO": [
-   {
-    "name": "Allnightgamer",
-    "relic": 7
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 7
-   },
-   {
-    "name": "Hoptownlaw",
-    "relic": 7
-   },
-   {
-    "name": "Hoyle2000",
-    "relic": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 7
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 7
-   },
-   {
-    "name": "Ryanthos",
-    "relic": 7
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 6
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 6
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 6
-   },
-   {
-    "name": "warden2025",
-    "relic": 6
-   },
-   {
-    "name": "Wckdaze",
-    "relic": 6
-   }
-  ],
-  "HONDO": [
-   {
-    "name": "50uLh4ck3r",
-    "relic": 9
-   },
-   {
-    "name": "Baserock",
-    "relic": 9
-   },
-   {
-    "name": "Bem",
-    "relic": 9
-   },
-   {
-    "name": "Casper Darkmage",
-    "relic": 9
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 9
-   },
-   {
-    "name": "Hoyle2000",
-    "relic": 9
-   },
-   {
-    "name": "Jaso Swift",
-    "relic": 9
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 9
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 9
-   },
-   {
-    "name": "Sabum",
-    "relic": 9
-   },
-   {
-    "name": "Swyth",
-    "relic": 9
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 9
-   },
-   {
-    "name": "trod75",
-    "relic": 9
-   },
-   {
-    "name": "Veskasa Stargazer",
-    "relic": 9
-   },
-   {
-    "name": "Wckdaze",
-    "relic": 9
-   },
-   {
-    "name": "Yan elriad",
-    "relic": 9
-   },
-   {
-    "name": "Bertz",
-    "relic": 7
-   },
-   {
-    "name": "Canchuck",
-    "relic": 7
-   },
-   {
-    "name": "CymStar",
-    "relic": 7
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 7
-   },
-   {
-    "name": "warden2025",
-    "relic": 7
-   },
-   {
-    "name": "DarthIsaB",
-    "relic": 6
-   },
-   {
-    "name": "FeRRiZ",
-    "relic": 6
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 6
-   },
-   {
-    "name": "Guardiandevil34",
-    "relic": 6
-   },
-   {
-    "name": "Jodo Kast",
-    "relic": 6
-   },
-   {
-    "name": "Ryanthos",
-    "relic": 6
-   },
-   {
-    "name": "Viktorion",
     "relic": 6
    }
   ],
@@ -2886,11 +770,183 @@
     "stars": 7
    }
   ],
-  "GRANDMASTERYODA": [
+  "SNOWTROOPER": [
    {
-    "name": "50uLh4ck3r",
+    "name": "Elias Lund",
+    "relic": 9
+   },
+   {
+    "name": "warden2025",
+    "relic": 9
+   },
+   {
+    "name": "Darthsketti",
     "relic": 8
    },
+   {
+    "name": "TheJobaFett",
+    "relic": 8
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 8
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 6
+   },
+   {
+    "name": "Jodo Kast",
+    "relic": 6
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 6
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 6
+   }
+  ],
+  "BB8": [
+   {
+    "name": "hellothere",
+    "relic": 8
+   },
+   {
+    "name": "Allnightgamer",
+    "relic": 7
+   },
+   {
+    "name": "Baserock",
+    "relic": 7
+   },
+   {
+    "name": "Bem",
+    "relic": 7
+   },
+   {
+    "name": "Bertz",
+    "relic": 7
+   },
+   {
+    "name": "Casper Darkmage",
+    "relic": 7
+   },
+   {
+    "name": "CymStar",
+    "relic": 7
+   },
+   {
+    "name": "Darthsketti",
+    "relic": 7
+   },
+   {
+    "name": "FeRRiZ",
+    "relic": 7
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 7
+   },
+   {
+    "name": "Guardiandevil34",
+    "relic": 7
+   },
+   {
+    "name": "Hello There",
+    "relic": 7
+   },
+   {
+    "name": "Hoptownlaw",
+    "relic": 7
+   },
+   {
+    "name": "Hoyle2000",
+    "relic": 7
+   },
+   {
+    "name": "Jaso Swift",
+    "relic": 7
+   },
+   {
+    "name": "Jodo Kast",
+    "relic": 7
+   },
+   {
+    "name": "last of the order",
+    "relic": 7
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 7
+   },
+   {
+    "name": "Lel En Co",
+    "relic": 7
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 7
+   },
+   {
+    "name": "NewLothropLegends",
+    "relic": 7
+   },
+   {
+    "name": "NoleySmokes",
+    "relic": 7
+   },
+   {
+    "name": "Ryanthos",
+    "relic": 7
+   },
+   {
+    "name": "Sabum",
+    "relic": 7
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 7
+   },
+   {
+    "name": "Swyth",
+    "relic": 7
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 7
+   },
+   {
+    "name": "Toyotathon Enthusiast",
+    "relic": 7
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 7
+   },
+   {
+    "name": "trod75",
+    "relic": 7
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 7
+   },
+   {
+    "name": "Viktorion",
+    "relic": 7
+   },
+   {
+    "name": "Wckdaze",
+    "relic": 7
+   },
+   {
+    "name": "Yan elriad",
+    "relic": 7
+   }
+  ],
+  "PADMEAMIDALA": [
    {
     "name": "Allnightgamer",
     "relic": 8
@@ -2924,23 +980,11 @@
     "relic": 8
    },
    {
-    "name": "Fama",
-    "relic": 8
-   },
-   {
-    "name": "FeRRiZ",
-    "relic": 8
-   },
-   {
     "name": "Grey Jedi29",
     "relic": 8
    },
    {
     "name": "Guardiandevil34",
-    "relic": 8
-   },
-   {
-    "name": "hamuta",
     "relic": 8
    },
    {
@@ -2964,18 +1008,6 @@
     "relic": 8
    },
    {
-    "name": "last of the order",
-    "relic": 8
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 8
-   },
-   {
-    "name": "Lel En Co",
-    "relic": 8
-   },
-   {
     "name": "Medjo Juhin",
     "relic": 8
    },
@@ -2984,19 +1016,15 @@
     "relic": 8
    },
    {
-    "name": "MYTHOSAUR",
-    "relic": 8
-   },
-   {
     "name": "NewLothropLegends",
     "relic": 8
    },
    {
-    "name": "NoleySmokes",
+    "name": "Protews",
     "relic": 8
    },
    {
-    "name": "Protews",
+    "name": "Riah",
     "relic": 8
    },
    {
@@ -3032,10 +1060,6 @@
     "relic": 8
    },
    {
-    "name": "Veskasa Stargazer",
-    "relic": 8
-   },
-   {
     "name": "Viktorion",
     "relic": 8
    },
@@ -3052,255 +1076,23 @@
     "relic": 8
    },
    {
+    "name": "50uLh4ck3r",
+    "relic": 7
+   },
+   {
+    "name": "Fama",
+    "relic": 7
+   },
+   {
     "name": "Hoptownlaw",
     "relic": 7
    },
    {
-    "name": "jediknith",
-    "relic": 7
-   }
-  ],
-  "WICKET": [
-   {
-    "name": "Grey Jedi29",
+    "name": "Xara",
     "relic": 7
    },
    {
-    "name": "NoleySmokes",
-    "relic": 7
-   },
-   {
-    "name": "Riah",
-    "relic": 7
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 7
-   },
-   {
-    "name": "Allnightgamer",
-    "relic": 6
-   },
-   {
-    "name": "Sabum",
-    "relic": 6
-   },
-   {
-    "name": "trod75",
-    "relic": 6
-   }
-  ],
-  "BT1": [
-   {
-    "name": "FeRRiZ",
-    "relic": 8
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 8
-   },
-   {
-    "name": "Guardiandevil34",
-    "relic": 7
-   },
-   {
-    "name": "50uLh4ck3r",
-    "relic": 6
-   },
-   {
-    "name": "DarthIsaB",
-    "relic": 6
-   },
-   {
-    "name": "Riah",
-    "relic": 6
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 6
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 6
-   },
-   {
-    "name": "Yan elriad",
-    "relic": 6
-   }
-  ],
-  "DENGAR": [
-   {
-    "name": "Fama",
-    "relic": 8
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 8
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 8
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 7
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 7
-   },
-   {
-    "name": "Wckdaze",
-    "relic": 7
-   }
-  ],
-  "GRANDMASTERLUKE": [
-   {
-    "name": "Allnightgamer",
-    "relic": 10
-   },
-   {
-    "name": "Guardiandevil34",
-    "relic": 10
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 10
-   },
-   {
-    "name": "50uLh4ck3r",
-    "relic": 9
-   },
-   {
-    "name": "Bem",
-    "relic": 9
-   },
-   {
-    "name": "Canchuck",
-    "relic": 9
-   },
-   {
-    "name": "FeRRiZ",
-    "relic": 9
-   },
-   {
-    "name": "HaterOfSand",
-    "relic": 9
-   },
-   {
-    "name": "hellothere",
-    "relic": 9
-   },
-   {
-    "name": "Hoptownlaw",
-    "relic": 9
-   },
-   {
-    "name": "Jodo Kast",
-    "relic": 9
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 9
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 9
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 9
-   },
-   {
-    "name": "Baserock",
-    "relic": 8
-   },
-   {
-    "name": "Bertz",
-    "relic": 8
-   },
-   {
-    "name": "DarthIsaB",
-    "relic": 8
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 8
-   },
-   {
-    "name": "Fama",
-    "relic": 8
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 8
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 8
-   },
-   {
-    "name": "Wckdaze",
-    "relic": 8
-   },
-   {
-    "name": "Casper Darkmage",
-    "relic": 7
-   },
-   {
-    "name": "CymStar",
-    "relic": 7
-   },
-   {
-    "name": "Hello There",
-    "relic": 7
-   },
-   {
-    "name": "Hoyle2000",
-    "relic": 7
-   },
-   {
-    "name": "Jaso Swift",
-    "relic": 7
-   },
-   {
-    "name": "Lel En Co",
-    "relic": 7
-   },
-   {
-    "name": "NoleySmokes",
-    "relic": 7
-   },
-   {
-    "name": "Riah",
-    "relic": 7
-   },
-   {
-    "name": "Sabum",
-    "relic": 7
-   },
-   {
-    "name": "Swyth",
-    "relic": 7
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 7
-   },
-   {
-    "name": "trod75",
-    "relic": 7
-   },
-   {
-    "name": "Viktorion",
-    "relic": 7
-   },
-   {
-    "name": "Yan elriad",
-    "relic": 7
-   },
-   {
-    "name": "ilmar",
+    "name": "hamuta",
     "relic": 6
    }
   ],
@@ -3434,7 +1226,7 @@
     "relic": 6
    }
   ],
-  "XWINGRED2": [
+  "EBONHAWK": [
    {
     "name": "50uLh4ck3r",
     "stars": 7
@@ -3453,10 +1245,6 @@
    },
    {
     "name": "Bertz",
-    "stars": 7
-   },
-   {
-    "name": "Canchuck",
     "stars": 7
    },
    {
@@ -3496,10 +1284,6 @@
     "stars": 7
    },
    {
-    "name": "HaterOfSand",
-    "stars": 7
-   },
-   {
     "name": "Hello There",
     "stars": 7
    },
@@ -3513,10 +1297,6 @@
    },
    {
     "name": "Hoyle2000",
-    "stars": 7
-   },
-   {
-    "name": "ilmar",
     "stars": 7
    },
    {
@@ -3553,10 +1333,6 @@
    },
    {
     "name": "NoleySmokes",
-    "stars": 7
-   },
-   {
-    "name": "Protews",
     "stars": 7
    },
    {
@@ -3600,10 +1376,6 @@
     "stars": 7
    },
    {
-    "name": "Veskasa Stargazer",
-    "stars": 7
-   },
-   {
     "name": "Viktorion",
     "stars": 7
    },
@@ -3616,29 +1388,13 @@
     "stars": 7
    },
    {
-    "name": "Xara",
-    "stars": 7
-   },
-   {
     "name": "Yan elriad",
     "stars": 7
    }
   ],
-  "SNOWTROOPER": [
+  "KYLEKATARN": [
    {
-    "name": "Elias Lund",
-    "relic": 9
-   },
-   {
-    "name": "warden2025",
-    "relic": 9
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 8
-   },
-   {
-    "name": "TheJobaFett",
+    "name": "Allnightgamer",
     "relic": 8
    },
    {
@@ -3647,32 +1403,16 @@
    },
    {
     "name": "Grey Jedi29",
-    "relic": 6
+    "relic": 7
    },
    {
-    "name": "Jodo Kast",
-    "relic": 6
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 6
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 6
+    "name": "Lazrin Novai",
+    "relic": 7
    }
   ],
-  "HERMITYODA": [
+  "JOLEEBINDO": [
    {
-    "name": "Bem",
-    "relic": 7
-   },
-   {
-    "name": "Canchuck",
-    "relic": 7
-   },
-   {
-    "name": "Fama",
+    "name": "Allnightgamer",
     "relic": 7
    },
    {
@@ -3684,68 +1424,218 @@
     "relic": 7
    },
    {
+    "name": "Hoyle2000",
+    "relic": 7
+   },
+   {
     "name": "Lazrin Novai",
     "relic": 7
    },
    {
-    "name": "CymStar",
-    "relic": 6
-   },
-   {
-    "name": "hamuta",
-    "relic": 6
-   },
-   {
-    "name": "hellothere",
-    "relic": 6
-   },
-   {
     "name": "Medjo Juhin",
-    "relic": 6
-   },
-   {
-    "name": "NoleySmokes",
-    "relic": 6
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 6
-   }
-  ],
-  "JEDIKNIGHTCONSULAR": [
-   {
-    "name": "Allnightgamer",
-    "relic": 8
-   },
-   {
-    "name": "Grey Jedi29",
     "relic": 7
    },
    {
     "name": "Ryanthos",
-    "relic": 6
-   }
-  ],
-  "ZAALBAR": [
-   {
-    "name": "Grey Jedi29",
     "relic": 7
-   },
-   {
-    "name": "Bem",
-    "relic": 6
    },
    {
     "name": "Darthsketti",
     "relic": 6
    },
    {
-    "name": "Hoyle2000",
+    "name": "TheJobaFett",
     "relic": 6
    },
    {
-    "name": "Starkiller117",
+    "name": "UncleSpike823",
     "relic": 6
+   },
+   {
+    "name": "warden2025",
+    "relic": 6
+   },
+   {
+    "name": "Wckdaze",
+    "relic": 6
+   }
+  ],
+  "GENERALKENOBI": [
+   {
+    "name": "Baserock",
+    "relic": 9
+   },
+   {
+    "name": "Bem",
+    "relic": 9
+   },
+   {
+    "name": "Casper Darkmage",
+    "relic": 9
+   },
+   {
+    "name": "CymStar",
+    "relic": 9
+   },
+   {
+    "name": "Darthsketti",
+    "relic": 9
+   },
+   {
+    "name": "Hoyle2000",
+    "relic": 9
+   },
+   {
+    "name": "Jaso Swift",
+    "relic": 9
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 9
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 9
+   },
+   {
+    "name": "Sabum",
+    "relic": 9
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 9
+   },
+   {
+    "name": "Swyth",
+    "relic": 9
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 9
+   },
+   {
+    "name": "trod75",
+    "relic": 9
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 9
+   },
+   {
+    "name": "warden2025",
+    "relic": 9
+   },
+   {
+    "name": "Wckdaze",
+    "relic": 9
+   },
+   {
+    "name": "Yan elriad",
+    "relic": 9
+   },
+   {
+    "name": "Allnightgamer",
+    "relic": 8
+   },
+   {
+    "name": "Bertz",
+    "relic": 8
+   },
+   {
+    "name": "Elias Lund",
+    "relic": 8
+   },
+   {
+    "name": "Fama",
+    "relic": 8
+   },
+   {
+    "name": "FeRRiZ",
+    "relic": 8
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 8
+   },
+   {
+    "name": "Guardiandevil34",
+    "relic": 8
+   },
+   {
+    "name": "hamuta",
+    "relic": 8
+   },
+   {
+    "name": "Hello There",
+    "relic": 8
+   },
+   {
+    "name": "hellothere",
+    "relic": 8
+   },
+   {
+    "name": "Jodo Kast",
+    "relic": 8
+   },
+   {
+    "name": "last of the order",
+    "relic": 8
+   },
+   {
+    "name": "Lel En Co",
+    "relic": 8
+   },
+   {
+    "name": "Moe Lester",
+    "relic": 8
+   },
+   {
+    "name": "MYTHOSAUR",
+    "relic": 8
+   },
+   {
+    "name": "NewLothropLegends",
+    "relic": 8
+   },
+   {
+    "name": "NoleySmokes",
+    "relic": 8
+   },
+   {
+    "name": "Protews",
+    "relic": 8
+   },
+   {
+    "name": "Ryanthos",
+    "relic": 8
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 8
+   },
+   {
+    "name": "Viktorion",
+    "relic": 8
+   },
+   {
+    "name": "50uLh4ck3r",
+    "relic": 7
+   },
+   {
+    "name": "Hoptownlaw",
+    "relic": 7
+   },
+   {
+    "name": "jediknith",
+    "relic": 7
+   },
+   {
+    "name": "Toyotathon Enthusiast",
+    "relic": 7
+   },
+   {
+    "name": "Xara",
+    "relic": 7
    }
   ],
   "REY": [
@@ -3890,6 +1780,56 @@
     "relic": 7
    }
   ],
+  "CAPITALPROFUNDITY": [
+   {
+    "name": "Baserock",
+    "stars": 7
+   },
+   {
+    "name": "Bem",
+    "stars": 7
+   },
+   {
+    "name": "Casper Darkmage",
+    "stars": 7
+   },
+   {
+    "name": "Fama",
+    "stars": 7
+   },
+   {
+    "name": "Grey Jedi29",
+    "stars": 7
+   },
+   {
+    "name": "Lazrin Novai",
+    "stars": 7
+   },
+   {
+    "name": "Medjo Juhin",
+    "stars": 7
+   },
+   {
+    "name": "Swyth",
+    "stars": 7
+   },
+   {
+    "name": "Trash Panda",
+    "stars": 7
+   },
+   {
+    "name": "Guardiandevil34",
+    "stars": 6
+   },
+   {
+    "name": "Viktorion",
+    "stars": 6
+   },
+   {
+    "name": "Yan elriad",
+    "stars": 6
+   }
+  ],
   "BADBATCHECHO": [
    {
     "name": "UncleSpike823",
@@ -3904,41 +1844,9 @@
     "relic": 6
    }
   ],
-  "R2D2_LEGENDARY": [
-   {
-    "name": "50uLh4ck3r",
-    "relic": 8
-   },
-   {
-    "name": "Baserock",
-    "relic": 8
-   },
-   {
-    "name": "Bem",
-    "relic": 8
-   },
-   {
-    "name": "Bertz",
-    "relic": 8
-   },
-   {
-    "name": "Casper Darkmage",
-    "relic": 8
-   },
-   {
-    "name": "CymStar",
-    "relic": 8
-   },
+  "MAULS7": [
    {
     "name": "DarthIsaB",
-    "relic": 8
-   },
-   {
-    "name": "Darthsketti",
-    "relic": 8
-   },
-   {
-    "name": "FeRRiZ",
     "relic": 8
    },
    {
@@ -3946,63 +1854,11 @@
     "relic": 8
    },
    {
-    "name": "hamuta",
+    "name": "Guardiandevil34",
     "relic": 8
    },
    {
-    "name": "Hello There",
-    "relic": 8
-   },
-   {
-    "name": "Hoptownlaw",
-    "relic": 8
-   },
-   {
-    "name": "Hoyle2000",
-    "relic": 8
-   },
-   {
-    "name": "ilmar",
-    "relic": 8
-   },
-   {
-    "name": "Jaso Swift",
-    "relic": 8
-   },
-   {
-    "name": "Jodo Kast",
-    "relic": 8
-   },
-   {
-    "name": "last of the order",
-    "relic": 8
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 8
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 8
-   },
-   {
-    "name": "Moe Lester",
-    "relic": 8
-   },
-   {
-    "name": "NoleySmokes",
-    "relic": 8
-   },
-   {
-    "name": "Riah",
-    "relic": 8
-   },
-   {
-    "name": "Ryanthos",
-    "relic": 8
-   },
-   {
-    "name": "Sabum",
+    "name": "hellothere",
     "relic": 8
    },
    {
@@ -4010,64 +1866,202 @@
     "relic": 8
    },
    {
-    "name": "Swyth",
-    "relic": 8
-   },
-   {
-    "name": "TheJobaFett",
-    "relic": 8
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 8
-   },
-   {
-    "name": "trod75",
-    "relic": 8
-   },
-   {
     "name": "UncleSpike823",
     "relic": 8
    },
    {
-    "name": "Viktorion",
-    "relic": 8
+    "name": "Baserock",
+    "relic": 7
    },
    {
-    "name": "Wckdaze",
-    "relic": 8
+    "name": "Bem",
+    "relic": 7
    },
    {
-    "name": "Yan elriad",
-    "relic": 8
+    "name": "Jodo Kast",
+    "relic": 7
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 7
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 7
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 7
+   },
+   {
+    "name": "trod75",
+    "relic": 7
+   },
+   {
+    "name": "Jaso Swift",
+    "relic": 6
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 6
+   }
+  ],
+  "OUTRIDER": [
+   {
+    "name": "50uLh4ck3r",
+    "stars": 7
    },
    {
     "name": "Allnightgamer",
-    "relic": 7
+    "stars": 7
+   },
+   {
+    "name": "Baserock",
+    "stars": 7
+   },
+   {
+    "name": "Bem",
+    "stars": 7
+   },
+   {
+    "name": "Bertz",
+    "stars": 7
    },
    {
     "name": "Canchuck",
-    "relic": 7
+    "stars": 7
+   },
+   {
+    "name": "Casper Darkmage",
+    "stars": 7
+   },
+   {
+    "name": "CymStar",
+    "stars": 7
+   },
+   {
+    "name": "DarthIsaB",
+    "stars": 7
+   },
+   {
+    "name": "Darthsketti",
+    "stars": 7
+   },
+   {
+    "name": "Elias Lund",
+    "stars": 7
    },
    {
     "name": "Fama",
-    "relic": 7
+    "stars": 7
+   },
+   {
+    "name": "Grey Jedi29",
+    "stars": 7
    },
    {
     "name": "Guardiandevil34",
-    "relic": 7
+    "stars": 7
    },
    {
     "name": "HaterOfSand",
-    "relic": 7
+    "stars": 7
    },
    {
     "name": "hellothere",
-    "relic": 7
+    "stars": 7
    },
    {
-    "name": "Lel En Co",
-    "relic": 7
+    "name": "Hoptownlaw",
+    "stars": 7
+   },
+   {
+    "name": "Hoyle2000",
+    "stars": 7
+   },
+   {
+    "name": "Jaso Swift",
+    "stars": 7
+   },
+   {
+    "name": "Jodo Kast",
+    "stars": 7
+   },
+   {
+    "name": "Lazrin Novai",
+    "stars": 7
+   },
+   {
+    "name": "Medjo Juhin",
+    "stars": 7
+   },
+   {
+    "name": "NoleySmokes",
+    "stars": 7
+   },
+   {
+    "name": "Protews",
+    "stars": 7
+   },
+   {
+    "name": "Riah",
+    "stars": 7
+   },
+   {
+    "name": "Sabum",
+    "stars": 7
+   },
+   {
+    "name": "Starkiller117",
+    "stars": 7
+   },
+   {
+    "name": "Swyth",
+    "stars": 7
+   },
+   {
+    "name": "TheJobaFett",
+    "stars": 7
+   },
+   {
+    "name": "Toyotathon Enthusiast",
+    "stars": 7
+   },
+   {
+    "name": "Trash Panda",
+    "stars": 7
+   },
+   {
+    "name": "trod75",
+    "stars": 7
+   },
+   {
+    "name": "UncleSpike823",
+    "stars": 7
+   },
+   {
+    "name": "Veskasa Stargazer",
+    "stars": 7
+   },
+   {
+    "name": "Viktorion",
+    "stars": 7
+   },
+   {
+    "name": "warden2025",
+    "stars": 7
+   },
+   {
+    "name": "Wckdaze",
+    "stars": 7
+   },
+   {
+    "name": "Xara",
+    "stars": 7
+   },
+   {
+    "name": "Yan elriad",
+    "stars": 7
    }
   ],
   "RAZORCREST": [
@@ -4272,21 +2266,139 @@
     "stars": 6
    }
   ],
-  "CHEWBACCALEGENDARY": [
+  "DENGAR": [
+   {
+    "name": "Fama",
+    "relic": 8
+   },
    {
     "name": "Grey Jedi29",
     "relic": 8
    },
    {
-    "name": "CymStar",
-    "relic": 7
+    "name": "Medjo Juhin",
+    "relic": 8
    },
    {
     "name": "Darthsketti",
     "relic": 7
    },
    {
+    "name": "Lazrin Novai",
+    "relic": 7
+   },
+   {
+    "name": "Wckdaze",
+    "relic": 7
+   }
+  ],
+  "GRANDMASTERLUKE": [
+   {
+    "name": "Allnightgamer",
+    "relic": 10
+   },
+   {
+    "name": "Guardiandevil34",
+    "relic": 10
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 10
+   },
+   {
+    "name": "50uLh4ck3r",
+    "relic": 9
+   },
+   {
+    "name": "Bem",
+    "relic": 9
+   },
+   {
+    "name": "Canchuck",
+    "relic": 9
+   },
+   {
+    "name": "FeRRiZ",
+    "relic": 9
+   },
+   {
+    "name": "HaterOfSand",
+    "relic": 9
+   },
+   {
+    "name": "hellothere",
+    "relic": 9
+   },
+   {
+    "name": "Hoptownlaw",
+    "relic": 9
+   },
+   {
     "name": "Jodo Kast",
+    "relic": 9
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 9
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 9
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 9
+   },
+   {
+    "name": "Baserock",
+    "relic": 8
+   },
+   {
+    "name": "Bertz",
+    "relic": 8
+   },
+   {
+    "name": "DarthIsaB",
+    "relic": 8
+   },
+   {
+    "name": "Darthsketti",
+    "relic": 8
+   },
+   {
+    "name": "Fama",
+    "relic": 8
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 8
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 8
+   },
+   {
+    "name": "Wckdaze",
+    "relic": 8
+   },
+   {
+    "name": "Casper Darkmage",
+    "relic": 7
+   },
+   {
+    "name": "CymStar",
+    "relic": 7
+   },
+   {
+    "name": "Hello There",
+    "relic": 7
+   },
+   {
+    "name": "Hoyle2000",
+    "relic": 7
+   },
+   {
+    "name": "Jaso Swift",
     "relic": 7
    },
    {
@@ -4298,7 +2410,27 @@
     "relic": 7
    },
    {
-    "name": "TheJobaFett",
+    "name": "Riah",
+    "relic": 7
+   },
+   {
+    "name": "Sabum",
+    "relic": 7
+   },
+   {
+    "name": "Swyth",
+    "relic": 7
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 7
+   },
+   {
+    "name": "trod75",
+    "relic": 7
+   },
+   {
+    "name": "Viktorion",
     "relic": 7
    },
    {
@@ -4306,131 +2438,37 @@
     "relic": 7
    },
    {
-    "name": "50uLh4ck3r",
+    "name": "ilmar",
     "relic": 6
-   },
+   }
+  ],
+  "KIADIMUNDI": [
    {
-    "name": "Allnightgamer",
-    "relic": 6
-   },
-   {
-    "name": "Baserock",
-    "relic": 6
-   },
-   {
-    "name": "Bem",
-    "relic": 6
+    "name": "Trash Panda",
+    "relic": 8
    },
    {
     "name": "Bertz",
-    "relic": 6
-   },
-   {
-    "name": "Canchuck",
-    "relic": 6
-   },
-   {
-    "name": "Casper Darkmage",
-    "relic": 6
-   },
-   {
-    "name": "DarthIsaB",
-    "relic": 6
+    "relic": 7
    },
    {
     "name": "Fama",
-    "relic": 6
+    "relic": 7
    },
    {
-    "name": "FeRRiZ",
-    "relic": 6
+    "name": "Grey Jedi29",
+    "relic": 7
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 7
    },
    {
     "name": "Guardiandevil34",
     "relic": 6
-   },
-   {
-    "name": "HaterOfSand",
-    "relic": 6
-   },
-   {
-    "name": "Hello There",
-    "relic": 6
-   },
-   {
-    "name": "hellothere",
-    "relic": 6
-   },
-   {
-    "name": "Hoptownlaw",
-    "relic": 6
-   },
-   {
-    "name": "Hoyle2000",
-    "relic": 6
-   },
-   {
-    "name": "ilmar",
-    "relic": 6
-   },
-   {
-    "name": "Jaso Swift",
-    "relic": 6
-   },
-   {
-    "name": "last of the order",
-    "relic": 6
-   },
-   {
-    "name": "Lazrin Novai",
-    "relic": 6
-   },
-   {
-    "name": "Medjo Juhin",
-    "relic": 6
-   },
-   {
-    "name": "Riah",
-    "relic": 6
-   },
-   {
-    "name": "Ryanthos",
-    "relic": 6
-   },
-   {
-    "name": "Sabum",
-    "relic": 6
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 6
-   },
-   {
-    "name": "Swyth",
-    "relic": 6
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 6
-   },
-   {
-    "name": "trod75",
-    "relic": 6
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 6
-   },
-   {
-    "name": "Viktorion",
-    "relic": 6
-   },
-   {
-    "name": "Wckdaze",
-    "relic": 6
    }
   ],
-  "YWINGREBEL": [
+  "XANADUBLOOD": [
    {
     "name": "50uLh4ck3r",
     "stars": 7
@@ -4472,6 +2510,10 @@
     "stars": 7
    },
    {
+    "name": "Elias Lund",
+    "stars": 7
+   },
+   {
     "name": "Fama",
     "stars": 7
    },
@@ -4488,6 +2530,10 @@
     "stars": 7
    },
    {
+    "name": "HaterOfSand",
+    "stars": 7
+   },
+   {
     "name": "Hello There",
     "stars": 7
    },
@@ -4497,6 +2543,10 @@
    },
    {
     "name": "Hoptownlaw",
+    "stars": 7
+   },
+   {
+    "name": "Hoyle2000",
     "stars": 7
    },
    {
@@ -4525,6 +2575,10 @@
    },
    {
     "name": "Medjo Juhin",
+    "stars": 7
+   },
+   {
+    "name": "Moe Lester",
     "stars": 7
    },
    {
@@ -4533,6 +2587,10 @@
    },
    {
     "name": "NoleySmokes",
+    "stars": 7
+   },
+   {
+    "name": "Protews",
     "stars": 7
    },
    {
@@ -4580,6 +2638,10 @@
     "stars": 7
    },
    {
+    "name": "warden2025",
+    "stars": 7
+   },
+   {
     "name": "Wckdaze",
     "stars": 7
    },
@@ -4590,71 +2652,35 @@
    {
     "name": "Yan elriad",
     "stars": 7
-   },
-   {
-    "name": "HaterOfSand",
-    "stars": 6
-   },
-   {
-    "name": "Hoyle2000",
-    "stars": 6
    }
   ],
-  "COMMANDERAHSOKA": [
-   {
-    "name": "Bertz",
-    "relic": 9
-   },
-   {
-    "name": "Casper Darkmage",
-    "relic": 9
-   },
+  "JEDIMASTERKENOBI": [
    {
     "name": "CymStar",
-    "relic": 9
+    "relic": 10
    },
    {
-    "name": "DarthIsaB",
-    "relic": 9
+    "name": "Guardiandevil34",
+    "relic": 10
+   },
+   {
+    "name": "Viktorion",
+    "relic": 10
    },
    {
     "name": "Darthsketti",
     "relic": 9
    },
    {
-    "name": "Elias Lund",
+    "name": "Fama",
     "relic": 9
    },
    {
-    "name": "FeRRiZ",
-    "relic": 9
-   },
-   {
-    "name": "Grey Jedi29",
-    "relic": 9
-   },
-   {
-    "name": "Guardiandevil34",
-    "relic": 9
-   },
-   {
-    "name": "Hoyle2000",
-    "relic": 9
-   },
-   {
-    "name": "Jaso Swift",
-    "relic": 9
-   },
-   {
-    "name": "Jodo Kast",
+    "name": "hellothere",
     "relic": 9
    },
    {
     "name": "Medjo Juhin",
-    "relic": 9
-   },
-   {
-    "name": "NewLothropLegends",
     "relic": 9
    },
    {
@@ -4662,63 +2688,141 @@
     "relic": 9
    },
    {
-    "name": "Riah",
-    "relic": 9
-   },
-   {
-    "name": "Starkiller117",
-    "relic": 9
-   },
-   {
-    "name": "Swyth",
-    "relic": 9
-   },
-   {
-    "name": "Toyotathon Enthusiast",
-    "relic": 9
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 9
-   },
-   {
-    "name": "trod75",
-    "relic": 9
-   },
-   {
-    "name": "UncleSpike823",
-    "relic": 9
-   },
-   {
-    "name": "warden2025",
-    "relic": 9
-   },
-   {
-    "name": "Wckdaze",
-    "relic": 9
-   },
-   {
     "name": "Yan elriad",
     "relic": 9
    },
    {
-    "name": "Fama",
-    "relic": 8
-   },
-   {
-    "name": "hamuta",
-    "relic": 8
-   },
-   {
     "name": "Allnightgamer",
-    "relic": 7
+    "relic": 8
+   },
+   {
+    "name": "Baserock",
+    "relic": 8
+   },
+   {
+    "name": "Bem",
+    "relic": 8
+   },
+   {
+    "name": "Bertz",
+    "relic": 8
+   },
+   {
+    "name": "Casper Darkmage",
+    "relic": 8
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 8
    },
    {
     "name": "Hello There",
+    "relic": 8
+   },
+   {
+    "name": "Hoyle2000",
+    "relic": 8
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 8
+   },
+   {
+    "name": "Moe Lester",
+    "relic": 8
+   },
+   {
+    "name": "Sabum",
+    "relic": 8
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 8
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 8
+   },
+   {
+    "name": "trod75",
+    "relic": 8
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 8
+   },
+   {
+    "name": "Wckdaze",
+    "relic": 8
+   },
+   {
+    "name": "Elias Lund",
     "relic": 7
    },
    {
-    "name": "hellothere",
+    "name": "hamuta",
+    "relic": 7
+   },
+   {
+    "name": "Jaso Swift",
+    "relic": 7
+   },
+   {
+    "name": "Jodo Kast",
+    "relic": 7
+   },
+   {
+    "name": "MYTHOSAUR",
+    "relic": 7
+   },
+   {
+    "name": "NewLothropLegends",
+    "relic": 7
+   },
+   {
+    "name": "Ryanthos",
+    "relic": 7
+   },
+   {
+    "name": "Swyth",
+    "relic": 7
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 7
+   },
+   {
+    "name": "warden2025",
+    "relic": 6
+   }
+  ],
+  "SMUGGLERCHEWBACCA": [
+   {
+    "name": "Trash Panda",
+    "relic": 8
+   },
+   {
+    "name": "Baserock",
+    "relic": 7
+   },
+   {
+    "name": "Bem",
+    "relic": 7
+   },
+   {
+    "name": "Casper Darkmage",
+    "relic": 7
+   },
+   {
+    "name": "Darthsketti",
+    "relic": 7
+   },
+   {
+    "name": "Hoyle2000",
+    "relic": 7
+   },
+   {
+    "name": "Jaso Swift",
     "relic": 7
    },
    {
@@ -4726,28 +2830,374 @@
     "relic": 7
    },
    {
-    "name": "TheJobaFett",
+    "name": "Medjo Juhin",
     "relic": 7
    },
    {
-    "name": "Viktorion",
+    "name": "Sabum",
     "relic": 7
    },
    {
-    "name": "Xara",
+    "name": "Swyth",
     "relic": 7
    },
    {
-    "name": "Baserock",
-    "relic": 6
+    "name": "trod75",
+    "relic": 7
    },
    {
-    "name": "Bem",
+    "name": "UncleSpike823",
+    "relic": 7
+   },
+   {
+    "name": "warden2025",
+    "relic": 7
+   },
+   {
+    "name": "Wckdaze",
+    "relic": 7
+   },
+   {
+    "name": "Yan elriad",
+    "relic": 7
+   }
+  ],
+  "WICKET": [
+   {
+    "name": "Grey Jedi29",
+    "relic": 7
+   },
+   {
+    "name": "NoleySmokes",
+    "relic": 7
+   },
+   {
+    "name": "Riah",
+    "relic": 7
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 7
+   },
+   {
+    "name": "Allnightgamer",
     "relic": 6
    },
    {
     "name": "Sabum",
     "relic": 6
+   },
+   {
+    "name": "trod75",
+    "relic": 6
+   }
+  ],
+  "RAVENSCLAW": [
+   {
+    "name": "50uLh4ck3r",
+    "stars": 7
+   },
+   {
+    "name": "Allnightgamer",
+    "stars": 7
+   },
+   {
+    "name": "Baserock",
+    "stars": 7
+   },
+   {
+    "name": "Bem",
+    "stars": 7
+   },
+   {
+    "name": "Bertz",
+    "stars": 7
+   },
+   {
+    "name": "Casper Darkmage",
+    "stars": 7
+   },
+   {
+    "name": "CymStar",
+    "stars": 7
+   },
+   {
+    "name": "DarthIsaB",
+    "stars": 7
+   },
+   {
+    "name": "Darthsketti",
+    "stars": 7
+   },
+   {
+    "name": "Fama",
+    "stars": 7
+   },
+   {
+    "name": "FeRRiZ",
+    "stars": 7
+   },
+   {
+    "name": "Grey Jedi29",
+    "stars": 7
+   },
+   {
+    "name": "hellothere",
+    "stars": 7
+   },
+   {
+    "name": "Hoptownlaw",
+    "stars": 7
+   },
+   {
+    "name": "Jaso Swift",
+    "stars": 7
+   },
+   {
+    "name": "Jodo Kast",
+    "stars": 7
+   },
+   {
+    "name": "Lazrin Novai",
+    "stars": 7
+   },
+   {
+    "name": "Medjo Juhin",
+    "stars": 7
+   },
+   {
+    "name": "NoleySmokes",
+    "stars": 7
+   },
+   {
+    "name": "Sabum",
+    "stars": 7
+   },
+   {
+    "name": "Starkiller117",
+    "stars": 7
+   },
+   {
+    "name": "Swyth",
+    "stars": 7
+   },
+   {
+    "name": "trod75",
+    "stars": 7
+   },
+   {
+    "name": "UncleSpike823",
+    "stars": 7
+   },
+   {
+    "name": "Viktorion",
+    "stars": 7
+   },
+   {
+    "name": "Wckdaze",
+    "stars": 7
+   },
+   {
+    "name": "Xara",
+    "stars": 7
+   },
+   {
+    "name": "Yan elriad",
+    "stars": 7
+   },
+   {
+    "name": "Guardiandevil34",
+    "stars": 6
+   }
+  ],
+  "BLADEOFDORIN": [
+   {
+    "name": "50uLh4ck3r",
+    "stars": 7
+   },
+   {
+    "name": "Allnightgamer",
+    "stars": 7
+   },
+   {
+    "name": "Baserock",
+    "stars": 7
+   },
+   {
+    "name": "Bem",
+    "stars": 7
+   },
+   {
+    "name": "Bertz",
+    "stars": 7
+   },
+   {
+    "name": "Canchuck",
+    "stars": 7
+   },
+   {
+    "name": "Casper Darkmage",
+    "stars": 7
+   },
+   {
+    "name": "CymStar",
+    "stars": 7
+   },
+   {
+    "name": "DarthIsaB",
+    "stars": 7
+   },
+   {
+    "name": "Darthsketti",
+    "stars": 7
+   },
+   {
+    "name": "Elias Lund",
+    "stars": 7
+   },
+   {
+    "name": "Fama",
+    "stars": 7
+   },
+   {
+    "name": "FeRRiZ",
+    "stars": 7
+   },
+   {
+    "name": "Grey Jedi29",
+    "stars": 7
+   },
+   {
+    "name": "Guardiandevil34",
+    "stars": 7
+   },
+   {
+    "name": "Hello There",
+    "stars": 7
+   },
+   {
+    "name": "hellothere",
+    "stars": 7
+   },
+   {
+    "name": "Hoptownlaw",
+    "stars": 7
+   },
+   {
+    "name": "Hoyle2000",
+    "stars": 7
+   },
+   {
+    "name": "ilmar",
+    "stars": 7
+   },
+   {
+    "name": "Jaso Swift",
+    "stars": 7
+   },
+   {
+    "name": "Jodo Kast",
+    "stars": 7
+   },
+   {
+    "name": "last of the order",
+    "stars": 7
+   },
+   {
+    "name": "Lazrin Novai",
+    "stars": 7
+   },
+   {
+    "name": "Lel En Co",
+    "stars": 7
+   },
+   {
+    "name": "Medjo Juhin",
+    "stars": 7
+   },
+   {
+    "name": "Moe Lester",
+    "stars": 7
+   },
+   {
+    "name": "NewLothropLegends",
+    "stars": 7
+   },
+   {
+    "name": "NoleySmokes",
+    "stars": 7
+   },
+   {
+    "name": "Protews",
+    "stars": 7
+   },
+   {
+    "name": "Riah",
+    "stars": 7
+   },
+   {
+    "name": "Ryanthos",
+    "stars": 7
+   },
+   {
+    "name": "Sabum",
+    "stars": 7
+   },
+   {
+    "name": "Starkiller117",
+    "stars": 7
+   },
+   {
+    "name": "Swyth",
+    "stars": 7
+   },
+   {
+    "name": "TheJobaFett",
+    "stars": 7
+   },
+   {
+    "name": "Toyotathon Enthusiast",
+    "stars": 7
+   },
+   {
+    "name": "Trash Panda",
+    "stars": 7
+   },
+   {
+    "name": "trod75",
+    "stars": 7
+   },
+   {
+    "name": "UncleSpike823",
+    "stars": 7
+   },
+   {
+    "name": "Veskasa Stargazer",
+    "stars": 7
+   },
+   {
+    "name": "Viktorion",
+    "stars": 7
+   },
+   {
+    "name": "warden2025",
+    "stars": 7
+   },
+   {
+    "name": "Wckdaze",
+    "stars": 7
+   },
+   {
+    "name": "Xara",
+    "stars": 7
+   },
+   {
+    "name": "Yan elriad",
+    "stars": 7
+   },
+   {
+    "name": "hamuta",
+    "stars": 6
    }
   ],
   "GHOST": [
@@ -4944,42 +3394,1200 @@
     "stars": 6
    }
   ],
-  "JEDIMASTERKENOBI": [
+  "THEMANDALORIANBESKARARMOR": [
    {
-    "name": "CymStar",
+    "name": "Swyth",
     "relic": 10
    },
    {
-    "name": "Guardiandevil34",
-    "relic": 10
+    "name": "Casper Darkmage",
+    "relic": 9
    },
    {
-    "name": "Viktorion",
-    "relic": 10
+    "name": "MYTHOSAUR",
+    "relic": 9
+   },
+   {
+    "name": "Wckdaze",
+    "relic": 9
+   },
+   {
+    "name": "Bertz",
+    "relic": 8
    },
    {
     "name": "Darthsketti",
-    "relic": 9
+    "relic": 8
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 8
+   },
+   {
+    "name": "Hoyle2000",
+    "relic": 8
+   },
+   {
+    "name": "Jaso Swift",
+    "relic": 8
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 8
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 8
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 8
+   },
+   {
+    "name": "Bem",
+    "relic": 7
+   },
+   {
+    "name": "Canchuck",
+    "relic": 7
+   },
+   {
+    "name": "CymStar",
+    "relic": 7
+   },
+   {
+    "name": "DarthIsaB",
+    "relic": 7
    },
    {
     "name": "Fama",
+    "relic": 7
+   },
+   {
+    "name": "Guardiandevil34",
+    "relic": 7
+   },
+   {
+    "name": "HaterOfSand",
+    "relic": 7
+   },
+   {
+    "name": "Hoptownlaw",
+    "relic": 7
+   },
+   {
+    "name": "Jodo Kast",
+    "relic": 7
+   },
+   {
+    "name": "Moe Lester",
+    "relic": 7
+   },
+   {
+    "name": "Protews",
+    "relic": 7
+   },
+   {
+    "name": "Riah",
+    "relic": 7
+   },
+   {
+    "name": "Sabum",
+    "relic": 7
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 7
+   },
+   {
+    "name": "trod75",
+    "relic": 7
+   },
+   {
+    "name": "Viktorion",
+    "relic": 7
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 6
+   }
+  ],
+  "FINN": [
+   {
+    "name": "Wckdaze",
+    "relic": 8
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 7
+   },
+   {
+    "name": "warden2025",
+    "relic": 6
+   }
+  ],
+  "SANASTARROS": [
+   {
+    "name": "Darthsketti",
+    "relic": 7
+   },
+   {
+    "name": "50uLh4ck3r",
+    "relic": 6
+   },
+   {
+    "name": "Bem",
+    "relic": 6
+   },
+   {
+    "name": "Bertz",
+    "relic": 6
+   },
+   {
+    "name": "CymStar",
+    "relic": 6
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 6
+   },
+   {
+    "name": "Riah",
+    "relic": 6
+   },
+   {
+    "name": "Ryanthos",
+    "relic": 6
+   },
+   {
+    "name": "Swyth",
+    "relic": 6
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 6
+   },
+   {
+    "name": "Wckdaze",
+    "relic": 6
+   }
+  ],
+  "AAYLASECURA": [
+   {
+    "name": "Bertz",
+    "relic": 6
+   },
+   {
+    "name": "DarthIsaB",
+    "relic": 6
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 6
+   },
+   {
+    "name": "NoleySmokes",
+    "relic": 6
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 6
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 6
+   }
+  ],
+  "LOGRAY": [
+   {
+    "name": "Guardiandevil34",
     "relic": 9
    },
    {
-    "name": "hellothere",
-    "relic": 9
+    "name": "Darthsketti",
+    "relic": 7
    },
+   {
+    "name": "NoleySmokes",
+    "relic": 7
+   },
+   {
+    "name": "Riah",
+    "relic": 7
+   },
+   {
+    "name": "Sabum",
+    "relic": 7
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 7
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 7
+   }
+  ],
+  "BT1": [
+   {
+    "name": "FeRRiZ",
+    "relic": 8
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 8
+   },
+   {
+    "name": "Guardiandevil34",
+    "relic": 7
+   },
+   {
+    "name": "50uLh4ck3r",
+    "relic": 6
+   },
+   {
+    "name": "DarthIsaB",
+    "relic": 6
+   },
+   {
+    "name": "Riah",
+    "relic": 6
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 6
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 6
+   },
+   {
+    "name": "Yan elriad",
+    "relic": 6
+   }
+  ],
+  "HOTHLEIA": [
+   {
+    "name": "Bem",
+    "relic": 7
+   },
+   {
+    "name": "Bertz",
+    "relic": 7
+   },
+   {
+    "name": "Casper Darkmage",
+    "relic": 7
+   },
+   {
+    "name": "Guardiandevil34",
+    "relic": 7
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 7
+   },
+   {
+    "name": "Sabum",
+    "relic": 7
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 7
+   },
+   {
+    "name": "50uLh4ck3r",
+    "relic": 6
+   },
+   {
+    "name": "CymStar",
+    "relic": 6
+   },
+   {
+    "name": "Fama",
+    "relic": 6
+   },
+   {
+    "name": "FeRRiZ",
+    "relic": 6
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 6
+   },
+   {
+    "name": "Jaso Swift",
+    "relic": 6
+   },
+   {
+    "name": "last of the order",
+    "relic": 6
+   },
+   {
+    "name": "Ryanthos",
+    "relic": 6
+   },
+   {
+    "name": "Xara",
+    "relic": 6
+   }
+  ],
+  "HERMITYODA": [
+   {
+    "name": "Bem",
+    "relic": 7
+   },
+   {
+    "name": "Canchuck",
+    "relic": 7
+   },
+   {
+    "name": "Fama",
+    "relic": 7
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 7
+   },
+   {
+    "name": "Hoptownlaw",
+    "relic": 7
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 7
+   },
+   {
+    "name": "CymStar",
+    "relic": 6
+   },
+   {
+    "name": "hamuta",
+    "relic": 6
+   },
+   {
+    "name": "hellothere",
+    "relic": 6
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 6
+   },
+   {
+    "name": "NoleySmokes",
+    "relic": 6
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 6
+   }
+  ],
+  "SCARIFREBEL": [
+   {
+    "name": "UncleSpike823",
+    "relic": 6
+   }
+  ],
+  "BENSOLO": [
    {
     "name": "Medjo Juhin",
     "relic": 9
    },
    {
-    "name": "Protews",
-    "relic": 9
+    "name": "Bertz",
+    "relic": 8
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 8
+   },
+   {
+    "name": "Guardiandevil34",
+    "relic": 8
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 8
+   },
+   {
+    "name": "Lel En Co",
+    "relic": 8
+   },
+   {
+    "name": "Casper Darkmage",
+    "relic": 7
+   },
+   {
+    "name": "CymStar",
+    "relic": 7
+   },
+   {
+    "name": "Darthsketti",
+    "relic": 7
+   },
+   {
+    "name": "hellothere",
+    "relic": 7
+   },
+   {
+    "name": "Jodo Kast",
+    "relic": 7
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 7
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 7
+   },
+   {
+    "name": "Viktorion",
+    "relic": 7
+   },
+   {
+    "name": "Bem",
+    "relic": 6
+   },
+   {
+    "name": "Fama",
+    "relic": 6
+   },
+   {
+    "name": "Jaso Swift",
+    "relic": 6
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 6
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 6
+   }
+  ],
+  "YWINGREBEL": [
+   {
+    "name": "50uLh4ck3r",
+    "stars": 7
+   },
+   {
+    "name": "Allnightgamer",
+    "stars": 7
+   },
+   {
+    "name": "Baserock",
+    "stars": 7
+   },
+   {
+    "name": "Bem",
+    "stars": 7
+   },
+   {
+    "name": "Bertz",
+    "stars": 7
+   },
+   {
+    "name": "Canchuck",
+    "stars": 7
+   },
+   {
+    "name": "Casper Darkmage",
+    "stars": 7
+   },
+   {
+    "name": "CymStar",
+    "stars": 7
+   },
+   {
+    "name": "DarthIsaB",
+    "stars": 7
+   },
+   {
+    "name": "Darthsketti",
+    "stars": 7
+   },
+   {
+    "name": "Fama",
+    "stars": 7
+   },
+   {
+    "name": "FeRRiZ",
+    "stars": 7
+   },
+   {
+    "name": "Grey Jedi29",
+    "stars": 7
+   },
+   {
+    "name": "Guardiandevil34",
+    "stars": 7
+   },
+   {
+    "name": "Hello There",
+    "stars": 7
+   },
+   {
+    "name": "hellothere",
+    "stars": 7
+   },
+   {
+    "name": "Hoptownlaw",
+    "stars": 7
+   },
+   {
+    "name": "ilmar",
+    "stars": 7
+   },
+   {
+    "name": "Jaso Swift",
+    "stars": 7
+   },
+   {
+    "name": "Jodo Kast",
+    "stars": 7
+   },
+   {
+    "name": "last of the order",
+    "stars": 7
+   },
+   {
+    "name": "Lazrin Novai",
+    "stars": 7
+   },
+   {
+    "name": "Lel En Co",
+    "stars": 7
+   },
+   {
+    "name": "Medjo Juhin",
+    "stars": 7
+   },
+   {
+    "name": "NewLothropLegends",
+    "stars": 7
+   },
+   {
+    "name": "NoleySmokes",
+    "stars": 7
+   },
+   {
+    "name": "Riah",
+    "stars": 7
+   },
+   {
+    "name": "Ryanthos",
+    "stars": 7
+   },
+   {
+    "name": "Sabum",
+    "stars": 7
+   },
+   {
+    "name": "Starkiller117",
+    "stars": 7
+   },
+   {
+    "name": "Swyth",
+    "stars": 7
+   },
+   {
+    "name": "TheJobaFett",
+    "stars": 7
+   },
+   {
+    "name": "Toyotathon Enthusiast",
+    "stars": 7
+   },
+   {
+    "name": "Trash Panda",
+    "stars": 7
+   },
+   {
+    "name": "trod75",
+    "stars": 7
+   },
+   {
+    "name": "UncleSpike823",
+    "stars": 7
+   },
+   {
+    "name": "Viktorion",
+    "stars": 7
+   },
+   {
+    "name": "Wckdaze",
+    "stars": 7
+   },
+   {
+    "name": "Xara",
+    "stars": 7
    },
    {
     "name": "Yan elriad",
+    "stars": 7
+   },
+   {
+    "name": "HaterOfSand",
+    "stars": 6
+   },
+   {
+    "name": "Hoyle2000",
+    "stars": 6
+   }
+  ],
+  "R2D2_LEGENDARY": [
+   {
+    "name": "50uLh4ck3r",
+    "relic": 8
+   },
+   {
+    "name": "Baserock",
+    "relic": 8
+   },
+   {
+    "name": "Bem",
+    "relic": 8
+   },
+   {
+    "name": "Bertz",
+    "relic": 8
+   },
+   {
+    "name": "Casper Darkmage",
+    "relic": 8
+   },
+   {
+    "name": "CymStar",
+    "relic": 8
+   },
+   {
+    "name": "DarthIsaB",
+    "relic": 8
+   },
+   {
+    "name": "Darthsketti",
+    "relic": 8
+   },
+   {
+    "name": "FeRRiZ",
+    "relic": 8
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 8
+   },
+   {
+    "name": "hamuta",
+    "relic": 8
+   },
+   {
+    "name": "Hello There",
+    "relic": 8
+   },
+   {
+    "name": "Hoptownlaw",
+    "relic": 8
+   },
+   {
+    "name": "Hoyle2000",
+    "relic": 8
+   },
+   {
+    "name": "ilmar",
+    "relic": 8
+   },
+   {
+    "name": "Jaso Swift",
+    "relic": 8
+   },
+   {
+    "name": "Jodo Kast",
+    "relic": 8
+   },
+   {
+    "name": "last of the order",
+    "relic": 8
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 8
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 8
+   },
+   {
+    "name": "Moe Lester",
+    "relic": 8
+   },
+   {
+    "name": "NoleySmokes",
+    "relic": 8
+   },
+   {
+    "name": "Riah",
+    "relic": 8
+   },
+   {
+    "name": "Ryanthos",
+    "relic": 8
+   },
+   {
+    "name": "Sabum",
+    "relic": 8
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 8
+   },
+   {
+    "name": "Swyth",
+    "relic": 8
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 8
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 8
+   },
+   {
+    "name": "trod75",
+    "relic": 8
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 8
+   },
+   {
+    "name": "Viktorion",
+    "relic": 8
+   },
+   {
+    "name": "Wckdaze",
+    "relic": 8
+   },
+   {
+    "name": "Yan elriad",
+    "relic": 8
+   },
+   {
+    "name": "Allnightgamer",
+    "relic": 7
+   },
+   {
+    "name": "Canchuck",
+    "relic": 7
+   },
+   {
+    "name": "Fama",
+    "relic": 7
+   },
+   {
+    "name": "Guardiandevil34",
+    "relic": 7
+   },
+   {
+    "name": "HaterOfSand",
+    "relic": 7
+   },
+   {
+    "name": "hellothere",
+    "relic": 7
+   },
+   {
+    "name": "Lel En Co",
+    "relic": 7
+   }
+  ],
+  "JEDIKNIGHTREVAN": [
+   {
+    "name": "Medjo Juhin",
     "relic": 9
+   },
+   {
+    "name": "MYTHOSAUR",
+    "relic": 9
+   },
+   {
+    "name": "Allnightgamer",
+    "relic": 8
+   },
+   {
+    "name": "Darthsketti",
+    "relic": 8
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 8
+   },
+   {
+    "name": "50uLh4ck3r",
+    "relic": 7
+   },
+   {
+    "name": "Canchuck",
+    "relic": 7
+   },
+   {
+    "name": "Casper Darkmage",
+    "relic": 7
+   },
+   {
+    "name": "CymStar",
+    "relic": 7
+   },
+   {
+    "name": "Guardiandevil34",
+    "relic": 7
+   },
+   {
+    "name": "Hello There",
+    "relic": 7
+   },
+   {
+    "name": "hellothere",
+    "relic": 7
+   },
+   {
+    "name": "Hoptownlaw",
+    "relic": 7
+   },
+   {
+    "name": "Hoyle2000",
+    "relic": 7
+   },
+   {
+    "name": "Jodo Kast",
+    "relic": 7
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 7
+   },
+   {
+    "name": "Lel En Co",
+    "relic": 7
+   },
+   {
+    "name": "Ryanthos",
+    "relic": 7
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 7
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 7
+   },
+   {
+    "name": "Bem",
+    "relic": 6
+   },
+   {
+    "name": "Jaso Swift",
+    "relic": 6
+   },
+   {
+    "name": "jediknith",
+    "relic": 6
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 6
+   }
+  ],
+  "NIGHTSISTERZOMBIE": [
+   {
+    "name": "TheJobaFett",
+    "relic": 8
+   },
+   {
+    "name": "Canchuck",
+    "relic": 7
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 7
+   },
+   {
+    "name": "Bem",
+    "relic": 6
+   },
+   {
+    "name": "Sabum",
+    "relic": 6
+   }
+  ],
+  "HANSOLO": [
+   {
+    "name": "50uLh4ck3r",
+    "relic": 8
+   },
+   {
+    "name": "Baserock",
+    "relic": 8
+   },
+   {
+    "name": "Bem",
+    "relic": 8
+   },
+   {
+    "name": "Bertz",
+    "relic": 8
+   },
+   {
+    "name": "Canchuck",
+    "relic": 8
+   },
+   {
+    "name": "Casper Darkmage",
+    "relic": 8
+   },
+   {
+    "name": "CymStar",
+    "relic": 8
+   },
+   {
+    "name": "DarthIsaB",
+    "relic": 8
+   },
+   {
+    "name": "Darthsketti",
+    "relic": 8
+   },
+   {
+    "name": "Elias Lund",
+    "relic": 8
+   },
+   {
+    "name": "Fama",
+    "relic": 8
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 8
+   },
+   {
+    "name": "Guardiandevil34",
+    "relic": 8
+   },
+   {
+    "name": "HaterOfSand",
+    "relic": 8
+   },
+   {
+    "name": "Hoptownlaw",
+    "relic": 8
+   },
+   {
+    "name": "Hoyle2000",
+    "relic": 8
+   },
+   {
+    "name": "Jaso Swift",
+    "relic": 8
+   },
+   {
+    "name": "Jodo Kast",
+    "relic": 8
+   },
+   {
+    "name": "Lel En Co",
+    "relic": 8
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 8
+   },
+   {
+    "name": "NoleySmokes",
+    "relic": 8
+   },
+   {
+    "name": "Sabum",
+    "relic": 8
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 8
+   },
+   {
+    "name": "Swyth",
+    "relic": 8
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 8
+   },
+   {
+    "name": "Toyotathon Enthusiast",
+    "relic": 8
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 8
+   },
+   {
+    "name": "trod75",
+    "relic": 8
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 8
+   },
+   {
+    "name": "Viktorion",
+    "relic": 8
+   },
+   {
+    "name": "warden2025",
+    "relic": 8
+   },
+   {
+    "name": "Wckdaze",
+    "relic": 8
+   },
+   {
+    "name": "Yan elriad",
+    "relic": 8
+   },
+   {
+    "name": "FeRRiZ",
+    "relic": 7
+   },
+   {
+    "name": "Allnightgamer",
+    "relic": 6
+   },
+   {
+    "name": "Hello There",
+    "relic": 6
+   },
+   {
+    "name": "hellothere",
+    "relic": 6
+   },
+   {
+    "name": "ilmar",
+    "relic": 6
+   },
+   {
+    "name": "last of the order",
+    "relic": 6
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 6
+   },
+   {
+    "name": "Riah",
+    "relic": 6
+   },
+   {
+    "name": "Ryanthos",
+    "relic": 6
+   }
+  ],
+  "BISTAN": [
+   {
+    "name": "Yan elriad",
+    "relic": 8
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 7
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 6
+   }
+  ],
+  "STARKILLER": [
+   {
+    "name": "hellothere",
+    "relic": 9
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 9
+   },
+   {
+    "name": "Allnightgamer",
+    "relic": 8
+   },
+   {
+    "name": "Bem",
+    "relic": 8
+   },
+   {
+    "name": "Bertz",
+    "relic": 8
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 8
+   },
+   {
+    "name": "Guardiandevil34",
+    "relic": 8
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 8
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 8
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 8
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 8
+   },
+   {
+    "name": "Xara",
+    "relic": 8
+   },
+   {
+    "name": "Veskasa Stargazer",
+    "relic": 7
+   },
+   {
+    "name": "DarthIsaB",
+    "relic": 6
+   },
+   {
+    "name": "Darthsketti",
+    "relic": 6
+   },
+   {
+    "name": "NoleySmokes",
+    "relic": 6
+   },
+   {
+    "name": "Riah",
+    "relic": 6
+   },
+   {
+    "name": "trod75",
+    "relic": 6
+   },
+   {
+    "name": "Viktorion",
+    "relic": 6
+   }
+  ],
+  "GRANDMASTERYODA": [
+   {
+    "name": "50uLh4ck3r",
+    "relic": 8
    },
    {
     "name": "Allnightgamer",
@@ -5002,7 +4610,35 @@
     "relic": 8
    },
    {
+    "name": "CymStar",
+    "relic": 8
+   },
+   {
+    "name": "Darthsketti",
+    "relic": 8
+   },
+   {
+    "name": "Elias Lund",
+    "relic": 8
+   },
+   {
+    "name": "Fama",
+    "relic": 8
+   },
+   {
+    "name": "FeRRiZ",
+    "relic": 8
+   },
+   {
     "name": "Grey Jedi29",
+    "relic": 8
+   },
+   {
+    "name": "Guardiandevil34",
+    "relic": 8
+   },
+   {
+    "name": "hamuta",
     "relic": 8
    },
    {
@@ -5010,7 +4646,23 @@
     "relic": 8
    },
    {
+    "name": "hellothere",
+    "relic": 8
+   },
+   {
     "name": "Hoyle2000",
+    "relic": 8
+   },
+   {
+    "name": "Jaso Swift",
+    "relic": 8
+   },
+   {
+    "name": "Jodo Kast",
+    "relic": 8
+   },
+   {
+    "name": "last of the order",
     "relic": 8
    },
    {
@@ -5018,7 +4670,35 @@
     "relic": 8
    },
    {
+    "name": "Lel En Co",
+    "relic": 8
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 8
+   },
+   {
     "name": "Moe Lester",
+    "relic": 8
+   },
+   {
+    "name": "MYTHOSAUR",
+    "relic": 8
+   },
+   {
+    "name": "NewLothropLegends",
+    "relic": 8
+   },
+   {
+    "name": "NoleySmokes",
+    "relic": 8
+   },
+   {
+    "name": "Protews",
+    "relic": 8
+   },
+   {
+    "name": "Ryanthos",
     "relic": 8
    },
    {
@@ -5030,7 +4710,15 @@
     "relic": 8
    },
    {
+    "name": "Swyth",
+    "relic": 8
+   },
+   {
     "name": "TheJobaFett",
+    "relic": 8
+   },
+   {
+    "name": "Trash Panda",
     "relic": 8
    },
    {
@@ -5042,7 +4730,165 @@
     "relic": 8
    },
    {
+    "name": "Veskasa Stargazer",
+    "relic": 8
+   },
+   {
+    "name": "Viktorion",
+    "relic": 8
+   },
+   {
+    "name": "warden2025",
+    "relic": 8
+   },
+   {
     "name": "Wckdaze",
+    "relic": 8
+   },
+   {
+    "name": "Yan elriad",
+    "relic": 8
+   },
+   {
+    "name": "Hoptownlaw",
+    "relic": 7
+   },
+   {
+    "name": "jediknith",
+    "relic": 7
+   }
+  ],
+  "HONDO": [
+   {
+    "name": "50uLh4ck3r",
+    "relic": 9
+   },
+   {
+    "name": "Baserock",
+    "relic": 9
+   },
+   {
+    "name": "Bem",
+    "relic": 9
+   },
+   {
+    "name": "Casper Darkmage",
+    "relic": 9
+   },
+   {
+    "name": "Darthsketti",
+    "relic": 9
+   },
+   {
+    "name": "Hoyle2000",
+    "relic": 9
+   },
+   {
+    "name": "Jaso Swift",
+    "relic": 9
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 9
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 9
+   },
+   {
+    "name": "Sabum",
+    "relic": 9
+   },
+   {
+    "name": "Swyth",
+    "relic": 9
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 9
+   },
+   {
+    "name": "trod75",
+    "relic": 9
+   },
+   {
+    "name": "Veskasa Stargazer",
+    "relic": 9
+   },
+   {
+    "name": "Wckdaze",
+    "relic": 9
+   },
+   {
+    "name": "Yan elriad",
+    "relic": 9
+   },
+   {
+    "name": "Bertz",
+    "relic": 7
+   },
+   {
+    "name": "Canchuck",
+    "relic": 7
+   },
+   {
+    "name": "CymStar",
+    "relic": 7
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 7
+   },
+   {
+    "name": "warden2025",
+    "relic": 7
+   },
+   {
+    "name": "DarthIsaB",
+    "relic": 6
+   },
+   {
+    "name": "FeRRiZ",
+    "relic": 6
+   },
+   {
+    "name": "Grey Jedi29",
+    "relic": 6
+   },
+   {
+    "name": "Guardiandevil34",
+    "relic": 6
+   },
+   {
+    "name": "Jodo Kast",
+    "relic": 6
+   },
+   {
+    "name": "Ryanthos",
+    "relic": 6
+   },
+   {
+    "name": "Viktorion",
+    "relic": 6
+   }
+  ],
+  "CHIEFNEBIT": [
+   {
+    "name": "Lazrin Novai",
+    "relic": 7
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 7
+   }
+  ],
+  "50RT": [
+   {
+    "name": "Bem",
+    "relic": 8
+   },
+   {
+    "name": "Trash Panda",
     "relic": 8
    },
    {
@@ -5050,39 +4896,35 @@
     "relic": 7
    },
    {
-    "name": "hamuta",
+    "name": "Lazrin Novai",
     "relic": 7
    },
    {
-    "name": "Jaso Swift",
+    "name": "Viktorion",
     "relic": 7
+   }
+  ],
+  "BADBATCHTECH": [
+   {
+    "name": "Guardiandevil34",
+    "relic": 6
    },
    {
-    "name": "Jodo Kast",
-    "relic": 7
+    "name": "Lazrin Novai",
+    "relic": 6
+   }
+  ],
+  "JEDIKNIGHTCONSULAR": [
+   {
+    "name": "Allnightgamer",
+    "relic": 8
    },
    {
-    "name": "MYTHOSAUR",
-    "relic": 7
-   },
-   {
-    "name": "NewLothropLegends",
+    "name": "Grey Jedi29",
     "relic": 7
    },
    {
     "name": "Ryanthos",
-    "relic": 7
-   },
-   {
-    "name": "Swyth",
-    "relic": 7
-   },
-   {
-    "name": "Trash Panda",
-    "relic": 7
-   },
-   {
-    "name": "warden2025",
     "relic": 6
    }
   ],
@@ -5149,6 +4991,164 @@
    },
    {
     "name": "Lazrin Novai",
+    "relic": 6
+   }
+  ],
+  "CHEWBACCALEGENDARY": [
+   {
+    "name": "Grey Jedi29",
+    "relic": 8
+   },
+   {
+    "name": "CymStar",
+    "relic": 7
+   },
+   {
+    "name": "Darthsketti",
+    "relic": 7
+   },
+   {
+    "name": "Jodo Kast",
+    "relic": 7
+   },
+   {
+    "name": "Lel En Co",
+    "relic": 7
+   },
+   {
+    "name": "NoleySmokes",
+    "relic": 7
+   },
+   {
+    "name": "TheJobaFett",
+    "relic": 7
+   },
+   {
+    "name": "Yan elriad",
+    "relic": 7
+   },
+   {
+    "name": "50uLh4ck3r",
+    "relic": 6
+   },
+   {
+    "name": "Allnightgamer",
+    "relic": 6
+   },
+   {
+    "name": "Baserock",
+    "relic": 6
+   },
+   {
+    "name": "Bem",
+    "relic": 6
+   },
+   {
+    "name": "Bertz",
+    "relic": 6
+   },
+   {
+    "name": "Canchuck",
+    "relic": 6
+   },
+   {
+    "name": "Casper Darkmage",
+    "relic": 6
+   },
+   {
+    "name": "DarthIsaB",
+    "relic": 6
+   },
+   {
+    "name": "Fama",
+    "relic": 6
+   },
+   {
+    "name": "FeRRiZ",
+    "relic": 6
+   },
+   {
+    "name": "Guardiandevil34",
+    "relic": 6
+   },
+   {
+    "name": "HaterOfSand",
+    "relic": 6
+   },
+   {
+    "name": "Hello There",
+    "relic": 6
+   },
+   {
+    "name": "hellothere",
+    "relic": 6
+   },
+   {
+    "name": "Hoptownlaw",
+    "relic": 6
+   },
+   {
+    "name": "Hoyle2000",
+    "relic": 6
+   },
+   {
+    "name": "ilmar",
+    "relic": 6
+   },
+   {
+    "name": "Jaso Swift",
+    "relic": 6
+   },
+   {
+    "name": "last of the order",
+    "relic": 6
+   },
+   {
+    "name": "Lazrin Novai",
+    "relic": 6
+   },
+   {
+    "name": "Medjo Juhin",
+    "relic": 6
+   },
+   {
+    "name": "Riah",
+    "relic": 6
+   },
+   {
+    "name": "Ryanthos",
+    "relic": 6
+   },
+   {
+    "name": "Sabum",
+    "relic": 6
+   },
+   {
+    "name": "Starkiller117",
+    "relic": 6
+   },
+   {
+    "name": "Swyth",
+    "relic": 6
+   },
+   {
+    "name": "Trash Panda",
+    "relic": 6
+   },
+   {
+    "name": "trod75",
+    "relic": 6
+   },
+   {
+    "name": "UncleSpike823",
+    "relic": 6
+   },
+   {
+    "name": "Viktorion",
+    "relic": 6
+   },
+   {
+    "name": "Wckdaze",
     "relic": 6
    }
   ]
