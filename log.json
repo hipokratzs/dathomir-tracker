@@ -1,5 +1,29 @@
 [
  {
+  "time": "2026-11-27T23:31:50Z",
+  "changes": [
+   {
+    "unit": "HANSOLO",
+    "player": "NewLothropLegends",
+    "from": null,
+    "to": 8
+   },
+   {
+    "unit": "DASHRENDAR",
+    "player": "NewLothropLegends",
+    "from": null,
+    "to": 8
+   },
+   {
+    "unit": "OUTRIDER",
+    "player": "NewLothropLegends",
+    "from": null,
+    "to": 7,
+    "kind": "stars"
+   }
+  ]
+ },
+ {
   "time": "2026-11-27T18:35:17Z",
   "changes": [
    {
