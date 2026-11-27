@@ -1,5 +1,16 @@
 [
  {
+  "time": "2026-11-27T00:35:52Z",
+  "changes": [
+   {
+    "unit": "THEMANDALORIANBESKARARMOR",
+    "player": "Casper Darkmage",
+    "from": 9,
+    "to": 10
+   }
+  ]
+ },
+ {
   "time": "2026-11-26T14:53:25Z",
   "changes": [
    {
