@@ -1,5 +1,16 @@
 [
  {
+  "time": "2026-11-27T05:17:10Z",
+  "changes": [
+   {
+    "unit": "R2D2_LEGENDARY",
+    "player": "Toyotathon Enthusiast",
+    "from": null,
+    "to": 7
+   }
+  ]
+ },
+ {
   "time": "2026-11-27T04:10:51Z",
   "changes": [
    {
