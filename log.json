@@ -1,5 +1,17 @@
 [
  {
+  "time": "2026-11-28T00:31:24Z",
+  "changes": [
+   {
+    "unit": "OUTRIDER",
+    "player": "ilmar",
+    "from": null,
+    "to": 6,
+    "kind": "stars"
+   }
+  ]
+ },
+ {
   "time": "2026-11-27T23:31:50Z",
   "changes": [
    {
