@@ -1,5 +1,42 @@
 [
  {
+  "time": "2026-11-28T06:38:09Z",
+  "changes": [
+   {
+    "unit": "SCARIFREBEL",
+    "player": "Elias Lund",
+    "from": null,
+    "to": 6
+   },
+   {
+    "unit": "YWINGREBEL",
+    "player": "HaterOfSand",
+    "from": 6,
+    "to": 7,
+    "kind": "stars"
+   },
+   {
+    "unit": "RAVENSCLAW",
+    "player": "Elias Lund",
+    "from": null,
+    "to": 7,
+    "kind": "stars"
+   },
+   {
+    "unit": "KYLEKATARN",
+    "player": "Elias Lund",
+    "from": null,
+    "to": 6
+   },
+   {
+    "unit": "BISTAN",
+    "player": "Elias Lund",
+    "from": null,
+    "to": 6
+   }
+  ]
+ },
+ {
   "time": "2026-11-28T01:58:28Z",
   "changes": [
    {
